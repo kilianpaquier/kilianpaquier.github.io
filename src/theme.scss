@@ -1,0 +1,59 @@
+@import "~@angular/material/theming";
+@include mat-core();
+
+$primary-color: mat-palette($mat-blue, 700);
+$lighten-primary-color: lighten(mat-color($primary-color), 10%);
+$darken-primary-color: darken(mat-color($primary-color), 10%);
+
+$light-accent: mat-palette($mat-pink, A200, A100, A400);
+$light-warn: mat-palette($mat-red);
+$light-background: map-get($mat-grey, 100);
+$darken-light-color: darken($light-background, 18%);
+$darken-light-background: darken($light-background, 10%);
+$light-theme: mat-light-theme(
+    (
+        color: (
+            primary: $primary-color,
+            accent: $light-accent,
+            warn: $light-warn,
+        ),
+    )
+);
+
+@include angular-material-theme($light-theme);
+
+$light-accent: mat-palette($mat-pink, A200, A100, A400);
+$light-warn: mat-palette($mat-red);
+$dark-background: darken(map-get($mat-grey, 800), 5%);
+$lighten-dark-color: lighten($dark-background, 13%);
+$lighten-dark-background: lighten($dark-background, 5%);
+$dark-theme: mat-dark-theme(
+    (
+        color: (
+            primary: $primary-color,
+            accent: $light-accent,
+            warn: $light-warn,
+        ),
+    )
+);
+
+$light-text-color: mat-color($light-theme, foreground);
+$dark-text-color: mat-color($dark-theme, foreground);
+
+.dark-theme {
+    @include angular-material-color($dark-theme);
+    .bg-nuance {
+        background-color: $lighten-dark-background !important;
+    }
+    .color {
+        color: mat-color($dark-text-color, text);
+    }
+}
+
+.bg-nuance {
+    background-color: $darken-light-background;
+}
+
+.color {
+    color: mat-color($light-text-color, text);
+}

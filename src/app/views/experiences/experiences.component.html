@@ -1,0 +1,42 @@
+<section id="experiences">
+    <div class="container animated fadeIn aos-overflow-x">
+        <div class="row mb-5 user-select-none">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">{{ "menu.experiences" | translate }}</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div appDataAosDirective class="col-12 col-lg-6 mb-3" [dataAos]="calculFadeInClass(isEven)" [dataAosDelay]="calculDelay(index)"
+                *ngFor="let in of experiences; let index = index; let isEven = even; trackBy: track">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title class="text-start">
+                            {{ "experiences." + index + ".company" | translate }}
+                        </mat-card-title>
+                        <mat-card-subtitle class="text-start ms-3">
+                            {{ "experiences." + index + ".date" | translate }}
+                        </mat-card-subtitle>
+                    </mat-card-header>
+                    <img alt="" mat-card-image class="experience-image user-select-none"
+                        src="assets/images/experiences/{{ 'experiences.' + index + '.key' | translate }}.png" />
+                    <mat-card-content>
+                        <mat-expansion-panel (opened)="closeOthersPanels(index)">
+                            <mat-expansion-panel-header class="user-select-none">
+                                <mat-panel-title>{{ "button.knowmore" | translate }}</mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <ul class="text-start list-group list-group-flush">
+                                <li class="list-group-item bg-transparent color" *ngFor="let in of in.properties; let i = index">
+                                    {{ "experiences." + index + ".properties." + i + "" | translate }}
+                                </li>
+                            </ul>
+                            <mat-card-subtitle *ngIf="hasKey('experiences.' + index + '.legend')" class="text-end"
+                                style="bottom: 0 !important; right: 0 !important">
+                                {{ "experiences." + index + ".legend" | translate }}
+                            </mat-card-subtitle>
+                        </mat-expansion-panel>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</section>

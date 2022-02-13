@@ -1,0 +1,65 @@
+<section id="skills">
+    <div class="container animated fadeIn user-select-none aos-overflow-x">
+        <div class="row mb-5">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">{{ "menu.skills" | translate }}</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h3 class="section-subheading mb-4">{{ "skills.names.programming" | translate }}</h3>
+            </div>
+            <div class="col-6 col-md-3 col-sm-4 col-lg-2 mb-5" *ngFor="let in of programming; let index = index; trackBy: track">
+                <em class="colored icon fa-3x devicon" [dataAos]="dataAos"
+                    ngClass="{{ 'skills.programming.' + index + '.class' | translate }}" appDataAosDirective
+                    [dataAosDelay]="calculDelay(index)" matTooltip="{{ 'skills.programming.' + index + '.name' | translate }}"
+                    *ngIf="!hasKey('skills.programming.' + index + '.image'); else elseProgramming"></em>
+                <ng-template #elseProgramming>
+                    <em class="icon fa-3x devicon" [dataAos]="dataAos" appDataAosDirective [dataAosDelay]="calculDelay(index)">
+                        <img alt="" src="assets/images/skills/{{ 'skills.programming.' + index + '.image' | translate }}"
+                            ngClass="{{ 'skills.programming.' + index + '.class' | translate }}"
+                            height="{{ 'skills.programming.' + index + '.height' | translate }}"
+                            matTooltip="{{ 'skills.programming.' + index + '.name' | translate }}" />
+                    </em>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h3 class="section-subheading mb-4">{{ "skills.names.frameworks" | translate }}</h3>
+            </div>
+            <div class="col-6 col-md-3 col-sm-4 col-lg-2 mb-5" *ngFor="let in of frameworks; let index = index; trackBy: track">
+                <em class="colored icon fa-3x devicon" [dataAos]="dataAos"
+                    ngClass="{{ 'skills.frameworks.' + index + '.class' | translate }}" appDataAosDirective
+                    [dataAosDelay]="calculDelay(index)" matTooltip="{{ 'skills.frameworks.' + index + '.name' | translate }}"
+                    *ngIf="!hasKey('skills.frameworks.' + index + '.image'); else elseFrameworks"></em>
+                <ng-template #elseFrameworks>
+                    <em class="icon fa-3x devicon" [dataAos]="dataAos" appDataAosDirective [dataAosDelay]="calculDelay(index)">
+                        <img alt="" src="assets/images/skills/{{ 'skills.frameworks.' + index + '.image' | translate }}"
+                            ngClass="{{ 'skills.frameworks.' + index + '.class' | translate }}"
+                            height="{{ 'skills.frameworks.' + index + '.height' | translate }}"
+                            matTooltip="{{ 'skills.frameworks.' + index + '.name' | translate }}" />
+                    </em>
+                </ng-template>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h3 class="section-subheading mb-4">{{ "skills.names.tools" | translate }}</h3>
+            </div>
+            <div class="col-6 col-md-3 col-sm-4 col-lg-2 mb-5" *ngFor="let in of tools; let index = index; trackBy: track">
+                <em class="colored icon fa-3x devicon" [dataAos]="dataAos" ngClass="{{ 'skills.tools.' + index + '.class' | translate }}"
+                    appDataAosDirective [dataAosDelay]="calculDelay(index)" matTooltip="{{ 'skills.tools.' + index + '.name' | translate }}"
+                    *ngIf="!hasKey('skills.tools.' + index + '.image'); else elseTools"></em>
+                <ng-template #elseTools>
+                    <em class="icon fa-3x devicon" [dataAos]="dataAos" appDataAosDirective [dataAosDelay]="calculDelay(index)">
+                        <img alt="" src="assets/images/skills/{{ 'skills.tools.' + index + '.image' | translate }}"
+                            ngClass="{{ 'skills.tools.' + index + '.class' | translate }}"
+                            height="{{ 'skills.tools.' + index + '.height' | translate }}"
+                            matTooltip="{{ 'skills.tools.' + index + '.name' | translate }}" />
+                    </em>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</section>

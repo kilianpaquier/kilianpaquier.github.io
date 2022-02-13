@@ -1,0 +1,19 @@
+include:
+  - project: "$CI_INDUS_PROJECT"
+    ref: $CI_INDUS_BRANCH
+    file:
+      - "pipelines/node.yml"
+
+node-build:
+  script:
+    - echo "FORMSPREE_GITLAB_URL=$FORMSPREE_GITLAB_URL" >> $ENV_ARTIFACT
+    - echo "FORMSPREE_FR_URL=$FORMSPREE_FR_URL" >> $ENV_ARTIFACT 
+    - echo "CAPTCHA_SITE_KEY=$CAPTCHA_SITE_KEY" >> $ENV_ARTIFACT
+    - yarn build --configuration=production $ANGULAR_CLI_OPTS
+
+report-analysis:
+  rules:
+    - when: never
+
+pages:
+  extends: .pages

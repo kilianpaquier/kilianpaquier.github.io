@@ -1,0 +1,73 @@
+<div class="text-center">
+    <h1 class="text-uppercase" mat-dialog-title>{{ "projects." + data.index + ".name" | translate }}</h1>
+</div>
+
+<mat-dialog-content>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 mb-3 text-center user-select-none">
+                <img alt="" 
+                    class="img-fluid mx-auto"
+                    src="assets/images/projects/dialog/{{ 'projects.' + data.index + '.key' | translate }}.png" />
+            </div>
+
+            <div class="col-12">
+                <h6>{{ "misc.context" | translate }}</h6>
+                <p class="text-justify">
+                    {{ "projects." + data.index + ".context" | translate }}
+                </p>
+            </div>
+
+            <div class="col-12">
+                <h6>{{ "misc.tasks" | translate }}</h6>
+                <ul class="list-group list-group-flush text-justify">
+                    <li class="list-group-item bg-transparent color" *ngFor="let in of tasks; let i = index; trackBy: trackTasks">
+                        {{ "projects." + data.index + ".tasks." + i | translate }}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-12 text-center user-select-none">
+                <a href="{{ 'projects.' + data.index + '.urls.' + i + '.value' | translate }}" 
+                    class="mx-2" 
+                    target="_blank"
+                    rel="noopener"
+                    *ngFor="let in of urls; let i = index; trackBy: trackValue">
+
+                    <fa-icon 
+                        [icon]="parseIcon('projects.' + data.index + '.urls.' + i + '.icon')" 
+                        class="fa-3x"
+                        *ngIf="!hasKey('projects.' + data.index + '.urls.' + i + '.image.name'); else elseUrls">
+                    </fa-icon>
+
+                    <ng-template #elseUrls>
+                        <em class="fa-3x">
+                            <img alt="" 
+                                class="align-top mt-1-5" 
+                                src="assets/images/projects/dialog/icon/{{ 'projects.' + data.index + '.urls.' + i + '.image.name' | translate }}.png" 
+                                width="{{ 'projects.' + data.index + '.urls.' + i + '.image.width' | translate }}" />
+                        </em>
+                    </ng-template>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent color" *ngFor="let in of keys; let i = index; trackBy: trackValue">
+                        <fa-icon 
+                            [icon]="parseIcon('projects.' + data.index + '.keys.' + i + '.icon')"
+                            class="{{ 'projects.' + data.index + '.keys.' + i + '.classes' | translate }}">
+                        </fa-icon>
+                        <span>{{ "projects." + data.index + ".keys." + i + ".value" | translate }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close class="text-uppercase">
+        {{ "button.closeproject" | translate }}
+    </button>
+</mat-dialog-actions>

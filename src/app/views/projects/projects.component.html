@@ -1,0 +1,27 @@
+<section id="projects">
+    <div class="container animated fadeIn aos-overflow-x aos-overflow-y">
+        <div class="row mb-5 user-select-none">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">{{ "menu.projects" | translate }}</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12 col-md-6 col-lg-4 mb-3" *ngFor="let in of projects; let index = index; trackBy: track">
+                <mat-card appDataAosDirective dataAos="slide-up" [dataAosDelay]="calculDelay(index)">
+                    <mat-card-header>
+                        <mat-card-title class="text-start">
+                            {{ "projects." + index + ".name" | translate }}
+                        </mat-card-title>
+                    </mat-card-header>
+                    <img alt="" class="user-select-none" mat-card-image
+                        src="assets/images/projects/{{ 'projects.' + index + '.key' | translate }}.png" />
+                    <mat-card-actions align="end" class="user-select-none">
+                        <button mat-button class="text-uppercase" (click)="openDialog(index)">
+                            {{ "button.knowmore" | translate }}
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</section>

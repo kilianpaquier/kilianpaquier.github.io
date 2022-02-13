@@ -1,0 +1,139 @@
+@import "../../../mixins.scss";
+
+header.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../../../assets/images/intro/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    .intro-text {
+        padding-top: 125px;
+        padding-bottom: 125px;
+        .intro-lead-in {
+            font-size: 22px;
+            font-style: italic;
+            line-height: 22px;
+            margin-bottom: 25px;
+            @include serif-font;
+        }
+        .intro-heading {
+            font-weight: 700;
+            margin-bottom: 30px;
+            @include heading-font;
+        }
+    }
+    .img-profil {
+        width: 45%;
+    }
+}
+
+@media (max-width: 330px) {
+    header.masthead {
+        .intro-text {
+            .intro-heading {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+        .img-profil {
+            width: 50% !important;
+        }
+    }
+
+    .about-button {
+        font-size: 17px !important;
+        padding: 10px 25px !important;
+    }
+}
+
+@media (min-width: 330px) and (max-width: 368px) {
+    header.masthead {
+        .intro-text {
+            .intro-heading {
+                font-size: 35px;
+                line-height: 40px;
+            }
+        }
+        .img-profil {
+            width: 50% !important;
+        }
+    }
+
+    .about-button {
+        font-size: 17px !important;
+        padding: 10px 25px !important;
+    }
+}
+
+@media (min-width: 368px) and (max-width: 576px) {
+    header.masthead {
+        .intro-text {
+            .intro-heading {
+                font-size: 40px;
+                line-height: 45px;
+            }
+        }
+    }
+
+    .about-button {
+        font-size: 17px !important;
+        padding: 10px 25px !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    header.masthead {
+        .intro-text {
+            .intro-heading {
+                font-size: 50px;
+                line-height: 55px;
+            }
+        }
+    }
+
+    .about-button {
+        font-size: 17px !important;
+        padding: 10px 25px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header.masthead {
+        .img-profil {
+            width: 33% !important;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header.masthead {
+        .intro-text {
+            padding-top: 125px;
+            padding-bottom: 125px;
+            .intro-lead-in {
+                font-size: 40px;
+                font-style: italic;
+                line-height: 40px;
+                margin-bottom: 25px;
+                @include serif-font;
+            }
+            .intro-heading {
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 60px;
+                margin-bottom: 40px;
+                @include heading-font;
+            }
+        }
+        .img-profil {
+            width: 25%;
+        }
+    }
+
+    .about-button {
+        font-size: 17px !important;
+        padding: 12px 27px !important;
+    }
+}

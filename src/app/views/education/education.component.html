@@ -1,0 +1,35 @@
+<section id="education" class="bg-nuance">
+    <div class="container animated fadeIn aos-overflow-x">
+        <div class="row mb-5 user-select-none">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">{{ "menu.education" | translate }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="timeline">
+                    <li [ngClass]="isOdd ? 'timeline-inverted' : ''"
+                        *ngFor="let in of educations; let index = index; let isOdd = odd; trackBy: track">
+                        <div class="timeline-image user-select-none" data-aos="zoom-out">
+                            <img alt="" class="rounded-circle h-100 w-100"
+                                src="assets/images/educations/{{ 'educations.' + index + '.image' | translate }}.png" />
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h5>{{ "educations." + index + ".date" | translate }}</h5>
+                                <h4 class="subheading">{{ "educations." + index + ".title" | translate }}</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-transparent color" *ngFor="let in of in.keys; let i = index">
+                                        {{ "educations." + index + ".keys." + i | translate }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,610 @@
+{
+    "menu": {
+        "about": "À propos",
+        "experiences": "Expériences",
+        "education": "Formation",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "interests": "Centres d'intérêts",
+        "contact": "Contactez-moi",
+        "lang": {
+            "lang": "Langage",
+            "english": "Anglais",
+            "french": "Français"
+        }
+    },
+    "intro": {
+        "title": "Ingénieur développement | Scrum",
+        "resume": "Mon CV",
+        "link": "https://cvdesignr.com/p/5d9cd3013bcbb"
+    },
+    "about": {
+        "welcome": "Bienvenue sur mon portfolio et bonne lecture ! Je suis ingénieur développement titulaire d'un double diplôme ingénieur informatique (avec Polytech Tours) et maîtrise informatique (Université du Québec à Chicoutimi)",
+        "intro": "Passionné par l'informatique depuis la classe de 4e (où j'ai pu suivre un cours de HTML et CSS sur le Site du Zéro), ma principale qualité se porte sur le souci du détail car il est important pour moi de fournir des applications complètes qui facilitent l'expérience utilisateur (en prenant en compte le ressenti des utilisateurs finaux à chaque démonstration)"
+    },
+    "experiences": [
+        {
+            "company": "Sopra Steria",
+            "date": "Depuis Mars 2021",
+            "key": "soprasteria",
+            "properties": [
+                "Ingénieur développement | Scrum",
+                "Élaboration et relecture de spécifications, documentations et dossiers de tests, grooming des US, démonstrations client",
+                "Fonctionnement en méthodologie Agile (planning poker, grooming, daily)",
+                "Animations des cérémonies Scrum",
+                "TypeScript, Java, Spring, Python, Hibernate, Angular, Jasmine, JUnit, Quarkus, Cucumber, Liquibase",
+                "Jira, Kubernetes, Docker, GitLab & CI/CD, ALM Octane, Checkmarx, Sonar, Dependency Check"
+            ]
+        },
+        {
+            "company": "ALTEN",
+            "date": "Août 2020 à Février 2021",
+            "key": "alten",
+            "properties": [
+                "Stagiaire consultant innovation",
+                "Développement ÉlectronJS",
+                "Utilisation d'une Blockchain",
+                "Élaboration de spécifications fonctionnelles, d'un Bilan Scientifique & Technique et d'un document d'architecture",
+                "Pilotage d'un état de l'art des Blockchains",
+                "Recherche & développement TypeScript accompagné d'une API NestJS et de tests unitaires Jest"
+            ]
+        },
+        {
+            "company": "Eurosys - CHEOPS",
+            "date": "Juin à Août 2019",
+            "key": "eurosys",
+            "properties": [
+                "Stagiaire analyse & développement",
+                "Analyse de la version du framework de l'ERP (ExtJS)",
+                "Estimation d'un temps et des changements à effectuer pour passer à une version plus récente du framework",
+                "Développement de plusieurs fonctionnalités sur l'ERP"
+            ]
+        },
+        {
+            "company": "DDT*",
+            "date": "Août 2018",
+            "key": "ddt",
+            "properties": [
+                "Vacataire développement",
+                "Analyse des besoins d'un client",
+                "Développement de T.A.GEDOFIS",
+                "Java SE, Swing, Exportation CSV et Excel",
+                "Recherche de dossiers (taxes d'aménagement) manquants",
+                "Génération de tableaux croisés"
+            ],
+            "legend": "*Direction Départementale des Territoires"
+        },
+        {
+            "company": "UFCV*",
+            "date": "Février, Avril et Août 2017",
+            "key": "ufcv",
+            "properties": [
+                "Formateur BAFA",
+                "Plusieurs sessions d'approfondissement",
+                "Une session de base",
+                "Élaboration de séances de formation avec fil rouge"
+            ],
+            "legend": "*Union Française des Centres de Vacances"
+        },
+        {
+            "company": "CGCV*",
+            "date": "Juillet 2016 et 2017",
+            "key": "cgcv",
+            "properties": [
+                "Animateur BAFA",
+                "Organisation et animation d'activités"
+            ],
+            "legend": "*C'est Génial Comme Vacances"
+        },
+        {
+            "company": "DREAL*",
+            "date": "Juin 2016",
+            "key": "dreal",
+            "properties": [
+                "Stagiaire",
+                "Découverte de la mise à jour des serveurs",
+                "Installation de la téléphonie IP au niveau des switchs et bureaux"
+            ],
+            "legend": "*Direction Régionale de l'Environnement, de l'Aménagement et du Logement"
+        }
+    ],
+    "educations": [
+        {
+            "title": "UQAC",
+            "date": "Août 2019 - Février 2021",
+            "keys": [
+                "Double diplôme",
+                "Maîtrise informatique à l'UQAC",
+                "Diplôme d'ingénieur informatique à Polytech Tours",
+                "Gestion de projet (spécifications fonctionnelles et techniques, méthologies agiles et prédictives)",
+                "Programmation objet avancée, génie logiciel, qualité logicielle, patrons de conception, applications d'entreprise, ERP",
+                "JEE, C#/.NET, ASP.NET MVC, Struts 2, Android (Java), Moleculer, Spring, Maven, UML, SQL, Angular CLI & Material, TS, Git, Bootstrap, Servlet"
+            ],
+            "image": "uqac"
+        },
+        {
+            "title": "Polytech Tours",
+            "date": "Septembre 2017 - Février 2021",
+            "keys": [
+                "Diplôme d'ingénieur informatique",
+                "Algorithmie, génie logiciel, qualité logicielle, cycle de vie des projets, gestion de projet (spécifications fonctionnelles et techniques)",
+                "Java/JEE, C#/.NET, Qt, JQuery, JS, Bootstrap, Spring, Maven, Hibernate, Swing, Trello, UML, SQL, C/C++, Git, Gantt, Servlet"
+            ],
+            "image": "polytechtours"
+        }
+    ],
+    "skills": {
+        "names": {
+            "programming": "Programmation",
+            "frameworks": "Frameworks",
+            "tools": "Outils"
+        },
+        "programming": [
+            {
+                "name": "Java ⚪⚪⚪⚪⚫",
+                "class": "devicon-java-plain"
+            },
+            {
+                "name": "TypeScript ⚪⚪⚪⚪⚫",
+                "class": "devicon-typescript-plain"
+            },
+            {
+                "name": "Python ⚪⚪⚫⚫⚫",
+                "class": "devicon-python-plain"
+            },
+            {
+                "name": "Javascript ⚪⚪⚪⚪⚫",
+                "class": "devicon-javascript-plain"
+            },
+            {
+                "name": "HTML5 ⚪⚪⚪⚪⚫",
+                "class": "devicon-html5-plain"
+            },
+            {
+                "name": "CSS3 ⚪⚪⚪⚫⚫",
+                "class": "devicon-css3-plain"
+            },
+            {
+                "name": "SCSS ⚪⚫⚫⚫⚫",
+                "class": "devicon-sass-original"
+            },
+            {
+                "name": "SQL ⚪⚪⚪⚫⚫",
+                "class": "align-top",
+                "image": "sql.png",
+                "height": "48"
+            },
+            {
+                "name": "C# ⚪⚪⚫⚫⚫",
+                "class": "devicon-csharp-plain"
+            },
+            {
+                "name": "PHP ⚪⚪⚫⚫⚫",
+                "class": "devicon-php-plain"
+            },
+            {
+                "name": "C++ ⚪⚪⚫⚫⚫",
+                "class": "devicon-cplusplus-plain"
+            },
+            {
+                "name": "C ⚪⚪⚫⚫⚫",
+                "class": "devicon-c-plain"
+            }
+        ],
+        "frameworks": [
+            {
+                "name": "Spring ⚪⚪⚪⚫⚫",
+                "class": "devicon-spring-plain"
+            },
+            {
+                "name": "Angular & Material ⚪⚪⚪⚫⚫",
+                "class": "devicon-angularjs-plain"
+            },
+            {
+                "name": "Cucumber ⚪⚪⚪⚫⚫",
+                "class": "devicon-cucumber-plain"
+            },
+            {
+                "name": "Quarkus ⚪⚪⚪⚫⚫",
+                "class": "align-top",
+                "image": "quarkus.png",
+                "height": "48"
+            },
+            {
+                "name": "Flask ⚪⚫⚫⚫⚫",
+                "class": "devicon-flask-plain"
+            },
+            {
+                "name": ".NET ⚪⚪⚫⚫⚫",
+                "class": "devicon-dot-net-plain"
+            },
+            {
+                "name": "Hibernate ⚪⚪⚪⚫⚫",
+                "class": "align-top",
+                "image": "hibernate.svg",
+                "height": "44"
+            },
+            {
+                "name": "Bootstrap ⚪⚪⚪⚪⚫",
+                "class": "devicon-bootstrap-plain"
+            },
+            {
+                "name": "JQuery ⚪⚪⚪⚫⚫",
+                "class": "devicon-jquery-plain"
+            },
+            {
+                "name": "Struts 2 ⚪⚪⚫⚫⚫",
+                "class": "align-top",
+                "image": "struts.svg",
+                "height": "48"
+            },
+            {
+                "name": "Java Swing ⚪⚪⚫⚫⚫",
+                "class": "devicon-java-plain"
+            },
+            {
+                "name": "Qt ⚪⚪⚫⚫⚫",
+                "class": "align-top",
+                "image": "qt.svg",
+                "height": "43"
+            },
+            {
+                "name": "ElectronJS ⚪⚫⚫⚫⚫",
+                "class": "devicon-electron-original"
+            },
+            {
+                "name": "NestJS ⚪⚫⚫⚫⚫",
+                "class": "devicon-nestjs-plain"
+            },
+            {
+                "name": "ExtJS ⚪⚫⚫⚫⚫",
+                "class": "align-top",
+                "image": "extjs.png",
+                "height": "45"
+            }
+        ],
+        "tools": [
+            {
+                "name": "Visual Studio Code ⚪⚪⚪⚪⚫",
+                "class": "devicon-vscode-plain"
+            },
+            {
+                "name": "GitLab & CI/CD ⚪⚪⚪⚫⚫",
+                "class": "devicon-gitlab-plain"
+            },
+            {
+                "name": "Kubernetes ⚪⚪⚫⚫⚫",
+                "class": "devicon-kubernetes-plain"
+            },
+            {
+                "name": "Helm ⚪⚪⚫⚫⚫",
+                "class": "align-top",
+                "image": "helm.svg",
+                "height": "56"
+            },
+            {
+                "name": "Prometheus ⚪⚫⚫⚫⚫",
+                "class": "align-top",
+                "image": "prometheus.png",
+                "height": "50"
+            },
+            {
+                "name": "Maven ⚪⚪⚪⚫⚫",
+                "class": "align-top",
+                "image": "maven.png",
+                "height": "56"
+            },
+            {
+                "name": "Jira ⚪⚪⚪⚫⚫",
+                "class": "align-top",
+                "image": "jira.svg",
+                "height": "45"
+            },
+            {
+                "name": "Grafana ⚪⚫⚫⚫⚫",
+                "class": "align-top",
+                "image": "grafana.svg",
+                "height": "48"
+            },
+            {
+                "name": "Vagrant ⚪⚪⚫⚫⚫",
+                "class": "devicon-vagrant-plain"
+            },
+            {
+                "name": "Docker ⚪⚫⚫⚫⚫",
+                "class": "devicon-docker-plain"
+            },
+            {
+                "name": "JetBrains ⚪⚪⚪⚫⚫",
+                "class": "devicon-jetbrains-plain"
+            },
+            {
+                "name": "UML ⚪⚪⚪⚪⚫",
+                "class": "align-top",
+                "image": "uml.png",
+                "height": "48"
+            }
+        ]
+    },
+    "projects": [
+        {
+            "name": "For The Berry",
+            "key": "fortheberry",
+            "context": "Dans le cadre d'un cours d'exploration du développement des jeux vidéo, j'ai travaillé avec 7 collègues sur le développement complet d'un prototype de jeu vidéo. En fonctionnement Scrum, nous avons réfléchi à un type de jeu, à l'histoire, à son déroulement et aux mécaniques à implémenter. Pour cela, nous avons utilisé le moteur Unity et le langage C#.",
+            "tasks": [
+                "Participation à l'élaboration du Game Design Document (document précisant l'histoire, le concept, l'ambiance, les niveaux, les personnages, etc.), du Product Backlog et des sprints backlogs.",
+                "Casquette de Scrum Master en charge de la communication avec le Product Owner (responsable universitaire), la production des rapports de fin de sprint et le respect des règles Scrum.",
+                "Casquette d'ingénieur développement avec l'implémentation des US portant sur les armes avec la récupération des visuels et animations adaptées, l'implémentation des émissions d'effets, le réglage des collisions, etc."
+            ],
+            "urls": [
+                {
+                    "value": "https://rogue888.itch.io/for-the-berry",
+                    "image": {
+                        "name": "itchio",
+                        "width": "55"
+                    }
+                }
+            ],
+            "keys": [
+                {
+                    "value": "Janvier à Avril 2020",
+                    "icon": "date",
+                    "classes": "me-3-5"
+                },
+                {
+                    "value": "Laboratoire des jeux vidéo",
+                    "icon": "course",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "C#, Unity, Mixamo, Perforce",
+                    "icon": "code",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Alexia NEUFOND, Yann GALAN, Vincent BOYER, Vincent RABIER, Théo BERTET, Christopher LERET, Benoît RICHARD, Kilian PAQUIER",
+                    "icon": "users",
+                    "classes": "me-3-1"
+                }
+            ]
+        },
+        {
+            "name": "Share Your Fit",
+            "key": "shareyourfit",
+            "context": "Dans un contexte de découverte du développement mobile, c'est accompagné de 2 collègues que nous avons développé une solution Android pour mieux comprendre le fonctionnement des machines dans les salles de sport. Par cela, nous permettons l'enregistrement d'une machine avec son nom, les muscles travaillés et après acollage d'un QR Code sur celle-ci, il est possible de consulter des vidéos d'exercices adaptés à la machine. En complément il est aussi possible de rechercher des exercies particuliers (pour un muscle par exemple ?) et de se diriger vers une machine adaptée.",
+            "tasks": [
+                "Conception et développement d'une partie des fonctionnalités de la solution.",
+                "Participation à l'élaboration de vidéos présentatives du concept et de la solution."
+            ],
+            "urls": [
+                {
+                    "value": "https://gitlab.com/kilian-paquier/share-your-fit",
+                    "icon": "git"
+                }
+            ],
+            "keys": [
+                {
+                    "value": "Avril 2020",
+                    "icon": "date",
+                    "classes": "me-3-5"
+                },
+                {
+                    "value": "Plateformes mobiles",
+                    "icon": "course",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Java, Android, Git, Gradle",
+                    "icon": "code",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Alexia NEUFOND, Vincent BOYER, Kilian PAQUIER",
+                    "icon": "users",
+                    "classes": "me-3-1"
+                }
+            ]
+        },
+        {
+            "name": "Flotte de camion",
+            "key": "flottecamions",
+            "context": "Dans le cadre d'un cours sur les applications d'entreprise, une entreprise virtuelle gérant une flotte de camions souhaitait réaliser cette gestion de manière numérique. Accompagné de 4 collègues nous avons réalisé une solution web en JEE puis en .NET répondant à une partie des besoins de cette entreprise. L'authentification des clients, la soumission de commande, l'affectation de livraisons (camion, remorque, conducteur, etc.) aux commandes (en fonction du type de marchandise, du volume des marchandises, etc.), le suivi des livraisons, la gestion des profils clients.",
+            "tasks": [
+                "Participation à l'élaboration des spécifications fonctionnelles et techniques.",
+                "Développement d'une partie des fonctionnalités en JEE avec Struts 2.",
+                "Développement d'une partie des fonctionnalités en C#, avec le Framework .NET, Entity Framework 6 et ASP.NET MVC."
+            ],
+            "urls": [
+                {
+                    "value": "https://gitlab.com/kilian-paquier/flotte-camions-jee",
+                    "icon": "git"
+                },
+                {
+                    "value": "https://gitlab.com/kilian-paquier/flotte-camions-net",
+                    "icon": "git"
+                }
+            ],
+            "keys": [
+                {
+                    "value": "Novembre à Décembre 2019",
+                    "icon": "date",
+                    "classes": "me-3-5"
+                },
+                {
+                    "value": "Applications d'entreprise",
+                    "icon": "course",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "JEE, Struts 2, MySQL, Bootstrap, C#/.NET, EF6, MS SQL, ASP.NET MVC, Git",
+                    "icon": "code",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Anja RAHARIJAONA, Nicolas ROUVET, Charles MÉCHERIKI, Emin YALAZ, Kilian PAQUIER",
+                    "icon": "users",
+                    "classes": "me-3-1"
+                }
+            ]
+        },
+        {
+            "name": "Gestion EPI",
+            "key": "gestionepi",
+            "context": "Dans le cadre d'une formation d'élagueur offerte par le lycée agricole des Fondettes, les étudiants sont amenés à utiliser des EPI (Équipement de Protection Individuelle) et des \"vérificateurs\" à les vérifier. Cette vérification, le responsable de la formation souhaitait la rendre numérique, de manière à ce qu'elle soit plus simple, plus accessible et plus complète. C'est donc accompagné de 6 collègues, que nous avons développé cette solution (web) afin de répondre aux besoins.",
+            "tasks": [
+                "Casquette de chef de projet chargé de la communication avec la client et avec le responsable universitaire.",
+                "Participation à la production des différents documents du projet avec les spécifications fonctionnelles et techniques et la documentation utilisateur.",
+                "Développement JavaScript de certaines fonctionnalités et support sur la partie Bootstrap et PHP."
+            ],
+            "urls": [
+                {
+                    "value": "https://gitlab.com/kilian-paquier/gestion-epi",
+                    "icon": "git"
+                }
+            ],
+            "keys": [
+                {
+                    "value": "Janvier à Mai 2019",
+                    "icon": "date",
+                    "classes": "me-3-5"
+                },
+                {
+                    "value": "Lycée agricole des Fondettes",
+                    "icon": "client",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "PHP, HTML/CSS, Bootstrap, JavaScript, JQuery, CodeIgniter, Git",
+                    "icon": "code",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Anas MONCEF, Emeric PAIN, Fannie LE FEL, Johann ANDRÉ, Paul RETAIL, Steven MARTIN, Kilian PAQUIER",
+                    "icon": "users",
+                    "classes": "me-3-1"
+                }
+            ]
+        },
+        {
+            "name": "Liste d'étudiants",
+            "key": "studentslist",
+            "context": "Dans le contexte d'un cours de développement logiciel, accompagné d'un collègue, nous avons pris un sujet afin de répondre aux besoins d'un enseignant chercheur de Polytech. Chaque année, celui-ci crée les listes d'étudiants pour les groupes de TD principalement et se retrouve face à une tâche pas forcément agréable. Nous avons donc répondu à ses besoins en développant une solution client lourd en Swing prenant en entrée une liste d'étudiants avec des options pour chaque étudiant et exportant (selon les propriétés sélectionnées dans l'interface) en sortie une liste plus affinée d'étudiants.",
+            "tasks": [
+                "Participation au recueil des besoins de l'enseignant.",
+                "Conception et développement de certaines fonctionnalités de la solution.",
+                "Participation à la planification des fonctionnalités et élaboration de la documentation utilisateur."
+            ],
+            "urls": [
+                {
+                    "value": "https://gitlab.com/kilian-paquier/listes-etudiants",
+                    "icon": "git"
+                }
+            ],
+            "keys": [
+                {
+                    "value": "Septembre à Décembre 2018",
+                    "icon": "date",
+                    "classes": "me-3-5"
+                },
+                {
+                    "value": "Enseignant chercheur",
+                    "icon": "client",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Java, Swing, Git",
+                    "icon": "code",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Nathan COUTON, Kilian PAQUIER",
+                    "icon": "users",
+                    "classes": "me-3-1"
+                }
+            ]
+        },
+        {
+            "name": "T.A.GEDOFIS",
+            "key": "tagedofis",
+            "context": "Dans un contexte de soumission des taxes d'aménagement au sein de l'application nationale, je suis intervenu dans le service Urbanisme de la DDT de Poitiers en tant que vacataire pour rechercher au sein de cette application (et plus particulièrement d'exportations CSV) les numéros de dossier qui auraient ne pas être transmis. Dans ce cadre, j'ai développé une solution afin de rechercher parmi tous ces fichiers (donnés en entrée une seule fois, sérialisés ensuite) les numéros de dossier manquants. À cela s'est ajouté une fonctionnalité d'exportation de tableaux croisés pour fournir des statistiques par commune, par type de taxe, par année ou lot d'années.",
+            "tasks": [
+                "Recueil des besoins du client.",
+                "Conception et développement de l'intégralité de la solution en client lourd Swing.",
+                "Suivi des besoins et livraison toutes les semaines avec prise en compte des modifications souhaitées."
+            ],
+            "urls": [
+                {
+                    "value": "https://gitlab.com/kilian-paquier/tagedofis",
+                    "icon": "git"
+                }
+            ],
+            "keys": [
+                {
+                    "value": "Août 2018",
+                    "icon": "date",
+                    "classes": "me-3-5"
+                },
+                {
+                    "value": "Direction Départementale des Territoires",
+                    "icon": "client",
+                    "classes": "me-3-1"
+                },
+                {
+                    "value": "Java, Swing, Git",
+                    "icon": "code",
+                    "classes": "me-3-1"
+                }
+            ]
+        }
+    ],
+    "interests": [
+        {
+            "name": "Séries",
+            "image": "tvtime"
+        },
+        {
+            "name": "Basket-ball",
+            "image": "basketball"
+        },
+        {
+            "name": "Voyages",
+            "image": "travels"
+        },
+        {
+            "name": "Jeux vidéo",
+            "image": "videogames"
+        },
+        {
+            "name": "Films",
+            "image": "movies"
+        }
+    ],
+    "contact": {
+        "fullname": "Votre nom et prénom",
+        "email": "Votre email",
+        "company": "Votre entreprise",
+        "message": "Votre message",
+        "send": "Envoyer votre message",
+        "error": {
+            "required": "Champ obligatoire",
+            "email": "Format email non respecté"
+        },
+        "snack": {
+            "close": "Fermer",
+            "successMessage": "Votre message a bien été envoyé.",
+            "errorMessage": "Erreur lors de l'envoi de votre message, veuillez me contacter directement par mail ou LinkedIn.",
+            "captchaMessage": "Erreur lors de la génération du token reCAPTCHA, veuillez réessayer."
+        }
+    },
+    "footer": {
+        "copyright": "Copyright © Kilian PAQUIER"
+    },
+    "button": {
+        "knowmore": "En savoir plus",
+        "closeproject": "Fermer le projet"
+    },
+    "misc": {
+        "context": "Contexte",
+        "tasks": "Tâches"
+    }
+}

@@ -1,0 +1,55 @@
+.nav-button {
+    bottom: 1rem;
+    right: 1rem;
+    position: fixed;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.progress-bar {
+    position: fixed;
+    height: 0.2rem;
+    z-index: 101;
+}
+
+.flag-icon-background {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.flag-icon {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em;
+}
+
+.flag-icon:before {
+    content: "\00a0";
+}
+
+.flag-icon.flag-icon-squared {
+    width: 1em;
+}
+
+.flag-icon-fr {
+    background-image: url(../../../assets/images/flags/4x3/fr.svg);
+}
+
+.flag-icon-fr.flag-icon-squared {
+    background-image: url(../../../assets/images/flags/1x1/fr.svg);
+}
+
+.flag-icon-gb {
+    background-image: url(../../../assets/images/flags/4x3/gb.svg);
+}
+
+.flag-icon-gb.flag-icon-squared {
+    background-image: url(../../../assets/images/flags/1x1/gb.svg);
+}

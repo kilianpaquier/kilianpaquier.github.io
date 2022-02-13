@@ -1,0 +1,75 @@
+<div class="app-frame mat-app-background" #appframe>
+    <mat-progress-bar class="progress-bar" [value]="progressbarValue" color="primary"></mat-progress-bar>
+    <app-intro></app-intro>
+    <app-about></app-about>
+    <div id="htmlResume">
+        <app-experiences></app-experiences>
+        <app-education></app-education>
+        <app-skills></app-skills>
+        <app-projects></app-projects>
+        <app-interests></app-interests>
+    </div>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+    <button class="nav-button" mat-fab color="primary" #menuTrigger="matMenuTrigger" [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" class="mb-2">
+        <button mat-menu-item (click)="scrollTo('about')">
+            <mat-icon>person</mat-icon>
+            <span>{{ "menu.about" | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="scrollTo('experiences')">
+            <mat-icon>business</mat-icon>
+            <span>{{ "menu.experiences" | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="scrollTo('education')">
+            <mat-icon>school</mat-icon>
+            <span>{{ "menu.education" | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="scrollTo('skills')">
+            <mat-icon>code</mat-icon>
+            <span>{{ "menu.skills" | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="scrollTo('projects')">
+            <mat-icon>collections_bookmark</mat-icon>
+            <span>{{ "menu.projects" | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="scrollTo('interests')">
+            <mat-icon>favorite</mat-icon>
+            <span>{{ "menu.interests" | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="scrollTo('contact')">
+            <mat-icon>contact_mail</mat-icon>
+            <span>{{ "menu.contact" | translate }}</span>
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="langMenu">
+            <mat-icon>language</mat-icon>
+            <span>{{ "menu.lang.lang" | translate }}</span>
+        </button>
+        <div fxLayout="row" fxLayoutAlign="center" class="mt-2">
+            <a href="https://gitlab.com/kilian-paquier" class="mx-1" target="_blank" rel="noopener">
+                <fa-icon [icon]="faGit" class="icon"></fa-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/kilian-paquier/" class="mx-1" target="_blank" rel="noopener">
+                <fa-icon [icon]="faLinkedinIn" class="icon"></fa-icon>
+            </a>
+            <a class="pointer mx-1 mt-1-5" (click)="changeTheme()">
+                <mat-icon class="icon">brightness_medium</mat-icon>
+            </a>
+            <!-- <a class="pointer mx-1 mt-1-5" (click)="toPdf()">
+                <mat-icon class="icon">cloud_download</mat-icon>
+            </a> -->
+        </div>
+    </mat-menu>
+    <mat-menu #langMenu="matMenu">
+        <button mat-menu-item (click)="changeLang('fr')">
+            <em class="flag-icon flag-icon-fr me-2"></em>
+            <span>{{ "menu.lang.french" | translate }}</span>
+        </button>
+        <button mat-menu-item (click)="changeLang('en')">
+            <em class="flag-icon flag-icon-gb me-2"></em>
+            <span>{{ "menu.lang.english" | translate }}</span>
+        </button>
+    </mat-menu>
+</div>
