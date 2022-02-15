@@ -3,6 +3,7 @@ include:
     ref: $CI_INDUS_BRANCH
     file:
       - "pipelines/node.yml"
+      - "pipelines/deployable-pages.yml"
 
 node-build:
   script:
@@ -14,6 +15,3 @@ node-build:
 report-analysis:
   rules:
     - when: never
-
-pages:
-  extends: .pages

@@ -77,7 +77,7 @@ registerLocaleData(localeEn, "en");
                 useFactory: HttpLoaderFactory,
                 deps: [HttpClient],
             },
-            defaultLanguage: "fr"
+            defaultLanguage: "fr",
         }),
         MatProgressBarModule,
         MatFormFieldModule,
@@ -103,7 +103,7 @@ registerLocaleData(localeEn, "en");
     bootstrap: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http, "./assets/i18n/");

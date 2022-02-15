@@ -19,10 +19,7 @@ export class HomeComponent implements OnInit {
     @ViewChild("menuTrigger")
     menuTrigger?: MatMenuTrigger;
 
-    constructor(
-        private cookieService: CookieService,
-        private translateService: TranslateService
-    ) { }
+    constructor(private cookieService: CookieService, private translateService: TranslateService) {}
 
     ngOnInit(): void {
         this.setTheme();
