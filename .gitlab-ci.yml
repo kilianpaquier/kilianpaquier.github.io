@@ -6,6 +6,8 @@ include:
       - "pipelines/deployable-pages.yml"
 
 node-build:
+  variables:
+    ANGULAR_CLI_OPTS: "--base-href ./"
   script:
     - echo "FORMSPREE_GITLAB_URL=$FORMSPREE_GITLAB_URL" >> $ENV_ARTIFACT
     - echo "FORMSPREE_FR_URL=$FORMSPREE_FR_URL" >> $ENV_ARTIFACT 

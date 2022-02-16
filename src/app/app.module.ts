@@ -1,4 +1,4 @@
-import { registerLocaleData } from "@angular/common";
+import { HashLocationStrategy, LocationStrategy, registerLocaleData } from "@angular/common";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, NgModule } from "@angular/core";
 import localeEn from "@angular/common/locales/en";
@@ -98,7 +98,7 @@ registerLocaleData(localeEn, "en");
             provide: RECAPTCHA_LANGUAGE,
             useFactory: (locale: string) => locale,
             deps: [LOCALE_ID],
-        },
+        }
     ],
     bootstrap: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
