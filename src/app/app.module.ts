@@ -98,7 +98,7 @@ registerLocaleData(localeEn, "en");
             provide: RECAPTCHA_LANGUAGE,
             useFactory: (locale: string) => locale,
             deps: [LOCALE_ID],
-        }
+        },
     ],
     bootstrap: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
