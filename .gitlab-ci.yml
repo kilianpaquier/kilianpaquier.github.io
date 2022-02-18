@@ -7,12 +7,12 @@ include:
 
 node-build:
   variables:
-    ANGULAR_CLI_OPTS: "--base-href ./"
+    NODE_CLI_OPTS: "--base-href ./"
   script:
     - echo "FORMSPREE_GITLAB_URL=$FORMSPREE_GITLAB_URL" >> $ENV_ARTIFACT
     - echo "FORMSPREE_FR_URL=$FORMSPREE_FR_URL" >> $ENV_ARTIFACT 
     - echo "CAPTCHA_SITE_KEY=$CAPTCHA_SITE_KEY" >> $ENV_ARTIFACT
-    - yarn build --configuration=production $ANGULAR_CLI_OPTS
+    - yarn build --configuration=production $NODE_CLI_OPTS
 
 report-analysis:
   rules:
