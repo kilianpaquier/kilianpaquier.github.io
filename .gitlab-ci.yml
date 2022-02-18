@@ -5,7 +5,7 @@ include:
       - "pipelines/node.yml"
       - "pipelines/deployable-pages.yml"
 
-node-build:
+build:
   variables:
     NODE_CLI_OPTS: "--base-href ./"
   script:
