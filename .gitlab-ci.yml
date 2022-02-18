@@ -5,14 +5,16 @@ include:
       - "pipelines/node.yml"
       - "pipelines/deployable-pages.yml"
 
-build:
+building:
   variables:
     NODE_CLI_OPTS: "--base-href ./"
-  script:
-    - echo "FORMSPREE_GITLAB_URL=$FORMSPREE_GITLAB_URL" >> $ENV_ARTIFACT
-    - echo "FORMSPREE_FR_URL=$FORMSPREE_FR_URL" >> $ENV_ARTIFACT 
-    - echo "CAPTCHA_SITE_KEY=$CAPTCHA_SITE_KEY" >> $ENV_ARTIFACT
-    - yarn build --configuration=production $NODE_CLI_OPTS
+  before_script:
+    - echo "FORMSPREE_GITLAB_URL=$FORMSPREE_GITLAB_URL" >> $CI_PROJECT_DIR/$ENV_ARTIFACT
+    - echo "FORMSPREE_FR_URL=$FORMSPREE_FR_URL" >> $CI_PROJECT_DIR/$ENV_ARTIFACT 
+    - echo "CAPTCHA_SITE_KEY=$CAPTCHA_SITE_KEY" >> $CI_PROJECT_DIR/$ENV_ARTIFACT
+
+sonar-analysis:
+  when: on_success
 
 report-analysis:
   rules:
