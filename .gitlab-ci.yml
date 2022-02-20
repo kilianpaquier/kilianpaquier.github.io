@@ -8,7 +8,7 @@ include:
 variables:
   NODE_WORKING_DIR: "sources"
 
-building:
+node-build:
   variables:
     NODE_CLI_OPTS: "--base-href ./"
   before_script:
