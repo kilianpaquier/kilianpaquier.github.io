@@ -20,4 +20,5 @@ sonar-analysis:
   when: on_success
 
 report-analysis:
-  when: never
+  rules:
+    - when: never
