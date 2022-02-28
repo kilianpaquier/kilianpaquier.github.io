@@ -301,16 +301,6 @@
                 "height": "45"
             },
             {
-                "name": "Grafana ⚪⚫⚫⚫⚫",
-                "class": "align-top",
-                "image": "grafana.svg",
-                "height": "48"
-            },
-            {
-                "name": "Vagrant ⚪⚪⚫⚫⚫",
-                "class": "devicon-vagrant-plain"
-            },
-            {
                 "name": "Docker ⚪⚫⚫⚫⚫",
                 "class": "devicon-docker-plain"
             },
