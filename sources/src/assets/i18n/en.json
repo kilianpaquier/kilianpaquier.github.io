@@ -14,7 +14,7 @@
         }
     },
     "intro": {
-        "title": "Software engineer | Scrum",
+        "title": "Software engineer | Scrum Master",
         "resume": "My Resume",
         "link": "https://cvdesignr.com/p/5ddff0dda9765"
     },
@@ -30,8 +30,8 @@
             "properties": [
                 "Software engineer | Scrum",
                 "Formulation and review of specifications, documentations and testing descriptions, User Stories refinement, client presentations",
-                "Working in Agile methodology (planning poker, refinement, daily)",
-                "Facilitation of Scrum ceremonies",
+                "Working in Agile methodology (planning poker, refinement, daily, sprint review & retro, SPM)",
+                "Facilitation of the Scrum Team",
                 "TypeScript, Java, Spring, Python, Hibernate, Angular, Jasmine, JUnit, Quarkus, Cucumber, Liquibase",
                 "Jira, Kubernetes, Docker, GitLab & CI/CD, ALM Octane, Checkmarx, Sonar, Dependency Check"
             ]
@@ -68,7 +68,7 @@
                 "Software temporary worker",
                 "Client needs analysis",
                 "T.A.GEDOFIS development",
-                "Java SE, Swing, CSV and Excel exportation",
+                "Java SE, Swing, CSV and Excel exports",
                 "Search of missing records (land planning taxes)",
                 "Generation of pivot tables"
             ],
@@ -299,16 +299,6 @@
                 "class": "align-top",
                 "image": "jira.svg",
                 "height": "45"
-            },
-            {
-                "name": "Grafana ⚪⚫⚫⚫⚫",
-                "class": "align-top",
-                "image": "grafana.svg",
-                "height": "48"
-            },
-            {
-                "name": "Vagrant ⚪⚪⚫⚫⚫",
-                "class": "devicon-vagrant-plain"
             },
             {
                 "name": "Docker ⚪⚫⚫⚫⚫",

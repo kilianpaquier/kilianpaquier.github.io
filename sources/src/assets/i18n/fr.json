@@ -28,10 +28,10 @@
             "date": "Depuis Mars 2021",
             "key": "soprasteria",
             "properties": [
-                "Ingénieur développement | Scrum",
-                "Élaboration et relecture de spécifications, documentations et dossiers de tests, grooming des US, démonstrations client",
-                "Fonctionnement en méthodologie Agile (planning poker, grooming, daily)",
-                "Animations des cérémonies Scrum",
+                "Ingénieur développement | Scrum Master",
+                "Élaboration et relecture de spécifications, documentations et dossiers de tests, affinage des US, démonstrations client",
+                "Fonctionnement en méthodologie Agile (planning poker, affinage, daily, démonstration, rétrospective, SPM)",
+                "Facilitation de l'équipe Scrum",
                 "TypeScript, Java, Spring, Python, Hibernate, Angular, Jasmine, JUnit, Quarkus, Cucumber, Liquibase",
                 "Jira, Kubernetes, Docker, GitLab & CI/CD, ALM Octane, Checkmarx, Sonar, Dependency Check"
             ]
@@ -299,16 +299,6 @@
                 "class": "align-top",
                 "image": "jira.svg",
                 "height": "45"
-            },
-            {
-                "name": "Grafana ⚪⚫⚫⚫⚫",
-                "class": "align-top",
-                "image": "grafana.svg",
-                "height": "48"
-            },
-            {
-                "name": "Vagrant ⚪⚪⚫⚫⚫",
-                "class": "devicon-vagrant-plain"
             },
             {
                 "name": "Docker ⚪⚫⚫⚫⚫",
