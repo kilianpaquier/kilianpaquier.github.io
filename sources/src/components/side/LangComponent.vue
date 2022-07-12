@@ -21,7 +21,7 @@
           <!-- Lang flag -->
           <v-list-item-avatar class="mx-auto ms-sm-4">
             <v-img
-              :src="require(`@/assets/flags/1x1/${lang.img}`)"
+              :src="`/img/flags/1x1/${lang.img}`"
               contain
               eager
             />
@@ -56,6 +56,10 @@ export default class LangComponent extends Vue {
 
   get selectedItem() {
       return this.$vuetify.lang.current === "fr" ? 0 : 1;
+  }
+
+  set selectedItem(item: number) {
+      // Do nothing
   }
 
   changeLang(item: Lang) {

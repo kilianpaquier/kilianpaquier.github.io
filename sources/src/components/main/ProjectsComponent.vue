@@ -34,7 +34,7 @@
         <v-card>
           <!-- Main component, the img -->
           <v-img
-            :src="require(`@/assets/projects/${project.img}`)"
+            :src="`/img/projects/${project.img}`"
             class="align-end cursor-pointer"
             eager
             @click="sectionShowing = !sectionShowing"
@@ -95,7 +95,7 @@
                   >
                     <v-img
                       v-if="project.codeImg"
-                      :src="require(`@/assets/projects/${project.codeImg}`)"
+                      :src="`/img/projects/${project.codeImg}`"
                       class="mx-auto cursor-pointer"
                       width="50"
                       @click="redirectTo(project.codeLink)"

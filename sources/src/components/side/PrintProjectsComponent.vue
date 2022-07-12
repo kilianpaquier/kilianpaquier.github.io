@@ -12,7 +12,7 @@
         <!-- Project img -->
         <v-list-item-avatar>
           <v-img
-            :src="require(`@/assets/projects/list/${project.img}`)"
+            :src="`/img/projects/list/${project.img}`"
             eager
           />
         </v-list-item-avatar>

@@ -62,7 +62,7 @@
                     skill.icon.includes('.svg') && !skill.icon.startsWith('/')
                   "
                   class="mx-auto small-img"
-                  :src="require(`@/assets/skills/${skill.icon}`)"
+                  :src="`/img/skills/${skill.icon}`"
                   eager
                   v-bind="attrs"
                   v-on="on"

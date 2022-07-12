@@ -4,7 +4,7 @@
       <v-col cols="auto">
         <v-container fluid>
           <v-img
-            :src="require('@/assets/about/profile.jpg')"
+            :src="'/img/about/profile.jpg'"
             class="rounded-circle"
             contain
             eager

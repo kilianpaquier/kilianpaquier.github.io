@@ -17,7 +17,7 @@
               <!-- Experience avatar -->
               <v-list-item-avatar>
                 <v-img
-                  :src="require(`@/assets/experiences/${exp.img}`)"
+                  :src="`/img/experiences/${exp.img}`"
                   contain
                   eager
                 />
@@ -97,7 +97,7 @@
               <!-- Avatar of each job -->
               <v-list-item-avatar>
                 <v-img
-                  :src="require(`@/assets/experiences/${item.img}`)"
+                  :src="`/img/experiences/${item.img}`"
                   contain
                 />
               </v-list-item-avatar>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-img
-      :src="require(`@/assets/interests/${object.img}`)"
+      :src="`/img/interests/${object.img}`"
       class="rounded-circle mx-auto mb-3 interests-border interests-img"
       v-animate-css.hover="'rubberBand'"
       eager

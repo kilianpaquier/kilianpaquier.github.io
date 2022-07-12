@@ -13,7 +13,7 @@
         <template v-slot:icon>
           <v-avatar class="bg-white">
             <v-img
-              :src="require(`@/assets/educations/${edu.img}`)"
+              :src="`/img/educations/${edu.img}`"
               class="bg-white"
               eager
             />

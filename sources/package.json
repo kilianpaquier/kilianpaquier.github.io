@@ -1,6 +1,6 @@
 {
   "name": "@kilian-paquier/portfolio",
-  "version": "3.1.0-0",
+  "version": "3.0.2-0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -41,10 +41,13 @@
     "@vue/test-utils": "^1.1.3",
     "@vue/vue2-jest": "^27.0.0-alpha.2",
     "babel-jest": "^27.0.6",
+    "cssnano": "^5.1.12",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "jest": "^27.0.5",
     "lint-staged": "^11.1.2",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "ts-jest": "^27.0.4",
