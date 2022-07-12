@@ -1,0 +1,17 @@
+include:
+  - project: "$CI_INDUS_PROJECT"
+    ref: $CI_INDUS_BRANCH
+    file:
+      - "pipelines/node.yml"
+      - "pipelines/deployable-pages.yml"
+
+variables:
+  NODE_WORKING_DIR: "sources"
+  SONAR_ADDITIONAL_EXCLUSIONS: "**/i18n/**"
+
+sonar-analysis:
+  when: on_success
+
+report-analysis:
+  rules:
+    - when: never

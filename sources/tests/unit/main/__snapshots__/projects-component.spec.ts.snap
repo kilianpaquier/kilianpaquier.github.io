@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsComponent.vue should create ProjectsComponent 1`] = `
+<div class="container container--fluid">
+  <h2 class="font-weight-bold mb-3">$vuetify.projects-title</h2>
+  <div class="v-window elevation-1 v-item-group theme--light v-window--show-arrows-on-hover" horizontal="">
+    <div class="v-window__container">
+      <transition-stub name="">
+        <div class="v-window-item v-window-item--active">
+          <div class="v-card v-sheet theme--light">
+            <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <div class="v-responsive__content">
+                <!---->
+                <div class="row pb-1">
+                  <div class="d-flex col col-12">
+                    <div class="mx-auto d-none d-sm-block">
+                      <div class="v-item-group theme--light"><button type="button" class="v-btn v-btn--active v-btn--icon v-btn--round theme--light v-size--default white--text v-item--active"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+              <div style="display: none;">
+                <div class="v-card__text">
+                  <div class="row">
+                    <div class="py-2 col col-12">$vuetify.projects.fortheberry.story</div>
+                    <div class="py-2 col col-12">$vuetify.projects.fortheberry.context</div>
+                  </div>
+                  <div class="row">
+                    <div class="text-center py-2 col col-12 mb-4">
+                      <div class="v-image v-responsive mx-auto cursor-pointer theme--light" style="width: 50px;">
+                        <div class="v-responsive__content"></div>
+                      </div>
+                      <!---->
+                    </div>
+                  </div>
+                  <div class="row text-right no-gutters">
+                    <div class="caption col col-12">$vuetify.projects.fortheberry.ide</div>
+                    <div class="caption col col-12">$vuetify.projects.fortheberry.mvp</div>
+                  </div>
+                </div>
+              </div>
+            </transition-stub>
+          </div>
+        </div>
+      </transition-stub>
+      <transition-stub name="">
+        <div class="v-window-item" style="display: none;">
+          <div class="v-card v-sheet theme--light">
+            <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <div class="v-responsive__content">
+                <!---->
+                <div class="row pb-1">
+                  <div class="d-flex col col-12">
+                    <div class="mx-auto d-none d-sm-block">
+                      <div class="v-item-group theme--light"><button type="button" class="v-btn v-btn--active v-btn--icon v-btn--round theme--light v-size--default white--text v-item--active"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+              <div style="display: none;">
+                <div class="v-card__text">
+                  <div class="row">
+                    <div class="py-2 col col-12">$vuetify.projects.shareyourfit.story</div>
+                    <div class="py-2 col col-12">$vuetify.projects.shareyourfit.context</div>
+                  </div>
+                  <div class="row">
+                    <div class="text-center py-2 col col-12">
+                      <!----> <a><em class="colored skill-icon devicon-gitlab-plain"></em></a>
+                    </div>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+            </transition-stub>
+          </div>
+        </div>
+      </transition-stub>
+      <transition-stub name="">
+        <div class="v-window-item" style="display: none;">
+          <div class="v-card v-sheet theme--light">
+            <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <div class="v-responsive__content">
+                <!---->
+                <div class="row pb-1">
+                  <div class="d-flex col col-12">
+                    <div class="mx-auto d-none d-sm-block">
+                      <div class="v-item-group theme--light"><button type="button" class="v-btn v-btn--active v-btn--icon v-btn--round theme--light v-size--default white--text v-item--active"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+              <div style="display: none;">
+                <div class="v-card__text">
+                  <div class="row">
+                    <div class="py-2 col col-12">$vuetify.projects.gestionepi.story</div>
+                    <div class="py-2 col col-12">$vuetify.projects.gestionepi.context</div>
+                  </div>
+                  <div class="row">
+                    <div class="text-center py-2 col col-12 mb-4">
+                      <!----> <a><em class="colored skill-icon devicon-gitlab-plain"></em></a>
+                    </div>
+                  </div>
+                  <div class="row text-right no-gutters">
+                    <div class="caption col col-12">$vuetify.projects.gestionepi.epi</div>
+                    <div class="caption col col-12">$vuetify.projects.gestionepi.mvp</div>
+                  </div>
+                </div>
+              </div>
+            </transition-stub>
+          </div>
+        </div>
+      </transition-stub>
+      <transition-stub name="">
+        <div class="v-window-item" style="display: none;">
+          <div class="v-card v-sheet theme--light">
+            <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <div class="v-responsive__content">
+                <div class="v-card__title secondary--text">T.A.GEDOFIS</div>
+                <div class="row pb-1">
+                  <div class="d-flex col col-12">
+                    <div class="mx-auto d-none d-sm-block">
+                      <div class="v-item-group theme--light"><button type="button" class="v-btn v-btn--active v-btn--icon v-btn--round theme--light v-size--default secondary--text v-item--active"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default secondary--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default secondary--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default secondary--text"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M19,12C19,15.86 15.86,19 12,19C8.14,19 5,15.86 5,12C5,8.14 8.14,5 12,5C15.86,5 19,8.14 19,12Z"></path></svg></span></span></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <transition-stub name="expand-transition">
+              <div style="display: none;">
+                <div class="v-card__text">
+                  <div class="row">
+                    <div class="py-2 col col-12">$vuetify.projects.tagedofis.story</div>
+                    <div class="py-2 col col-12">$vuetify.projects.tagedofis.context</div>
+                  </div>
+                  <div class="row">
+                    <div class="text-center py-2 col col-12 mb-4">
+                      <!----> <a><em class="colored skill-icon devicon-gitlab-plain"></em></a>
+                    </div>
+                  </div>
+                  <div class="row text-right no-gutters">
+                    <div class="caption col col-12">$vuetify.projects.tagedofis.ddt</div>
+                  </div>
+                </div>
+              </div>
+            </transition-stub>
+          </div>
+        </div>
+      </transition-stub>
+      <div class="v-window__prev"><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text" aria-label="Previous visual"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path></svg></span></span></button></div>
+      <div class="v-window__next"><button type="button" class="v-btn v-btn--icon v-btn--round theme--light v-size--default white--text" aria-label="Next visual"><span class="v-btn__content"><span aria-hidden="true" class="v-icon notranslate theme--light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg></span></span></button></div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrintProjectsComponent.vue should create PrintProjectsComponent 1`] = `
+<div class="container container--fluid">
+  <h2 class="font-weight-bold mb-3">$vuetify.projects-title</h2>
+  <div role="list" class="v-list v-sheet theme--light">
+    <div tabindex="-1" role="listitem" class="v-list-item theme--light">
+      <div class="v-avatar v-list-item__avatar" style="height: 40px; min-width: 40px; width: 40px;">
+        <div class="v-image v-responsive theme--light">
+          <div class="v-responsive__content"></div>
+        </div>
+      </div>
+      <div class="v-list-item__content">
+        <div class="v-list-item__title">For The Berry</div>
+        <div class="v-list-item__subtitle">$vuetify.projects.fortheberry.subtitle</div>
+      </div>
+    </div>
+    <div tabindex="-1" role="listitem" class="v-list-item theme--light">
+      <div class="v-avatar v-list-item__avatar" style="height: 40px; min-width: 40px; width: 40px;">
+        <div class="v-image v-responsive theme--light">
+          <div class="v-responsive__content"></div>
+        </div>
+      </div>
+      <div class="v-list-item__content">
+        <div class="v-list-item__title">Share Your Fit</div>
+        <div class="v-list-item__subtitle">$vuetify.projects.shareyourfit.subtitle</div>
+      </div>
+    </div>
+    <div tabindex="-1" role="listitem" class="v-list-item theme--light">
+      <div class="v-avatar v-list-item__avatar" style="height: 40px; min-width: 40px; width: 40px;">
+        <div class="v-image v-responsive theme--light">
+          <div class="v-responsive__content"></div>
+        </div>
+      </div>
+      <div class="v-list-item__content">
+        <div class="v-list-item__title">Gestion EPI</div>
+        <div class="v-list-item__subtitle">$vuetify.projects.gestionepi.subtitle</div>
+      </div>
+    </div>
+    <div tabindex="-1" role="listitem" class="v-list-item theme--light">
+      <div class="v-avatar v-list-item__avatar" style="height: 40px; min-width: 40px; width: 40px;">
+        <div class="v-image v-responsive theme--light">
+          <div class="v-responsive__content"></div>
+        </div>
+      </div>
+      <div class="v-list-item__content">
+        <div class="v-list-item__title">T.A.GEDOFIS</div>
+        <div class="v-list-item__subtitle">$vuetify.projects.tagedofis.subtitle</div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

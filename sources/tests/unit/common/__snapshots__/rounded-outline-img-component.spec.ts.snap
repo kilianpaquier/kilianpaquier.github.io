@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoundedOutlinedImg.vue should create RoundedOutlinedImg 1`] = `
+<div>
+  <div class="v-image v-responsive rounded-circle mx-auto mb-3 interests-border interests-img theme--light">
+    <div class="v-responsive__content"></div>
+  </div> <span class="body-2">$vuetify.title</span>
+</div>
+`;
