@@ -24,11 +24,15 @@ export default class RoundedOutlinedImg extends Vue {
 
 <style lang="sass" scoped>
 .interests-border
-    outline: 7px solid #CFD8DC
+    box-shadow: 0 0 0 7px #CFD8DC
+    -moz-box-shadow: 0 0 0 7px #CFD8DC
+    -o-box-shadow: 0 0 0 7px #CFD8DC
+    -webkit-box-shadow: 0 0 0 7px #CFD8DC
 
 .interests-img
     min-height: 90px
     min-width: 90px
     max-width: 90px
     max-height: 90px
+
 </style>
