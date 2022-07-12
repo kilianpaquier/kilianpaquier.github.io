@@ -10,6 +10,8 @@ variables:
   SONAR_ADDITIONAL_EXCLUSIONS: "**/i18n/**"
 
 sonar-analysis:
+  variables:
+    SONAR_ADDITIONAL_EXCLUSIONS: "**/i18n/**"
   when: on_success
 
 report-analysis:
