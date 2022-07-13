@@ -9,6 +9,9 @@ exports[`ProjectsComponent.vue should create ProjectsComponent 1`] = `
         <div class="v-window-item v-window-item--active">
           <div class="v-card v-sheet theme--light">
             <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <transition-stub name="fade-transition" mode="in-out">
+                <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+              </transition-stub>
               <div class="v-responsive__content">
                 <!---->
                 <div class="row pb-1">
@@ -30,6 +33,9 @@ exports[`ProjectsComponent.vue should create ProjectsComponent 1`] = `
                   <div class="row">
                     <div class="text-center py-2 col col-12 mb-4">
                       <div class="v-image v-responsive mx-auto cursor-pointer theme--light" style="width: 50px;">
+                        <transition-stub name="fade-transition" mode="in-out">
+                          <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+                        </transition-stub>
                         <div class="v-responsive__content"></div>
                       </div>
                       <!---->
@@ -49,6 +55,9 @@ exports[`ProjectsComponent.vue should create ProjectsComponent 1`] = `
         <div class="v-window-item" style="display: none;">
           <div class="v-card v-sheet theme--light">
             <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <transition-stub name="fade-transition" mode="in-out">
+                <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+              </transition-stub>
               <div class="v-responsive__content">
                 <!---->
                 <div class="row pb-1">
@@ -83,6 +92,9 @@ exports[`ProjectsComponent.vue should create ProjectsComponent 1`] = `
         <div class="v-window-item" style="display: none;">
           <div class="v-card v-sheet theme--light">
             <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <transition-stub name="fade-transition" mode="in-out">
+                <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+              </transition-stub>
               <div class="v-responsive__content">
                 <!---->
                 <div class="row pb-1">
@@ -120,6 +132,9 @@ exports[`ProjectsComponent.vue should create ProjectsComponent 1`] = `
         <div class="v-window-item" style="display: none;">
           <div class="v-card v-sheet theme--light">
             <div class="v-image v-responsive align-end cursor-pointer theme--light">
+              <transition-stub name="fade-transition" mode="in-out">
+                <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+              </transition-stub>
               <div class="v-responsive__content">
                 <div class="v-card__title secondary--text">T.A.GEDOFIS</div>
                 <div class="row pb-1">

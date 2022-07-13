@@ -7,6 +7,9 @@ exports[`InterestsComponent.vue should create InterestsComponent 1`] = `
     <div class="text-center px-5 col col-auto">
       <div>
         <div class="v-image v-responsive rounded-circle mx-auto mb-3 interests-border interests-img theme--light">
+          <transition-stub name="fade-transition" mode="in-out">
+            <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+          </transition-stub>
           <div class="v-responsive__content"></div>
         </div> <span class="body-2">$vuetify.interests.basketball</span>
       </div>
@@ -14,6 +17,9 @@ exports[`InterestsComponent.vue should create InterestsComponent 1`] = `
     <div class="text-center px-5 col col-auto">
       <div>
         <div class="v-image v-responsive rounded-circle mx-auto mb-3 interests-border interests-img theme--light">
+          <transition-stub name="fade-transition" mode="in-out">
+            <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+          </transition-stub>
           <div class="v-responsive__content"></div>
         </div> <span class="body-2">$vuetify.interests.tvtime</span>
       </div>
@@ -21,6 +27,9 @@ exports[`InterestsComponent.vue should create InterestsComponent 1`] = `
     <div class="text-center px-5 col col-auto">
       <div>
         <div class="v-image v-responsive rounded-circle mx-auto mb-3 interests-border interests-img theme--light">
+          <transition-stub name="fade-transition" mode="in-out">
+            <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;"></div>
+          </transition-stub>
           <div class="v-responsive__content"></div>
         </div> <span class="body-2">$vuetify.interests.games</span>
       </div>

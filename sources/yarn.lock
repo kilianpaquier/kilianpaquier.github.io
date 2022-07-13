@@ -1807,7 +1807,6 @@ __metadata:
     sass-loader: ^12.0.0
     ts-jest: ^27.0.4
     typescript: ~4.5.5
-    v-animate-css: ^0.0.5
     vue: ^2.6.14
     vue-class-component: ^7.2.3
     vue-cli-plugin-vuetify: ^2.5.1
@@ -10333,13 +10332,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scrollmonitor@npm:^1.2.4":
-  version: 1.2.9
-  resolution: "scrollmonitor@npm:1.2.9"
-  checksum: 141fb897f6bf98cdb77be212191fa03da1d809bdfc78ba16e74a1509b6a38609bdc7dc735c875a1138d07583d7ce7033cb803cbc31ec54014f87d3221135c0f6
-  languageName: node
-  linkType: hard
-
 "select-hose@npm:^2.0.0":
   version: 2.0.0
   resolution: "select-hose@npm:2.0.0"
@@ -11693,15 +11685,6 @@ __metadata:
   bin:
     uuid: dist/bin/uuid
   checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
-  languageName: node
-  linkType: hard
-
-"v-animate-css@npm:^0.0.5":
-  version: 0.0.5
-  resolution: "v-animate-css@npm:0.0.5"
-  dependencies:
-    scrollmonitor: ^1.2.4
-  checksum: a60e2549cf64713f42391a5531afba0ff328c7eb3129ee12dd9a352710b7258e31bcedba32a3a47cf3d9e272b234c5a5c2fb420bfc3e0dd17e3c9fcc0ab5b94a
   languageName: node
   linkType: hard
 

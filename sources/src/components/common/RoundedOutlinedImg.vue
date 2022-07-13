@@ -3,7 +3,6 @@
     <v-img
       :src="`/img/interests/${object.img}`"
       class="rounded-circle mx-auto mb-3 interests-border interests-img"
-      v-animate-css.hover="'rubberBand'"
       eager
     />
     <span class="body-2" v-text="$vuetify.lang.t(`$vuetify.${object.title}`)" />

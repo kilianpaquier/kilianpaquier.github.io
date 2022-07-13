@@ -11,6 +11,9 @@ exports[`LangComponent.vue should create LangComponent 1`] = `
         </div>
         <div class="v-avatar v-list-item__avatar mx-auto ms-sm-4" style="height: 40px; min-width: 40px; width: 40px;">
           <div class="v-image v-responsive theme--light">
+            <transition-stub name="fade-transition" mode="in-out">
+              <div class="v-image__image v-image__image--preload v-image__image--contain" style="background-position: center center;"></div>
+            </transition-stub>
             <div class="v-responsive__content"></div>
           </div>
         </div>
@@ -22,6 +25,9 @@ exports[`LangComponent.vue should create LangComponent 1`] = `
         </div>
         <div class="v-avatar v-list-item__avatar mx-auto ms-sm-4" style="height: 40px; min-width: 40px; width: 40px;">
           <div class="v-image v-responsive theme--light">
+            <transition-stub name="fade-transition" mode="in-out">
+              <div class="v-image__image v-image__image--preload v-image__image--contain" style="background-position: center center;"></div>
+            </transition-stub>
             <div class="v-responsive__content"></div>
           </div>
         </div>
