@@ -10,7 +10,8 @@ variables:
   SONAR_ADDITIONAL_EXCLUSIONS: "**/i18n/**"
 
 node-test:
-  when: never
+  rules:
+    - when: never
 
 sonar-analysis:
   needs:
