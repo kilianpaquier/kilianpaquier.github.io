@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`AboutComponent.vue should create AboutComponent 1`] = `
-<div class="container pt-0 container--fluid">
-  <h1 class="h1 font-weight-bold mb-3">$vuetify.title</h1>
-  <p class="text-justify mb-0">$vuetify.about</p>
-</div>
-`;
