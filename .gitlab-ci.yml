@@ -27,5 +27,7 @@ report-analysis:
 
 release:
   needs:
-    - node-lint
-    - node-build
+    - job: node-lint
+      artifacts: false
+    - job: node-build
+      artifacts: false
