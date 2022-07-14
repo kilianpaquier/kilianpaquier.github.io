@@ -24,3 +24,8 @@ sonar-analysis:
 report-analysis:
   rules:
     - when: never
+
+release:
+  needs:
+    - node-lint
+    - node-build
