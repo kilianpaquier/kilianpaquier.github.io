@@ -9,7 +9,13 @@ variables:
   NODE_WORKING_DIR: "sources"
   SONAR_ADDITIONAL_EXCLUSIONS: "**/i18n/**"
 
+node-test:
+  when: never
+
 sonar-analysis:
+  needs:
+    - node-lint
+    - env
   variables:
     SONAR_ADDITIONAL_EXCLUSIONS: "**/i18n/**"
   when: on_success

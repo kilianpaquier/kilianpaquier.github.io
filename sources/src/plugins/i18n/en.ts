@@ -1,7 +1,4 @@
-import en from "vuetify/src/locale/en";
-
 export default {
-    ...en,
     title: "Software Engineer | Scrum Master",
     about: "",
     close: "Close",
