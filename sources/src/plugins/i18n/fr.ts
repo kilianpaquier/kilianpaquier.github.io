@@ -1,4 +1,7 @@
+import fr from 'vuetify/src/locale/fr'
+
 export default {
+    ...fr,
     title: "Ingénieur développement | Scrum Master",
     about: "",
     close: "Fermer",
