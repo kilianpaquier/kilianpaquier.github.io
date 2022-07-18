@@ -127,7 +127,7 @@ export default class SkillComponent extends Vue {
           skills: [
               { icon: "devicon-typescript-plain", name: "TypeScript" },
               { icon: "/vuejs/vuejs-original.svg", name: "Vuejs" },
-              { icon: "/vuetify/vuetify-original.svg", name: "Vuetify" },
+              { icon: "vuetify-original.svg", name: "Vuetify" },
               { icon: "devicon-nestjs-plain", name: "NestJS" },
               { icon: "devicon-angularjs-plain", name: "Angular & Material" },
 
