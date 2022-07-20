@@ -20,23 +20,21 @@ export default {
         tools: {
             dates: "Mars 2021 - Aujourd'hui",
             title: "Ingénieur développement | Scrum Master",
-            one: "Développement backend Java avec Spring & Quarkus, frontend Angular, script CLI¹ python, mock flask et wiremock-studio, CI/CD²",
+            
             two: "Facilitation des cérémonies Scrum, de l'auto-organisation de l'équipe et de l'amélioration continue du processus agile",
             three:
-        "Participation à toutes les phases d'une US³, affinage, implémentation⁴, livraison, déploiement, supervision et support technique",
+        "Participation à toutes les phases d'une US¹, affinage, implémentation², livraison, déploiement, supervision et support technique",
             four: "Formation fonctionnelle et technique des nouveaux acteurs",
 
-            cli: "¹ Command-Line Interface",
-            cicd: "² Continuous Integration / Continuous Delivery",
-            us: "³ User Story",
+            us: "¹ User Story",
             implementation:
-        "⁴ Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications",
+        "² Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications",
         },
         alten: {
             dates: "Août 2020 - Février 2021",
             title: "Stagiaire consultant innovation",
-            one: "Développement ElectronJS, NestJS et utilisation d'une blockchain",
-            two: "Pilotage et participation à un état de l'art des Blockchains",
+
+            two: "Pilotage et participation à un état de l'art des Blockchains, utilisation d'une blockchain",
             three:
         "Rédaction de spécifications fonctionnelles, d'un document d'architecture et d'un bilan scientifique et technique",
         },

@@ -21,6 +21,7 @@ export interface Education {
   img: string;
   value: string;
   caption?: string;
+  skills?: Skill[];
 }
 
 export interface Experience {
@@ -30,6 +31,7 @@ export interface Experience {
   img: string;
   text: string[];
   captions?: string[];
+  skills?: Skill[];
 }
 
 export interface OldExperience {

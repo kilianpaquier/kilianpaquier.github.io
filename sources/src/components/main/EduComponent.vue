@@ -29,9 +29,14 @@
             v-text="$vuetify.lang.t(`$vuetify.${edu.dates}`)"
           />
           <v-card-text
-            :class="{ 'py-0': edu.caption, 'pt-0': !edu.caption }"
-            v-text="$vuetify.lang.t(`$vuetify.${edu.value}`)"
-          />
+            :class="{ 'py-0': edu.caption, 'pt-0': !edu.caption }">
+            <v-row no-gutters>
+              <v-col cols="12" v-text="$vuetify.lang.t(`$vuetify.${edu.value}`)" />
+              <v-col cols="12">
+                <skill-component :skills="edu.skills"></skill-component>
+              </v-col>
+            </v-row>
+          </v-card-text>
 
           <!-- Captions if needed -->
           <v-card-actions class="caption" v-if="edu.caption">
@@ -48,8 +53,11 @@
 import { Education } from "@/model/entities";
 import Vue from "vue";
 import Component from "vue-class-component";
+import SkillComponent from "../side/SkillComponent.vue";
 
-@Component
+@Component({
+    components: { SkillComponent }
+})
 export default class EduComponent extends Vue {
   educations: Education[] = [
       {
@@ -64,12 +72,45 @@ export default class EduComponent extends Vue {
           img: "uqac.jpg",
           value: "educations.uqac.title",
           caption: "¹ Université du Québec à Chicoutimi",
+          skills: [
+              { icon: "/java/java-original.svg", name: "Java" },
+              { icon: "devicon-spring-plain", name: "Spring" },
+              { icon: "hibernate-original.svg", name: "Hibernate" },
+              { icon: "maven-original.svg", name: "Maven" },
+              { icon: "devicon-android-plain", name: "Android" },
+
+              { icon: "/html5/html5-original.svg", name: "HTML" },
+              { icon: "/bootstrap/bootstrap-original.svg", name: "Bootstrap" },
+
+              { icon: "/csharp/csharp-original.svg", name: "C#" },
+              { icon: "/dot-net/dot-net-original.svg", name: ".NET Framework" },
+
+              { icon: "perforce-original.svg", name: "Perforce" },
+              { icon: "unity-original.svg", name: "Unity" },
+          ]
       },
       {
           title: "Polytech Tours",
           dates: "educations.polytech.dates",
           img: "polytechtours.jpg",
           value: "educations.polytech.title",
+          skills: [
+              { icon: "/java/java-original.svg", name: "Java" },
+              { icon: "hibernate-original.svg", name: "Hibernate" },
+
+              { icon: "/html5/html5-original.svg", name: "HTML" },
+              { icon: "/bootstrap/bootstrap-original.svg", name: "Bootstrap" },
+
+              { icon: "/javascript/javascript-original.svg", name: "Javascript" },
+              { icon: "devicon-jquery-plain", name: "JQuery" },
+
+              { icon: "/python/python-original.svg", name: "Python" },
+              { icon: "devicon-php-plain", name: "PHP" },
+
+              { icon: "/c/c-original.svg", name: "C" },
+              { icon: "/cplusplus/cplusplus-original.svg", name: "C++" },
+              { icon: "devicon-qt-original", name: "Qt" },
+          ],
       },
   ];
 }

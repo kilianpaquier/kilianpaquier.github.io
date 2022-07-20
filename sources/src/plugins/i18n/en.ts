@@ -21,24 +21,20 @@ export default {
             dates: "March 2021 - Today",
             title: "Software Engineer | Scrum Master",
 
-            one: "Backend development with Spring & Quarkus, Angular frontend, python CLI¹ script, flask mock and wiremock-studio, CI/CD²",
             two: "Facilitation of the Scrum rituals, team self-organization and agile process continual improvement",
             three:
-        "Involvement in all phases of an US³, refinement, implementation⁴, delivery, deployment, supervision and technical support",
+        "Involvement in all phases of an US¹, refinement, implementation², delivery, deployment, supervision and technical support",
             four: "Functional and technical training of our new team members",
 
-            cli: "¹ Command-Line Interface",
-            cicd: "² Continuous Integration / Continuous Delivery",
-            us: "³ User Story",
+            us: "¹ User Story",
             implementation:
-        "⁴ Development, reviews, functional tests (writing and execution), specifications",
+        "² Development, reviews, functional tests (writing and execution), specifications",
         },
         alten: {
             dates: "August 2020 - February 2021",
             title: "Innovation consultant intern",
 
-            one: "ElectronJS and NestJS development, use of a blockchain",
-            two: "Leading and contribution to a blockchains' state of the art",
+            two: "Leading and contribution to a blockchains' state of the art, use of a blockchain",
             three:
         "Writing of functional and technical specifications, of an architecture document and a scientific and technical assessment",
         },

@@ -32,6 +32,9 @@
                 <v-list-item-subtitle
                   v-text="$vuetify.lang.t(`$vuetify.${exp.job}`)"
                 />
+              <v-list-item-subtitle class="mt-2">
+                <skill-component :skills="exp.skills"></skill-component>
+              </v-list-item-subtitle>
               </v-list-item-content>
             </v-list-item>
           </v-list>
@@ -138,9 +141,14 @@
 import { Experience, OldExperience } from "@/model/entities";
 import Vue from "vue";
 import Component from "vue-class-component";
+import SkillComponent from "../side/SkillComponent.vue";
 
-@Component
+@Component({
+    components: { SkillComponent },
+})
 export default class ExpComponent extends Vue {
+  deviconPrefix = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons";
+
   experiences: Experience[] = [
       {
           title: "Sopra Steria",
@@ -148,16 +156,46 @@ export default class ExpComponent extends Vue {
           dates: "experiences.tools.dates",
           img: "soprasteria.png",
           text: [
-              "experiences.tools.one",
               "experiences.tools.two",
               "experiences.tools.three",
               "experiences.tools.four",
           ],
           captions: [
-              "experiences.tools.cli",
-              "experiences.tools.cicd",
               "experiences.tools.us",
               "experiences.tools.implementation",
+          ],
+          skills: [
+              { icon: "/java/java-original.svg", name: "Java" },
+              { icon: "devicon-spring-plain", name: "Spring" },
+              { icon: "quarkus-original.svg", name: "Quarkus" },
+              { icon: "hibernate-original.svg", name: "Hibernate" },
+              { icon: "maven-original.svg", name: "Maven" },
+
+              { icon: "devicon-typescript-plain", name: "TypeScript" },
+              { icon: "devicon-angularjs-plain", name: "Angular" },
+              { icon: "/bootstrap/bootstrap-original.svg", name: "Bootstrap" },
+
+              { icon: "karatelabs-plain.svg", name: "Karatelabs" },
+              { icon: "devicon-jasmine-plain", name: "Jasmine" },
+
+              { icon: "devicon-kubernetes-plain", name: "Kubernetes" },
+              { icon: "/docker/docker-original.svg", name: "Docker" },
+              { icon: "helm-original.svg", name: "Helm" },
+              // { icon: "devicon-prometheus-original", name: "Prometheus" },
+              { icon: "traefikproxy-original.svg", name: "Traefik proxy" },
+              { icon: "envoyproxy-original.svg", name: "Envoy proxy" },
+
+              { icon: "/postgresql/postgresql-original.svg", name: "Postgresql" },
+              // { icon: "dbeaver-original.svg", name: "Dbeaver" },
+              { icon: "liquibase-original.svg", name: "Liquibase" },
+
+              { icon: "/gitlab/gitlab-original.svg", name: "GitLab CI/CD" },
+
+              { icon: "elasticsearch-original.svg", name: "Elasticsearch" },
+              // { icon: "kibana-original.svg", name: "Kibana" },
+
+              { icon: "/python/python-original.svg", name: "Python" },
+              { icon: "devicon-flask-plain", name: "Flask" },
           ],
       },
       {
@@ -166,9 +204,17 @@ export default class ExpComponent extends Vue {
           dates: "experiences.alten.dates",
           img: "alten.png",
           text: [
-              "experiences.alten.one",
               "experiences.alten.two",
               "experiences.alten.three",
+          ],
+          skills: [
+              { icon: "devicon-typescript-plain", name: "TypeScript" },
+              { icon: "/bootstrap/bootstrap-original.svg", name: "Bootstrap" },
+              { icon: "devicon-nestjs-plain", name: "NestJS" },
+
+              { icon: "/javascript/javascript-original.svg", name: "Javascript" },
+              { icon: "devicon-electron-original", name: "ElectronJS" },
+              { icon: "devicon-jest-plain", name: "Jest" },
           ],
       },
   ];
@@ -216,3 +262,15 @@ export default class ExpComponent extends Vue {
   };
 }
 </script>
+
+<style lang="sass" scoped>
+.small-icon
+    font-size: 1.75rem
+
+$skill-icon-size: 28px
+.small-img
+    max-height: $skill-icon-size
+    min-height: $skill-icon-size
+    max-width: $skill-icon-size
+    min-width: $skill-icon-size
+</style>

@@ -35,9 +35,9 @@
                         </v-col>
                         <v-col cols="12" xl="6">
                             <v-row no-gutters>
-                                <v-col cols="12">
+                                <!-- <v-col cols="12">
                                     <edu-component></edu-component>
-                                </v-col>
+                                </v-col> -->
                                 <v-col
                                     cols="12"
                                     class="d-block d-lg-none d-xl-block d-print-none"
@@ -52,7 +52,8 @@
                 <v-col cols="12" md="4" lg="5" xl="4">
                     <v-row no-gutters>
                         <v-col cols="12">
-                            <skill-component></skill-component>
+                            <!-- <skill-component></skill-component> -->
+                            <edu-component></edu-component>
                         </v-col>
                         <v-col cols="12">
                             <interests-component></interests-component>
@@ -91,7 +92,7 @@ export default Vue.extend({
         ExpComponent,
         EduComponent,
         ProjectsComponent,
-        SkillComponent,
+        // SkillComponent,
         LangComponent,
         AboutComponent,
         InterestsComponent,
