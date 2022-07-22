@@ -16,7 +16,7 @@
         </v-col>
 
         <!-- Resume link -->
-        <v-col cols="auto">
+        <v-col cols="auto" class="d-print-none">
             <v-tooltip top color="primary">
                 <template v-slot:activator="{ on, attrs }">
                     <v-btn fab icon color="primary" v-bind:href="downloadResume" target="_blank" download
