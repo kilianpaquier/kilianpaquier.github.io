@@ -1,62 +1,53 @@
 <template>
-  <v-container fluid>
-    <!-- Projects title -->
-    <h2
-      class="font-weight-bold mb-3"
-      v-text="$vuetify.lang.t(`$vuetify.projects-title`)"
-    />
-
-    <v-list>
-      <!-- One item per lang -->
-      <v-list-item v-for="(project, i) in projects" :key="i">
-        <!-- Project img -->
-        <v-list-item-avatar>
-          <v-img
-            :src="`/img/projects/list/${project.img}`"
-            eager
-          />
-        </v-list-item-avatar>
-
-        <!-- Project name -->
-        <v-list-item-content>
-          <v-list-item-title v-text="project.title" />
-          <v-list-item-subtitle
-            v-text="$vuetify.lang.t(`$vuetify.${project.subtitle}`)"
-          />
-        </v-list-item-content>
-      </v-list-item>
-    </v-list>
-  </v-container>
+    <k-row title="projects_title">
+        <v-list>
+            <k-list-item v-bind:title="project.title" v-bind:avatar="project.img" v-bind:eager-avatar="true"
+                         v-for="(project, index) in projects" :key="'print_projects' + index">
+                <v-list-item-subtitle>
+                    {{ $t(project.subtitle) }}
+                </v-list-item-subtitle>
+            </k-list-item>
+        </v-list>
+    </k-row>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { Project } from "@/model/entities";
-import Component from "vue-class-component";
+import {defineComponent} from "vue";
+import KRow from "../common/KRow.vue";
+import fortheberry from "../../assets/projects/list/fortheberry.png";
+import shareyourfit from "../../assets/projects/list/shareyourfit.png";
+import gestionepi from "../../assets/projects/list/gestionepi.png";
+import tagedofis from "../../assets/projects/list/tagedofis.png";
+import KListItem from "../common/KListItem.vue";
 
-@Component
-export default class PrintProjectsComponent extends Vue {
-  projects: Project[] = [
-      {
-          title: "For The Berry",
-          subtitle: "projects.fortheberry.subtitle",
-          img: "fortheberry.png",
-      },
-      {
-          title: "Share Your Fit",
-          subtitle: "projects.shareyourfit.subtitle",
-          img: "shareyourfit.png",
-      },
-      {
-          title: "Gestion EPI",
-          subtitle: "projects.gestionepi.subtitle",
-          img: "gestionepi.png",
-      },
-      {
-          title: "T.A.GEDOFIS",
-          subtitle: "projects.tagedofis.subtitle",
-          img: "tagedofis.png",
-      },
-  ];
-}
+export default defineComponent({
+    name: "PrintProjectsComponent",
+    components: {KListItem, KRow},
+    data() {
+        return {
+            projects: [
+                {
+                    title: "For The Berry",
+                    subtitle: "projects[0].subtitle",
+                    img: fortheberry,
+                },
+                {
+                    title: "Share Your Fit",
+                    subtitle: "projects[1].subtitle",
+                    img: shareyourfit,
+                },
+                {
+                    title: "Gestion EPI",
+                    subtitle: "projects[2].subtitle",
+                    img: gestionepi,
+                },
+                {
+                    title: "T.A.GEDOFIS",
+                    subtitle: "projects[3].subtitle",
+                    img: tagedofis,
+                }
+            ]
+        }
+    }
+});
 </script>
