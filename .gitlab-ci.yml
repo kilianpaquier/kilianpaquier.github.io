@@ -7,7 +7,6 @@ include:
 
 variables:
   NODE_WORKING_DIR: "sources"
-  SONAR_ADDITIONAL_EXCLUSIONS: "**/i18n/**"
 
 node-test:
   rules:
