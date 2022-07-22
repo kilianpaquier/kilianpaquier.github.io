@@ -1,218 +1,246 @@
 <template>
-  <v-container fluid>
-    <!-- Experiences title -->
-    <h2
-      class="font-weight-bold mb-3"
-      v-text="$vuetify.lang.t(`$vuetify.experiences-title`)"
-    />
+    <k-row title="experiences_title">
+        <v-expansion-panels mandatory>
 
-    <v-expansion-panels mandatory>
-      <!-- For each main experience -->
-      <v-expansion-panel v-for="(exp, i) in experiences" :key="i">
-        <!-- Panel header -->
-        <v-expansion-panel-header class="py-0">
-          <!-- List of title, subtitle, job -->
-          <v-list>
-            <v-list-item three-line>
-              <!-- Experience avatar -->
-              <v-list-item-avatar>
-                <v-img
-                  :src="`/img/experiences/${exp.img}`"
-                  contain
-                  eager
-                />
-              </v-list-item-avatar>
+            <!-- Latest experiences -->
+            <v-expansion-panel v-for="(experience, index) in experiences" v-bind:key="'exp' + index">
 
-              <!-- Experience title, date and job -->
-              <v-list-item-content>
-                <v-list-item-title v-text="exp.title" />
-                <v-list-item-subtitle
-                  v-text="$vuetify.lang.t(`$vuetify.${exp.dates}`)"
-                />
-                <v-list-item-subtitle
-                  v-text="$vuetify.lang.t(`$vuetify.${exp.job}`)"
-                />
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-expansion-panel-header>
+                <!-- Header -->
+                <v-expansion-panel-header class="py-0">
+                    <v-list>
+                        <k-list-item v-bind:avatar="experience.avatar" v-bind:lines="3"
+                                     v-bind:title="experience.title" v-bind:contain-avatar="true" rounded-avatar="0">
+                            <!-- Subtitles -->
+                            <v-list-item-subtitle
+                                v-for="(subtitle, index) in experience.subtitles" v-bind:key="'exp_sub' + index">
+                                {{ $t(subtitle) }}
+                            </v-list-item-subtitle>
 
-        <!-- Content with list of missions -->
-        <v-expansion-panel-content>
-          <v-divider></v-divider>
+                            <!-- Skills -->
+                            <v-list-item-subtitle class="pt-2">
+                                <v-row no-gutters>
+                                    <v-col cols="auto" class="pe-2 py-1" v-for="(skill, index) in experience.skills" v-bind:key="'exp_skill' + index">
+                                        <k-skill v-bind:icon="skill.icon" v-bind:title="skill.name"></k-skill>
+                                    </v-col>
+                                </v-row>
+                            </v-list-item-subtitle>
+                        </k-list-item>
+                    </v-list>
+                </v-expansion-panel-header>
 
-          <!-- List of missions -->
-          <v-list>
-            <v-list-item
-              v-for="(item, j) in exp.text"
-              :key="j"
-              :class="{ 'mb-n2': j < exp.text.length - 1 }"
-            >
-              <v-list-item-content
-                class="body-2"
-                v-text="$vuetify.lang.t(`$vuetify.${item}`)"
-              />
-            </v-list-item>
-          </v-list>
+                <!-- Content -->
+                <v-expansion-panel-content>
+                    <v-divider></v-divider>
 
-          <!-- Captions if needed -->
-          <v-row class="text-right" no-gutters v-if="exp.captions">
-            <v-col
-              cols="12"
-              class="caption"
-              v-for="(caption, k) in exp.captions"
-              :key="k"
-              v-text="$vuetify.lang.t(`$vuetify.${caption}`)"
-            />
-          </v-row>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
+                    <!-- List of missions -->
+                    <v-list class="body-2">
+                        <v-list-item v-for="(mission, index) in experience.missions" v-bind:key="'exp_mission' + index">
+                            <v-list-item-content>
+                                {{ $t(mission) }}
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-list>
 
-      <!-- For each old experience -->
-      <v-expansion-panel>
-        <!-- Header of old experiences -->
-        <v-expansion-panel-header class="py-0">
-          <v-list>
-            <v-list-item>
-              <v-list-item-content>
-                <v-list-item-title
-                  v-text="$vuetify.lang.t(`$vuetify.${oldExperience.title}`)"
-                />
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-expansion-panel-header>
+                    <!-- Captions if needed -->
+                    <v-row class="text-right" no-gutters v-if="experience.captions">
+                        <v-col cols="12" v-for="(caption, index) in experience.captions" v-bind:key="'exp_caption' + index" class="caption">
+                            {{ $t(caption) }}
+                        </v-col>
+                    </v-row>
+                </v-expansion-panel-content>
+            </v-expansion-panel>
 
-        <!-- Content with the list of jobs -->
-        <v-expansion-panel-content>
-          <v-divider></v-divider>
+            <!-- Old experiences -->
+            <v-expansion-panel>
+                <v-expansion-panel-header class="py-0">
+                    <v-list>
+                        <k-list-item v-bind:title="$t('old_experiences_title').toString()"></k-list-item>
+                    </v-list>
+                </v-expansion-panel-header>
 
-          <!-- List of jobs -->
-          <v-list>
-            <v-list-item
-              v-for="(item, i) in oldExperience.text"
-              :key="i"
-              three-line
-            >
-              <!-- Avatar of each job -->
-              <v-list-item-avatar>
-                <v-img
-                  :src="`/img/experiences/${item.img}`"
-                  contain
-                />
-              </v-list-item-avatar>
+                <v-expansion-panel-content>
+                    <v-divider></v-divider>
 
-              <!-- Content of each job -->
-              <v-list-item-content>
-                <v-list-item-title
-                  class="body-2"
-                  v-text="$vuetify.lang.t(`$vuetify.${item.title}`)"
-                />
-                <v-list-item-subtitle
-                  v-text="$vuetify.lang.t(`$vuetify.${item.dates}`)"
-                />
-                <v-list-item-subtitle
-                  v-text="$vuetify.lang.t(`$vuetify.${item.value}`)"
-                />
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
+                    <v-list>
+                        <k-list-item v-for="(experience, index) in old_experiences.experiences"
+                                     v-bind:key="'old_exp' + index" v-bind:title="experience.title"
+                                     v-bind:avatar="experience.avatar" v-bind:lines="3" v-bind:contain-avatar="true"
+                                     rounded-avatar="0">
 
-          <!-- Captions if needed -->
-          <v-row class="text-right" no-gutters v-if="oldExperience.captions">
-            <v-col
-              cols="12"
-              class="caption"
-              v-for="(caption, k) in oldExperience.captions"
-              :key="k"
-              v-text="$vuetify.lang.t(`$vuetify.${caption}`)"
-            />
-          </v-row>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
-  </v-container>
+                            <!-- Subtitles -->
+                            <v-list-item-subtitle
+                                v-for="(subtitle, index) in experience.subtitles" v-bind:key="'old_exp_sub' + index">
+                                {{ $t(subtitle) }}
+                            </v-list-item-subtitle>
+                        </k-list-item>
+                    </v-list>
+
+                    <!-- Captions if needed -->
+                    <v-row class="text-right" no-gutters v-if="old_experiences.captions">
+                        <v-col cols="12" v-for="(caption, index) in old_experiences.captions" v-bind:key="'old_exp_caption' + index" class="caption">
+                            {{ $t(caption) }}
+                        </v-col>
+                    </v-row>
+                </v-expansion-panel-content>
+            </v-expansion-panel>
+        </v-expansion-panels>
+    </k-row>
 </template>
 
 <script lang="ts">
-import { Experience, OldExperience } from "@/model/entities";
-import Vue from "vue";
-import Component from "vue-class-component";
+import KSkill from "../common/KSkill.vue";
+import soprasteria from "../../assets/experiences/soprasteria.png"
+import alten from "../../assets/experiences/alten.png";
+import eurosys from "../../assets/experiences/eurosys.png";
+import ddt from "../../assets/experiences/ddt.png";
+import ufcv from "../../assets/experiences/ufcv.png";
+import cgcv from "../../assets/experiences/cgcv.png";
+import dreal from "../../assets/experiences/dreal.png";
+import {
+    angular,
+    bootstrap, docker, elasticsearch, electron, envoy, flask, gitlab, helm,
+    hibernate,
+    jasmine,
+    java, javascript, jest,
+    karatelabs, kubernetes, liquibase,
+    nestjs, postgresql, python,
+    quarkus,
+    spring, traefik,
+    typescript
+} from "../../plugins/devicon";
+import KRow from "../common/KRow.vue";
+import KListItem from "../common/KListItem.vue";
 
-@Component
-export default class ExpComponent extends Vue {
-  experiences: Experience[] = [
-      {
-          title: "Sopra Steria",
-          job: "experiences.tools.title",
-          dates: "experiences.tools.dates",
-          img: "soprasteria.png",
-          text: [
-              "experiences.tools.one",
-              "experiences.tools.two",
-              "experiences.tools.three",
-              "experiences.tools.four",
-          ],
-          captions: [
-              "experiences.tools.cli",
-              "experiences.tools.cicd",
-              "experiences.tools.us",
-              "experiences.tools.implementation",
-          ],
-      },
-      {
-          title: "Alten",
-          job: "experiences.alten.title",
-          dates: "experiences.alten.dates",
-          img: "alten.png",
-          text: [
-              "experiences.alten.one",
-              "experiences.alten.two",
-              "experiences.alten.three",
-          ],
-      },
-  ];
+export default {
+    name: "ExpComponent",
+    components: {
+        KListItem,
+        KRow,
+        KSkill
+    },
+    data() {
+        return {
+            experiences: [
+                {
+                    title: "Sopra Steria",
+                    avatar: soprasteria,
+                    subtitles: [
+                        "experiences[0].subtitles[0]",
+                        "experiences[0].subtitles[1]"
+                    ],
+                    missions: [
+                        "experiences[0].missions[0]",
+                        "experiences[0].missions[1]",
+                        "experiences[0].missions[2]"
+                    ],
+                    captions: [
+                        "experiences[0].captions[0]",
+                        "experiences[0].captions[1]"
+                    ],
+                    skills: [
+                        { icon: java, name: "Java" },
+                        { icon: spring, name: "Spring" },
+                        { icon: quarkus, name: "Quarkus" },
+                        { icon: hibernate, name: "Hibernate" },
 
-  oldExperience: OldExperience = {
-      title: "experiences.old.title",
-      text: [
-          {
-              title: "experiences.old.eurosys.title",
-              dates: "experiences.old.eurosys.dates",
-              value: "experiences.old.eurosys.value",
-              img: "eurosys.png",
-          },
-          {
-              title: "experiences.old.ddt.title",
-              dates: "experiences.old.ddt.dates",
-              value: "experiences.old.ddt.value",
-              img: "ddt.png",
-          },
-          {
-              title: "experiences.old.ufcv.title",
-              dates: "experiences.old.ufcv.dates",
-              value: "experiences.old.ufcv.value",
-              img: "ufcv.png",
-          },
-          {
-              title: "experiences.old.cgcv.title",
-              dates: "experiences.old.cgcv.dates",
-              value: "experiences.old.cgcv.value",
-              img: "cgcv.png",
-          },
-          {
-              title: "experiences.old.dreal.title",
-              dates: "experiences.old.dreal.dates",
-              value: "experiences.old.dreal.value",
-              img: "dreal.png",
-          },
-      ],
-      captions: [
-          "experiences.old.ddt.caption",
-          "experiences.old.ufcv.caption",
-          "experiences.old.cgcv.caption",
-          "experiences.old.dreal.caption",
-      ],
-  };
+                        { icon: typescript, name: "TypeScript" },
+                        { icon: angular, name: "Angular" },
+                        { icon: bootstrap, name: "Bootstrap" },
+
+                        { icon: karatelabs, name: "Karatelabs" },
+                        { icon: jasmine, name: "Jasmine" },
+
+                        { icon: kubernetes, name: "Kubernetes" },
+                        { icon: docker, name: "Docker" },
+                        { icon: helm, name: "Helm" },
+                        { icon: traefik, name: "Traefik proxy" },
+                        { icon: envoy, name: "Envoy proxy" },
+
+                        { icon: postgresql, name: "Postgresql" },
+                        { icon: liquibase, name: "Liquibase" },
+
+                        { icon: gitlab, name: "GitLab CI/CD" },
+
+                        { icon: elasticsearch, name: "Elasticsearch" },
+
+                        { icon: python, name: "Python" },
+                        { icon: flask, name: "Flask" },
+                    ]
+                },
+                {
+                    title: "Alten",
+                    avatar: alten,
+                    subtitles: [
+                        "experiences[1].subtitles[0]",
+                        "experiences[1].subtitles[1]"
+                    ],
+                    missions: [
+                        "experiences[1].missions[0]",
+                        "experiences[1].missions[1]"
+                    ],
+                    skills: [
+                        { icon: typescript, name: "TypeScript" },
+                        { icon: bootstrap, name: "Bootstrap" },
+                        { icon: nestjs, name: "NestJS" },
+
+                        { icon: javascript, name: "Javascript" },
+                        { icon: electron, name: "ElectronJS" },
+                        { icon: jest, name: "Jest" },
+                    ],
+                },
+            ],
+
+            old_experiences: {
+                experiences: [
+                    {
+                        title: "Eurosys",
+                        avatar: eurosys,
+                        subtitles: [
+                            "experiences[2].subtitles[0]",
+                            "experiences[2].subtitles[1]"
+                        ]
+                    },
+                    {
+                        title: "DDT¹",
+                        avatar: ddt,
+                        subtitles: [
+                            "experiences[3].subtitles[0]",
+                            "experiences[3].subtitles[1]"
+                        ]
+                    },
+                    {
+                        title: "UFCV²",
+                        avatar: ufcv,
+                        subtitles: [
+                            "experiences[4].subtitles[0]",
+                            "experiences[4].subtitles[1]"
+                        ],
+                    },
+                    {
+                        title: "CGCV³",
+                        avatar: cgcv,
+                        subtitles: [
+                            "experiences[5].subtitles[0]",
+                            "experiences[5].subtitles[1]"
+                        ],
+                    },
+                    {
+                        title: "DREAL⁴",
+                        avatar: dreal,
+                        subtitles: [
+                            "experiences[6].subtitles[0]",
+                            "experiences[6].subtitles[1]"
+                        ],
+                    }
+                ],
+                captions: [
+                    "experiences[3].captions[0]",
+                    "experiences[4].captions[0]",
+                    "experiences[5].captions[0]",
+                    "experiences[6].captions[0]",
+                ]
+            }
+        }
+    }
 }
 </script>

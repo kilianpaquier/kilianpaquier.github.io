@@ -1,48 +1,47 @@
 <template>
-  <v-container fluid>
-    <!-- Interests title -->
-    <h2
-      class="font-weight-bold mb-3"
-      v-text="$vuetify.lang.t(`$vuetify.interests-title`)"
-    />
-
-    <!-- Interests imgs -->
-    <v-row justify="center">
-      <v-col
-        cols="auto"
-        class="text-center px-5"
-        v-for="(interest, i) in interests"
-        :key="i"
-      >
-        <rounded-outlined-img :object="interest" />
-      </v-col>
-    </v-row>
-  </v-container>
+    <k-row title="interests_title">
+        <!-- Interests -->
+        <v-row justify="center">
+            <v-col cols="auto" class="text-center px-7" v-for="(interest, index) in interests" :key="'int' + index">
+                <k-rounded-img v-bind:title="$t(interest.title).toString()" v-bind:img="interest.img"></k-rounded-img>
+            </v-col>
+        </v-row>
+    </k-row>
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-import { Interest } from "@/model/entities";
-import Component from "vue-class-component";
-import RoundedOutlinedImg from "@/components/common/RoundedOutlinedImg.vue";
+import {defineComponent} from "vue";
+import KRow from "../common/KRow.vue";
+import basketball from "../../assets/interests/basketball.png";
+import movies from "../../assets/interests/movies.png";
+import videogames from "../../assets/interests/videogames.png";
+import KRoundedImg from "../common/KRoundedImg.vue";
 
-@Component({
-    components: { RoundedOutlinedImg },
-})
-export default class InterestsComponent extends Vue {
-  interests: Interest[] = [
-      {
-          title: "interests.basketball",
-          img: "basketball.png",
-      },
-      {
-          title: "interests.tvtime",
-          img: "movies.png",
-      },
-      {
-          title: "interests.games",
-          img: "videogames.png",
-      },
-  ];
-}
+export default defineComponent({
+    name: "InterestsComponent",
+    components: {KRoundedImg, KRow},
+
+    data() {
+        return {
+            interests: [
+                {
+                    title: "interests[0]",
+                    img: basketball,
+                },
+                {
+                    title: "interests[1]",
+                    img: movies,
+                },
+                {
+                    title: "interests[2]",
+                    img: videogames,
+                },
+            ]
+        }
+    }
+});
 </script>
+
+<style scoped>
+
+</style>
