@@ -18,9 +18,8 @@ node-lint:
     - when: never
 
 sonar-analysis:
-  needs:
-    - env
-  when: on_success
+  rules:
+    - when: never
 
 report-analysis:
   rules:
