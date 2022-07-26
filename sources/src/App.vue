@@ -77,7 +77,7 @@ import IntroComponent from "./components/IntroComponent.vue";
 import SocialComponent from "./components/SocialComponent.vue";
 import ExpComponent from "./components/main/ExpComponent.vue";
 import EduComponent from "./components/side/EduComponent.vue";
-import {bash, devicon, jetbrains, jira, maven, npm, postman, uml, vscode, yarn} from "./plugins/devicon";
+import {bash, dbeaver, devicon, jetbrains, jira, maven, npm, postman, uml, vscode, yarn} from "./plugins/devicon";
 import KSkill from "./components/common/KSkill.vue";
 import KRow from "./components/common/KRow.vue";
 import InterestsComponent from "./components/side/InterestsComponent.vue";
@@ -110,6 +110,7 @@ export default defineComponent({
 
                 { icon: jetbrains, name: "JetBrains" },
                 { icon: vscode, name: "VSCode" },
+                { icon: dbeaver, name: "DBeaver" },
 
                 { icon: uml, name: "UML" },
                 { icon: postman, name: "Postman" },

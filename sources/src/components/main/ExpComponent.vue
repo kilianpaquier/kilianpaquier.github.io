@@ -143,7 +143,7 @@ export default {
                         { icon: quarkus, name: "Quarkus" },
                         { icon: hibernate, name: "Hibernate" },
 
-                        { icon: typescript, name: "TypeScript" },
+                        { icon: typescript, name: "Typescript" },
                         { icon: angular, name: "Angular" },
                         { icon: bootstrap, name: "Bootstrap" },
 
@@ -179,7 +179,7 @@ export default {
                         "experiences[1].missions[1]"
                     ],
                     skills: [
-                        { icon: typescript, name: "TypeScript" },
+                        { icon: typescript, name: "Typescript" },
                         { icon: bootstrap, name: "Bootstrap" },
                         { icon: nestjs, name: "NestJS" },
 
