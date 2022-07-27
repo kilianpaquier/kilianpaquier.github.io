@@ -1,7 +1,7 @@
 {
   "name": "@kilian-paquier/portfolio",
   "private": true,
-  "version": "4.0.1-0",
+  "version": "4.0.2-0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
