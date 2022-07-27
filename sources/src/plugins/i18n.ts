@@ -6,7 +6,7 @@ import en from "./i18n/en";
 Vue.use(VueI18n);
 
 export default new VueI18n({
-    locale: navigator.language,
+    locale: navigator.language?.includes("en") ? "en" : "fr",
     fallbackLocale: "fr",
     messages: {
         fr,
