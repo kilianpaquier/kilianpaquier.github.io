@@ -9,7 +9,8 @@
                 <v-expansion-panel-header class="py-0">
                     <v-list>
                         <k-list-item v-bind:avatar="experience.avatar" v-bind:lines="3"
-                                     v-bind:title="experience.title" v-bind:contain-avatar="true" rounded-avatar="0">
+                                     v-bind:title="experience.title" v-bind:contain-avatar="true" rounded-avatar="0"
+                                     v-bind:eager-avatar="true">
                             <!-- Subtitles -->
                             <v-list-item-subtitle
                                 v-for="(subtitle, index) in experience.subtitles" v-bind:key="'exp_sub' + index">
@@ -65,7 +66,7 @@
                         <k-list-item v-for="(experience, index) in old_experiences.experiences"
                                      v-bind:key="'old_exp' + index" v-bind:title="experience.title"
                                      v-bind:avatar="experience.avatar" v-bind:lines="3" v-bind:contain-avatar="true"
-                                     rounded-avatar="0">
+                                     v-bind:eager-avatar="true" rounded-avatar="0">
 
                             <!-- Subtitles -->
                             <v-list-item-subtitle
