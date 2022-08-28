@@ -21,7 +21,6 @@ export default defineConfig({
                 // Vuetify
                 VuetifyResolver(),
             ],
-
         }),
     ]
 })

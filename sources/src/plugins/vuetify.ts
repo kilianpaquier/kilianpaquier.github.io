@@ -1,9 +1,17 @@
 import Vue from 'vue';
 import Vuetify, {
     VApp,
+    VAvatar,
     VBtn,
+    VCard,
+    VCardActions,
+    VCardSubtitle,
+    VCardText,
+    VCardTitle,
     VCol,
     VContainer,
+    VDivider,
+    VExpandTransition,
     VExpansionPanel,
     VExpansionPanelContent,
     VExpansionPanelHeader,
@@ -18,21 +26,14 @@ import Vuetify, {
     VListItemSubtitle,
     VListItemTitle,
     VMain,
-    VAvatar,
     VRow,
     VSpacer,
-    VTooltip,
-    VDivider,
-    VCard,
-    VCardSubtitle,
-    VCardTitle,
-    VCardText,
-    VCardActions,
+    VThemeProvider,
     VTimeline,
     VTimelineItem,
+    VTooltip,
     VWindow,
-    VWindowItem,
-    VExpandTransition
+    VWindowItem
 } from 'vuetify/lib';
 import i18n from "./i18n";
 
@@ -79,7 +80,9 @@ Vue.use(Vuetify, {
         VIcon,
         VAvatar,
         VDivider,
-        VExpandTransition
+        VExpandTransition,
+
+        VThemeProvider
     }
 });
 
@@ -89,5 +92,14 @@ export default new Vuetify({
     },
     lang: {
         t: (key, ...params) => i18n.t(key, params)
+    },
+    theme: {
+        options: {
+            customProperties: true,
+            themeCache: {
+                get: key => localStorage.getItem(key),
+                set: (key, value) => localStorage.setItem(key, value),
+            }
+        }
     }
 });

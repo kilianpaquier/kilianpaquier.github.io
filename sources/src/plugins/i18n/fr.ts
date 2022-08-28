@@ -3,6 +3,7 @@ export default {
     about: "Passionné par l'informatique depuis la fin du collège, j'apprécie particulièrement soigner les interfaces utilisateurs (IHM), en y mettant du détail mais aussi en proposant des solutions intuitives (listes déroulantes, autocomplétion, etc.). Soucieux de rester le plus polyvalent possible, je cherche toujours à pratiquer mes compétences techniques et fonctionnelles (étude, réponse au besoin et accompagnement du client / Product Owner en particulier).",
     open_to_offers: "Vous souhaitez prendre contact avec moi ? Envoyez-moi un message sur Linkedin !",
     resume: "Mon CV",
+    theme: "Changement de thème",
 
     langs: [
         {

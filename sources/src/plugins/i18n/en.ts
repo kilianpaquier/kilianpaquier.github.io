@@ -2,6 +2,7 @@ export default {
     title: "Software engineer | Scrum Master",
     about: "Passionate by computer science since the end of middle school, I particularly like to be attentive to user interfaces (UI), by adding details but also by suggesting intuitive solutions (drop-down list, predictive text, etc.). Solicitous of remaining versatile, I always seek to practice my technical and functional (needs analysis and customer / Product Owner support especially) skills.",
     resume: "My resume",
+    theme: "Theme change",
 
     langs: [
         {

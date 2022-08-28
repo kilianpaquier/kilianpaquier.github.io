@@ -5,7 +5,7 @@
         </v-col>
         <v-spacer></v-spacer>
         <v-col cols="auto">
-            <v-list rounded class="text-center text-sm-end pe-0">
+            <v-list rounded class="text-center text-sm-end pe-0" style="background: transparent">
                 <v-list-item-group mandatory v-model="currentLang">
                     <v-list-item v-for="(lang, index) in langs" v-bind:key="'lang' + index">
 

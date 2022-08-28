@@ -24,7 +24,7 @@ import php from "devicon/icons/php/php-original.svg";
 import qt from "devicon/icons/qt/qt-original.svg";
 import jquery from "devicon/icons/jquery/jquery-original.svg";
 import html5 from "devicon/icons/html5/html5-original.svg";
-import android from "devicon/icons/android/android-original.svg";
+import android from "devicon/icons/android/android-plain.svg";
 
 import quarkus from "../assets/skills/quarkus-original.svg";
 import hibernate from "../assets/skills/hibernate-original.svg";

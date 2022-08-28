@@ -7,7 +7,7 @@
 
                 <!-- Header -->
                 <v-expansion-panel-header class="py-0">
-                    <v-list>
+                    <v-list class="bg-transparent">
                         <k-list-item v-bind:avatar="experience.avatar" v-bind:lines="3"
                                      v-bind:title="experience.title" v-bind:contain-avatar="true" rounded-avatar="0"
                                      v-bind:eager-avatar="true">
@@ -34,7 +34,7 @@
                     <v-divider></v-divider>
 
                     <!-- List of missions -->
-                    <v-list class="body-2">
+                    <v-list class="body-2 bg-transparent">
                         <v-list-item v-for="(mission, index) in experience.missions" v-bind:key="'exp_mission' + index">
                             <v-list-item-content>
                                 {{ $t(mission) }}
@@ -54,7 +54,7 @@
             <!-- Old experiences -->
             <v-expansion-panel>
                 <v-expansion-panel-header class="py-0">
-                    <v-list>
+                    <v-list class="bg-transparent">
                         <k-list-item v-bind:title="$t('old_experiences_title').toString()"></k-list-item>
                     </v-list>
                 </v-expansion-panel-header>
@@ -62,7 +62,7 @@
                 <v-expansion-panel-content>
                     <v-divider></v-divider>
 
-                    <v-list>
+                    <v-list class="bg-transparent">
                         <k-list-item v-for="(experience, index) in old_experiences.experiences"
                                      v-bind:key="'old_exp' + index" v-bind:title="experience.title"
                                      v-bind:avatar="experience.avatar" v-bind:lines="3" v-bind:contain-avatar="true"
