@@ -6,7 +6,7 @@ include:
       - "pipelines/deployable-pages.yml"
 
 variables:
-  NODE_WORKING_DIR: "sources"
+  NODE_WORKING_DIR: "frontend"
 
 node-test:
   rules:

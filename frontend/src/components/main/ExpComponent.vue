@@ -1,0 +1,95 @@
+<template>
+    <v-row :no-gutters="true">
+        <v-col cols="12">
+            <h2 class="mb-3">{{ $t("experiences_title") }}</h2>
+        </v-col>
+        <v-col cols="12">
+            <v-expansion-panels :model-value="[0]" mandatory>
+                <v-expansion-panel v-for="(experience, index) in experiences" :key="'experience_' + index">
+                    <v-expansion-panel-title hide-actions>
+                        <v-list class="bg-transparent py-0">
+                            <v-list-item :title="experience.title" class="py-0 ps-1">
+                                <template #prepend>
+                                    <v-avatar>
+                                        <v-img :eager="true" :src="experience.icon" />
+                                    </v-avatar>
+                                </template>
+
+                                <v-list-item-subtitle v-for="(subtitle, index) in experience.subtitles" :key="'experience_subtitle' + index" :class="{ 'mt-1': index > 0 }">
+                                    {{ $t(subtitle) }}
+                                </v-list-item-subtitle>
+
+                                <v-row :no-gutters="true" class="mt-1">
+                                    <v-col v-for="(skill, index) in experience.skills" :key="'experience_skill' + index" :class="{ 'me-2': index < experience.skills.length - 1 }" class="my-1" cols="auto">
+                                        <v-tooltip :text="skill.name" location="bottom">
+                                            <template #activator="{props}">
+                                                <v-img :eager="true" :src="skill.icon" class="mx-auto" v-bind="props" width="25"></v-img>
+                                            </template>
+                                        </v-tooltip>
+                                    </v-col>
+                                </v-row>
+                            </v-list-item>
+                        </v-list>
+                    </v-expansion-panel-title>
+                    <v-expansion-panel-text>
+                        <v-list class="bg-transparent">
+                            <v-list-item v-for="(mission, index) in experience.missions" :key="'experience_mission_' + index">
+                                {{ $t(mission) }}
+                            </v-list-item>
+                        </v-list>
+
+                        <v-row v-if="experience.captions" :no-gutters="true" class="text-end">
+                            <v-col v-for="(caption, index) in experience.captions" :key="'experience_caption' + index" class="text-caption" cols="12">
+                                {{ $t(caption) }}
+                            </v-col>
+                        </v-row>
+                    </v-expansion-panel-text>
+                </v-expansion-panel>
+
+                <v-expansion-panel>
+                    <v-expansion-panel-title hide-actions>
+                        <span class="my-1 ms-3">
+                            {{ $t("old_experiences_title") }}
+                        </span>
+                    </v-expansion-panel-title>
+
+                    <v-expansion-panel-text>
+                        <v-list class="bg-transparent">
+                            <v-list-item v-for="(experience, index) in old_experiences.experiences" :key="'old_experience_' + index" :title="experience.title" class="ps-2" :class="{ 'mt-2': index > 0 }">
+                                <template #prepend>
+                                    <v-avatar>
+                                        <v-img :eager="true" :src="experience.icon" />
+                                    </v-avatar>
+                                </template>
+
+                                <v-list-item-subtitle v-for="(subtitle, index) in experience.subtitles" :key="'old_experience_subtitle' + index" :class="{ 'mt-1': index > 0 }">
+                                    {{ $t(subtitle) }}
+                                </v-list-item-subtitle>
+                            </v-list-item>
+                        </v-list>
+
+                        <v-row :no-gutters="true" class="text-end">
+                            <v-col v-for="(caption, index) in old_experiences.captions" :key="'old_experience_caption' + index" class="text-caption" cols="12">
+                                {{ $t(caption) }}
+                            </v-col>
+                        </v-row>
+                    </v-expansion-panel-text>
+                </v-expansion-panel>
+            </v-expansion-panels>
+        </v-col>
+    </v-row>
+</template>
+
+<script lang="ts">
+import {defineComponent} from "vue";
+import {experiences, old_experiences} from "@/data/experiences";
+
+export default defineComponent({
+    name: "ExpComponent",
+
+    data: () => ({
+        experiences,
+        old_experiences
+    })
+});
+</script>

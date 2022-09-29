@@ -1,0 +1,33 @@
+// Main styles here
+
+@import "@fontsource/roboto";
+@import "vuetify/lib/styles/main.sass";
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+@media print {
+  .fluid {
+    max-width: 100% !important;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.select-none {
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.v-list-item__prepend .v-avatar:not(.rounded-circle) {
+  border-radius: 0 !important;
+}
