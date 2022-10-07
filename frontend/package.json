@@ -33,5 +33,5 @@
         "vue-tsc": "^1.0.0",
         "vuetify": "next"
     },
-    "packageManager": "yarn@3.2.3"
+    "packageManager": "yarn@3.2.4"
 }
