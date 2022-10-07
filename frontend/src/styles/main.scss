@@ -1,7 +1,7 @@
 // Main styles here
 
-@import "@fontsource/roboto";
-@import "vuetify/lib/styles/main.sass";
+@forward "@fontsource/roboto";
+@forward "vuetify/styles";
 
 html {
   font-family: "Roboto", sans-serif;
@@ -30,4 +30,8 @@ html {
 
 .v-list-item__prepend .v-avatar:not(.rounded-circle) {
   border-radius: 0 !important;
+}
+
+.no-outline {
+  outline: none;
 }

@@ -7,7 +7,7 @@
             <v-window :continuous="true" class="elevation-1" show-arrows="hover">
                 <v-window-item v-for="(project, index) in projects" :key="'project_' + index" eager>
                     <v-card>
-                        <v-img :eager="true" :src="project.icon" class="align-end cursor-pointer" @click="sectionShowing = !sectionShowing">
+                        <v-img :eager="true" :sizes="sizes" :src="project.src" :srcset="project.srcset" class="align-end cursor-pointer" @click="sectionShowing = !sectionShowing">
                             <v-card-title v-if="project.title" :class="project.titleColor">
                                 {{ project.title }}
                             </v-card-title>
@@ -22,7 +22,7 @@
                                         </v-col>
 
                                         <v-col class="text-center my-3" cols="12">
-                                            <v-img :eager="true" :src="project.codeImg" class="mx-auto cursor-pointer" height="50" @click="redirect(index)"></v-img>
+                                            <component :is="project.icon" class="mx-auto no-outline cursor-pointer" height="40" @click="redirect(index)" />
                                         </v-col>
 
                                         <template v-if="project.captions">
@@ -49,6 +49,7 @@ export default defineComponent({
     name: "ProjectsComponent",
 
     data: () => ({
+        sizes: "(max-width: 960px) 100vw, (max-width: 1920px) 50vw, (min-width: 1921px) 25vw",
         sectionShowing: false
     }),
 
