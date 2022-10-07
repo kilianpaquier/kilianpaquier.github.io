@@ -23,7 +23,7 @@
                     <v-col v-for="(skill, index) in tools" v-bind:key="'tool' + index" :class="{ 'me-2': index < tools.length - 1 }" class="my-1" cols="auto">
                         <v-tooltip :text="skill.name" location="bottom">
                             <template #activator="{props}">
-                                <v-img :eager="true" :src="skill.icon" class="mx-auto" v-bind="props" width="25"></v-img>
+                                <component :is="skill.icon" class="mx-auto no-outline" v-bind="props" width="25" />
                             </template>
                         </v-tooltip>
                     </v-col>
@@ -40,7 +40,7 @@ import {bash, dbeaver, devicon, jetbrains, jira, maven, npm, postman, uml, vscod
 export default defineComponent({
     name: "SkillsComponent",
 
-    data: () => ({
+    setup: () => ({
         softs: [
             "softs[0]",
             "softs[1]"

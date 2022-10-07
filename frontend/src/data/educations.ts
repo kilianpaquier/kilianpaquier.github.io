@@ -15,7 +15,9 @@ export default [
     {
         title: "PSM I",
         dates: "educations[0].dates",
-        icon: "/educations/psmi.svg",
+        src: "/educations/psmi.webp",
+        srcset: "/educations/psmi.webp 229w",
+
         diploma: "educations[0].diploma",
         caption: undefined,
         skills: undefined
@@ -23,7 +25,9 @@ export default [
     {
         title: "UQAC¹",
         dates: "educations[1].dates",
-        icon: "/educations/uqac.jpg",
+        src: "/educations/uqac-small.webp",
+        srcset: "/educations/uqac-large.webp 1024w, /educations/uqac.webp 512w, /educations/uqac-small.webp 256w",
+
         diploma: "educations[1].diploma",
         caption: "¹ Université du Québec à Chicoutimi",
         skills: [
@@ -48,7 +52,9 @@ export default [
     {
         title: "Polytech Tours",
         dates: "educations[2].dates",
-        icon: "/educations/polytechtours.jpg",
+        src: "/educations/polytechtours-small.webp",
+        srcset: "/educations/polytechtours-large.webp 1571w, /educations/polytechtours.webp 786w, /educations/polytechtours-small.webp 393w",
+
         diploma: "educations[2].diploma",
         caption: undefined,
         skills: [

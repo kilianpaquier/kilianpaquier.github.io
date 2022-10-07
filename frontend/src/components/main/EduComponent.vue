@@ -8,7 +8,7 @@
                 <v-timeline-item v-for="(education, index) in educations" :key="'education_' + index" :fill-dot="true" size="large" width="100%">
                     <template #icon>
                         <v-avatar class="h-100 w-100">
-                            <v-img :cover="true" :eager="true" :src="education.icon" class="w-100 h-100" />
+                            <v-img :cover="true" :eager="true" :sizes="sizes" :src="education.src" :srcset="education.srcset" class="w-100 h-100" />
                         </v-avatar>
                     </template>
 
@@ -21,7 +21,7 @@
                                 <v-col v-for="(skill, index) in education.skills" :key="'experience_skill' + index" :class="{ 'me-2': index < education.skills.length - 1 }" class="my-1" cols="auto">
                                     <v-tooltip :text="skill.name" location="bottom">
                                         <template #activator="{props}">
-                                            <v-img :eager="true" :src="skill.icon" class="mx-auto" v-bind="props" width="25"></v-img>
+                                            <component :is="skill.icon" class="mx-auto no-outline" v-bind="props" width="25" />
                                         </template>
                                     </v-tooltip>
                                 </v-col>
@@ -48,7 +48,8 @@ import educations from "@/data/educations";
 export default defineComponent({
     name: "EduComponent",
 
-    data: () => ({
+    setup: () => ({
+        sizes: "10vw",
         educations
     })
 });

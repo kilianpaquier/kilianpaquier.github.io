@@ -4,7 +4,8 @@ export const projects = [
     {
         title: undefined,
         titleColor: undefined,
-        icon: "/projects/fortheberry.png",
+        src: "/projects/fortheberry.webp",
+        srcset: "/projects/fortheberry.webp 881w, /projects/fortheberry-small.webp 441w",
 
         text: [
             "projects[0].text[0]",
@@ -15,13 +16,14 @@ export const projects = [
             "projects[0].captions[1]"
         ],
 
-        codeImg: itchio,
+        icon: itchio,
         codeLink: "https://rogue888.itch.io/for-the-berry",
     },
     {
         title: undefined,
         titleColor: undefined,
-        icon: "/projects/shareyourfit.png",
+        src: "/projects/shareyourfit.webp",
+        srcset: "/projects/shareyourfit.webp 881w, /projects/shareyourfit-small.webp 441w",
 
         text: [
             "projects[1].text[0]",
@@ -29,13 +31,14 @@ export const projects = [
         ],
         captions: undefined,
 
-        codeImg: gitlab,
+        icon: gitlab,
         codeLink: "https://gitlab.com/kilian-paquier/share-your-fit",
     },
     {
         title: undefined,
         titleColor: undefined,
-        icon: "/projects/gestionepi.png",
+        src: "/projects/gestionepi.webp",
+        srcset: "/projects/gestionepi.webp 881w, /projects/gestionepi-small.webp 441w",
 
         text: [
             "projects[2].text[0]",
@@ -46,13 +49,14 @@ export const projects = [
             "projects[2].captions[1]"
         ],
 
-        codeImg: gitlab,
+        icon: gitlab,
         codeLink: "https://gitlab.com/kilian-paquier/gestion-epi",
     },
     {
         title: "T.A.GEDOFIS",
         titleColor: "text-black",
-        icon: "/projects/tagedofis.png",
+        src: "/projects/tagedofis.webp",
+        srcset: "/projects/tagedofis.webp 881w, /projects/tagedofis-small.webp 441w",
 
         text: [
             "projects[3].text[0]",
@@ -62,7 +66,7 @@ export const projects = [
             "projects[3].captions[0]"
         ],
 
-        codeImg: gitlab,
+        icon: gitlab,
         codeLink: "https://gitlab.com/kilian-paquier/tagedofis",
     },
 ];
@@ -71,21 +75,25 @@ export const print_projects = [
     {
         title: "For The Berry",
         subtitle: "projects[0].subtitle",
-        icon: "/projects/list/fortheberry.png",
+        src: "/projects/list/fortheberry.webp",
+        srcset: "/projects/list/fortheberry.webp 749w, /projects/list/fortheberry-small.webp 375w",
     },
     {
         title: "Share Your Fit",
         subtitle: "projects[1].subtitle",
-        icon: "/projects/list/shareyourfit.png",
+        src: "/projects/list/shareyourfit.webp",
+        srcset: "/projects/list/shareyourfit.webp 315w",
     },
     {
         title: "Gestion EPI",
         subtitle: "projects[2].subtitle",
-        icon: "/projects/list/gestionepi.png",
+        src: "/projects/list/gestionepi.webp",
+        srcset: "/projects/list/gestionepi.webp 784w, /projects/list/gestionepi-small.webp 392w",
     },
     {
         title: "T.A.GEDOFIS",
         subtitle: "projects[3].subtitle",
-        icon: "/projects/list/tagedofis.png",
+        src: "/projects/list/tagedofis.webp",
+        srcset: "/projects/list/tagedofis.webp 154w",
     }
 ];

@@ -1,13 +1,11 @@
 import typescript from "devicon/icons/typescript/typescript-original.svg";
 import java from "devicon/icons/java/java-original.svg";
 import spring from "devicon/icons/spring/spring-original.svg";
-import bootstrap from "devicon/icons/bootstrap/bootstrap-original.svg";
 import jasmine from "devicon/icons/jasmine/jasmine-plain.svg";
 import kubernetes from "devicon/icons/kubernetes/kubernetes-plain.svg";
 import docker from "devicon/icons/docker/docker-original.svg";
 import postgresql from "devicon/icons/postgresql/postgresql-original.svg";
 import gitlab from "devicon/icons/gitlab/gitlab-original.svg";
-import python from "devicon/icons/python/python-original.svg";
 import flask from "devicon/icons/flask/flask-original.svg";
 import nestjs from "devicon/icons/nestjs/nestjs-plain.svg";
 import javascript from "devicon/icons/javascript/javascript-original.svg";
@@ -18,13 +16,13 @@ import jetbrains from "devicon/icons/jetbrains/jetbrains-original.svg";
 import vscode from "devicon/icons/vscode/vscode-original.svg";
 import yarn from "devicon/icons/yarn/yarn-original.svg";
 import npm from "devicon/icons/npm/npm-original-wordmark.svg";
-import jira from "devicon/icons/jira/jira-original.svg";
 import devicon from "devicon/icons/devicon/devicon-original.svg";
-import php from "devicon/icons/php/php-original.svg";
+import php from "devicon/icons/php/php-plain.svg";
 import qt from "devicon/icons/qt/qt-original.svg";
 import jquery from "devicon/icons/jquery/jquery-original.svg";
 import html5 from "devicon/icons/html5/html5-original.svg";
 import android from "devicon/icons/android/android-plain.svg";
+import bootstrap from "devicon/icons/bootstrap/bootstrap-plain.svg";
 
 import quarkus from "@/assets/skills/quarkus-original.svg";
 import hibernate from "@/assets/skills/hibernate-original.svg";
@@ -48,6 +46,8 @@ import dotnet from "@/assets/skills/dot-net-original.svg";
 import c from "@/assets/skills/c-original.svg";
 import itchio from "@/assets/skills/itchio-original-wordmark.svg";
 import moleculer from "@/assets/skills/moleculer-original.svg";
+import jira from "@/assets/skills/jira-plain.svg";
+import python from "@/assets/skills/python-plain.svg";
 
 export {
     itchio,

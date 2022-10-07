@@ -8,7 +8,7 @@
             <v-row justify="center">
                 <v-col v-for="(interest, index) in interests" :key="'interest_' + index" class="text-center" cols="auto">
                     <div>
-                        <v-img :class="borderColor()" :eager="true" :cover="true" :src="interest.img" class="rounded-circle mx-auto mb-3 interests-img w-100 h-100"></v-img>
+                        <v-img :class="borderColor()" :cover="true" :eager="true" :sizes="sizes" :src="interest.src" :srcset="interest.srcset" class="rounded-circle mx-auto mb-3 interests-img w-100 h-100"></v-img>
                         <span class="body-2">{{ $t(interest.title) }}</span>
                     </div>
                 </v-col>
@@ -24,28 +24,29 @@ import {useTheme} from "vuetify";
 export default defineComponent({
     name: "InterestsComponent",
 
-    data: () => ({
-        interests: [
-            {
-                title: "interests[0]",
-                img: "/interests/basketball.png",
-            },
-            {
-                title: "interests[1]",
-                img: "/interests/movies.png",
-            },
-            {
-                title: "interests[2]",
-                img: "/interests/videogames.png",
-            },
-        ]
-    }),
-
     setup: () => {
         const theme = useTheme();
 
         return {
-            borderColor: () => theme.global.current.value.dark ? "interests-border-dark" : "interests-border"
+            borderColor: () => theme.global.current.value.dark ? "interests-border-dark" : "interests-border",
+            sizes: "20vw",
+            interests: [
+                {
+                    title: "interests[0]",
+                    src: "/interests/basketball-small.webp",
+                    srcset: "/interests/basketball-large.webp 1214w, /interests/basketball.webp 607w, /interests/basketball-small.webp 304w",
+                },
+                {
+                    title: "interests[1]",
+                    src: "/interests/movies.webp",
+                    srcset: "/interests/movies.webp 626w, /interests/movies-small.webp 313w",
+                },
+                {
+                    title: "interests[2]",
+                    src: "/interests/videogames-small.webp",
+                    srcset: "/interests/videogames-large.webp 1530w, /interests/videogames.webp 765w, /interests/videogames-small.webp 383w",
+                },
+            ]
         }
     }
 });

@@ -11,7 +11,7 @@
                             <v-list-item :title="experience.title" class="py-0 ps-1">
                                 <template #prepend>
                                     <v-avatar>
-                                        <v-img :eager="true" :src="experience.icon" />
+                                        <v-img :eager="true" :sizes="sizes" :src="experience.src" :srcset="experience.srcset" />
                                     </v-avatar>
                                 </template>
 
@@ -23,7 +23,7 @@
                                     <v-col v-for="(skill, index) in experience.skills" :key="'experience_skill' + index" :class="{ 'me-2': index < experience.skills.length - 1 }" class="my-1" cols="auto">
                                         <v-tooltip :text="skill.name" location="bottom">
                                             <template #activator="{props}">
-                                                <v-img :eager="true" :src="skill.icon" class="mx-auto" v-bind="props" width="25"></v-img>
+                                                <component :is="skill.icon" class="mx-auto no-outline" v-bind="props" width="25" />
                                             </template>
                                         </v-tooltip>
                                     </v-col>
@@ -58,7 +58,7 @@
                             <v-list-item v-for="(experience, index) in old_experiences.experiences" :key="'old_experience_' + index" :title="experience.title" class="ps-2" :class="{ 'mt-2': index > 0 }">
                                 <template #prepend>
                                     <v-avatar>
-                                        <v-img :eager="true" :src="experience.icon" />
+                                        <v-img :sizes="sizes" :src="experience.src" :srcset="experience.srcset" />
                                     </v-avatar>
                                 </template>
 
@@ -87,7 +87,8 @@ import {experiences, old_experiences} from "@/data/experiences";
 export default defineComponent({
     name: "ExpComponent",
 
-    data: () => ({
+    setup: () => ({
+        sizes: "10vw",
         experiences,
         old_experiences
     })

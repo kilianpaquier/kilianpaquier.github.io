@@ -28,3 +28,8 @@ release:
   needs:
     - job: node-build
       artifacts: false
+
+pages:
+  rules:
+    # Testing purposes
+    - when: manual

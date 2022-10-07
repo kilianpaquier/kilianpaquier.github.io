@@ -1,30 +1,17 @@
 import App from "@/App.vue"
-import {ViteSSG} from "vite-ssg";
-import {routes} from "@/plugins/router";
-import {createHead} from "@vueuse/head";
 import {usePreferredLanguages} from "@vueuse/core";
-import {initializeI18n} from "@/plugins/i18n";
-import {initializeVuetify} from "@/plugins/vuetify";
+import {clientI18n} from "@/plugins/i18n";
+import {clientVuetify} from "@/plugins/vuetify";
+import {ViteSSG} from "vite-ssg/single-page";
 
-export const createApp = ViteSSG(App, {routes}, (context) => {
+export const createApp = ViteSSG(App, (context) => {
     const {app} = context;
     const languages = usePreferredLanguages();
 
-    const head = createHead({
-        title: "Kilian PAQUIER",
-        htmlAttrs: {lang: languages.value[0]},
-        link: [
-            {href: "/favicon.png", rel: "icon"}
-        ],
-        meta: [
-            {charset: "UTF-8"},
-            {content: "width=device-width, initial-scale=1.0", name: "viewport"}
-        ]
-    });
-    app.use(head);
-
-    const i18n = initializeI18n(app, languages);
+    const i18n = clientI18n(languages);
+    app.use(i18n);
 
     // @ts-ignore i18n.messages malformed
-    initializeVuetify(app, i18n);
+    const vuetify = clientVuetify(i18n);
+    app.use(vuetify);
 });

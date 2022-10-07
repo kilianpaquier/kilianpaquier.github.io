@@ -28,7 +28,8 @@ import {
 export const experiences = [
     {
         title: "Sopra Steria",
-        icon: "/experiences/soprasteria.png",
+        src: "/experiences/soprasteria.webp",
+        srcset: "/experiences/soprasteria.webp 512w, /experiences/soprasteria-small.webp 256w",
         subtitles: [
             "experiences[0].subtitles[0]",
             "experiences[0].subtitles[1]"
@@ -74,7 +75,8 @@ export const experiences = [
     },
     {
         title: "Alten",
-        icon: "/experiences/alten.png",
+        src: "/experiences/alten.webp",
+        srcset: "/experiences/alten-large.webp 1221w, /experiences/alten.webp 611w, /experiences/alten-small.webp 306w",
         subtitles: [
             "experiences[1].subtitles[0]",
             "experiences[1].subtitles[1]"
@@ -100,7 +102,8 @@ export const old_experiences = {
     experiences: [
         {
             title: "Eurosys",
-            icon: "/experiences/eurosys.png",
+            src: "/experiences/eurosys.webp",
+            srcset: "/experiences/eurosys.webp 141w",
             subtitles: [
                 "experiences[2].subtitles[0]",
                 "experiences[2].subtitles[1]"
@@ -108,7 +111,8 @@ export const old_experiences = {
         },
         {
             title: "DDT¹",
-            icon: "/experiences/ddt.png",
+            src: "/experiences/ddt.webp",
+            srcset: "/experiences/ddt.webp 1000w, /experiences/ddt-small.webp 500w",
             subtitles: [
                 "experiences[3].subtitles[0]",
                 "experiences[3].subtitles[1]"
@@ -116,7 +120,8 @@ export const old_experiences = {
         },
         {
             title: "UFCV²",
-            icon: "/experiences/ufcv.png",
+            src: "/experiences/ufcv.webp",
+            srcset: "/experiences/ufcv.webp 1417w, /experiences/ufcv-small.webp 709w",
             subtitles: [
                 "experiences[4].subtitles[0]",
                 "experiences[4].subtitles[1]"
@@ -124,7 +129,8 @@ export const old_experiences = {
         },
         {
             title: "CGCV³",
-            icon: "/experiences/cgcv.png",
+            src: "/experiences/cgcv.webp",
+            srcset: "/experiences/cgcv.webp 400w, /experiences/cgcv-small.webp 200w",
             subtitles: [
                 "experiences[5].subtitles[0]",
                 "experiences[5].subtitles[1]"
@@ -132,7 +138,8 @@ export const old_experiences = {
         },
         {
             title: "DREAL⁴",
-            icon: "/experiences/dreal.png",
+            src: "/experiences/dreal.webp",
+            srcset: "/experiences/dreal.webp 480w, /experiences/dreal-small.webp 240w",
             subtitles: [
                 "experiences[6].subtitles[0]",
                 "experiences[6].subtitles[1]"
