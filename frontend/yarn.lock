@@ -2485,9 +2485,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kilian-paquier.gitlab.io@workspace:.":
+"kilianpaquier.gitlab.io@workspace:.":
   version: 0.0.0-use.local
-  resolution: "kilian-paquier.gitlab.io@workspace:."
+  resolution: "kilianpaquier.gitlab.io@workspace:."
   dependencies:
     "@fontsource/roboto": ^4.5.8
     "@mdi/js": ^7.0.96

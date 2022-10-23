@@ -52,19 +52,19 @@ export default defineComponent({
                 {
                     title: "GitHub",
                     icon: mdiGithub,
-                    link: "https://github.com/kilian-paquier",
+                    link: "https://github.com/kilianpaquier",
                     color: undefined
                 },
                 {
                     title: "GitLab",
                     icon: mdiGitlab,
-                    link: "https://gitlab.com/kilian-paquier",
+                    link: "https://gitlab.com/kilianpaquier",
                     color: "red",
                 },
                 {
                     title: "Linkedin",
                     icon: mdiLinkedin,
-                    link: "https://www.linkedin.com/in/kilian-paquier",
+                    link: "https://www.linkedin.com/in/kilianpaquier",
                     color: "blue",
                 }
             ]

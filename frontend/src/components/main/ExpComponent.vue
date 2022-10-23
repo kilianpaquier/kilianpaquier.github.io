@@ -32,7 +32,7 @@
                         </v-list>
                     </v-expansion-panel-title>
                     <v-expansion-panel-text>
-                        <v-list class="bg-transparent">
+                        <v-list class="bg-transparent text-body-2">
                             <v-list-item v-for="(mission, index) in experience.missions" :key="'experience_mission_' + index">
                                 {{ $t(mission) }}
                             </v-list-item>

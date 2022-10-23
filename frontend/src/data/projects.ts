@@ -32,7 +32,7 @@ export const projects = [
         captions: undefined,
 
         icon: gitlab,
-        codeLink: "https://gitlab.com/kilian-paquier/share-your-fit",
+        codeLink: "https://gitlab.com/kilianpaquier/share-your-fit",
     },
     {
         title: undefined,
@@ -50,7 +50,7 @@ export const projects = [
         ],
 
         icon: gitlab,
-        codeLink: "https://gitlab.com/kilian-paquier/gestion-epi",
+        codeLink: "https://gitlab.com/kilianpaquier/gestion-epi",
     },
     {
         title: "T.A.GEDOFIS",
@@ -67,7 +67,7 @@ export const projects = [
         ],
 
         icon: gitlab,
-        codeLink: "https://gitlab.com/kilian-paquier/tagedofis",
+        codeLink: "https://gitlab.com/kilianpaquier/tagedofis",
     },
 ];
 
