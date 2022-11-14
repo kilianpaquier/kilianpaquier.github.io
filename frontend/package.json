@@ -1,6 +1,6 @@
 {
     "name": "kilianpaquier.gitlab.io",
-    "version": "5.2.0-0",
+    "version": "5.1.2-0",
     "private": true,
     "scripts": {
         "dev": "vite --host",
