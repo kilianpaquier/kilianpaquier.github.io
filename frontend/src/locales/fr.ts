@@ -4,7 +4,6 @@ export default {
     $vuetify: {
         ...fr
     },
-    title: "Ingénieur développement {'|'} Scrum Master",
     about: "Passionné par l'informatique depuis la fin du collège, j'apprécie particulièrement soigner les interfaces utilisateurs (IHM), en y mettant du détail mais aussi en proposant des solutions intuitives (listes déroulantes, autocomplétion, etc.). Soucieux de rester le plus polyvalent possible, je cherche toujours à pratiquer mes compétences techniques et fonctionnelles (étude, réponse au besoin et accompagnement du client / Product Owner en particulier).",
     open_to_offers: "Vous souhaitez prendre contact avec moi ? Envoyez-moi un message sur Linkedin !",
     resume: "Mon CV",
@@ -30,8 +29,22 @@ export default {
     experiences: [
         {
             subtitles: [
+                "Ingénieur développement",
+                "Octobre 2022 - Aujourd'hui"
+            ],
+            missions: [
+                "Participation aux phases d'affinage, implémentation² et livraison des US¹",
+                "Réalisation d'analyses et études techniques pour répondre aux besoins",
+            ],
+            captions: [
+                "¹ User Story",
+                "² Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications"
+            ]
+        },
+        {
+            subtitles: [
                 "Ingénieur développement {'|'} Scrum Master",
-                "Mars 2021 - Aujourd'hui"
+                "Mars 2021 - Octobre 2022"
             ],
             missions: [
                 "Facilitation des cérémonies Scrum, de l'auto-organisation de l'équipe et de l'amélioration continue du processus agile",

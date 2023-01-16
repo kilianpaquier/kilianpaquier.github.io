@@ -1,12 +1,15 @@
 import {
     angular,
+    bitbucket,
     bootstrap,
+    camunda,
     docker,
     elasticsearch,
     electron,
     envoy,
     flask,
     gitlab,
+    go,
     helm,
     hibernate,
     jasmine,
@@ -20,9 +23,10 @@ import {
     postgresql,
     python,
     quarkus,
+    redis,
     spring,
     traefik,
-    typescript
+    typescript,
 } from "@/plugins/devicon";
 
 export const experiences = [
@@ -36,12 +40,42 @@ export const experiences = [
         ],
         missions: [
             "experiences[0].missions[0]",
-            "experiences[0].missions[1]",
-            "experiences[0].missions[2]"
+            "experiences[0].missions[1]"
         ],
         captions: [
             "experiences[0].captions[0]",
             "experiences[0].captions[1]"
+        ],
+        skills: [
+            {icon: go, name: "Go"},
+            {icon: camunda, name: "Camunda BPMN"},
+
+            {icon: bitbucket, name: "Bitbucket"},
+            {icon: postgresql, name: "Postgresql"},
+
+            {icon: docker, name: "Docker"},
+            {icon: kubernetes, name: "Kubernetes"},
+            {icon: helm, name: "Helm"},
+
+            {icon: redis, name: "Redis"},
+        ]
+    },
+    {
+        title: "Sopra Steria",
+        src: "/experiences/soprasteria.webp",
+        srcset: "/experiences/soprasteria.webp 512w, /experiences/soprasteria-small.webp 256w",
+        subtitles: [
+            "experiences[1].subtitles[0]",
+            "experiences[1].subtitles[1]"
+        ],
+        missions: [
+            "experiences[1].missions[0]",
+            "experiences[1].missions[1]",
+            "experiences[1].missions[2]"
+        ],
+        captions: [
+            "experiences[1].captions[0]",
+            "experiences[1].captions[1]"
         ],
         skills: [
             {icon: java, name: "Java"},
@@ -78,12 +112,12 @@ export const experiences = [
         src: "/experiences/alten.webp",
         srcset: "/experiences/alten-large.webp 1221w, /experiences/alten.webp 611w, /experiences/alten-small.webp 306w",
         subtitles: [
-            "experiences[1].subtitles[0]",
-            "experiences[1].subtitles[1]"
+            "experiences[2].subtitles[0]",
+            "experiences[2].subtitles[1]"
         ],
         missions: [
-            "experiences[1].missions[0]",
-            "experiences[1].missions[1]"
+            "experiences[2].missions[0]",
+            "experiences[2].missions[1]"
         ],
         captions: undefined,
         skills: [
@@ -105,8 +139,8 @@ export const old_experiences = {
             src: "/experiences/eurosys.webp",
             srcset: "/experiences/eurosys.webp 141w",
             subtitles: [
-                "experiences[2].subtitles[0]",
-                "experiences[2].subtitles[1]"
+                "experiences[3].subtitles[0]",
+                "experiences[3].subtitles[1]"
             ]
         },
         {
@@ -114,8 +148,8 @@ export const old_experiences = {
             src: "/experiences/ddt.webp",
             srcset: "/experiences/ddt.webp 1000w, /experiences/ddt-small.webp 500w",
             subtitles: [
-                "experiences[3].subtitles[0]",
-                "experiences[3].subtitles[1]"
+                "experiences[4].subtitles[0]",
+                "experiences[4].subtitles[1]"
             ]
         },
         {
@@ -123,8 +157,8 @@ export const old_experiences = {
             src: "/experiences/ufcv.webp",
             srcset: "/experiences/ufcv.webp 1417w, /experiences/ufcv-small.webp 709w",
             subtitles: [
-                "experiences[4].subtitles[0]",
-                "experiences[4].subtitles[1]"
+                "experiences[5].subtitles[0]",
+                "experiences[5].subtitles[1]"
             ],
         },
         {
@@ -132,8 +166,8 @@ export const old_experiences = {
             src: "/experiences/cgcv.webp",
             srcset: "/experiences/cgcv.webp 400w, /experiences/cgcv-small.webp 200w",
             subtitles: [
-                "experiences[5].subtitles[0]",
-                "experiences[5].subtitles[1]"
+                "experiences[6].subtitles[0]",
+                "experiences[6].subtitles[1]"
             ],
         },
         {
@@ -141,15 +175,15 @@ export const old_experiences = {
             src: "/experiences/dreal.webp",
             srcset: "/experiences/dreal.webp 480w, /experiences/dreal-small.webp 240w",
             subtitles: [
-                "experiences[6].subtitles[0]",
-                "experiences[6].subtitles[1]"
+                "experiences[7].subtitles[0]",
+                "experiences[7].subtitles[1]"
             ],
         }
     ],
     captions: [
-        "experiences[3].captions[0]",
         "experiences[4].captions[0]",
         "experiences[5].captions[0]",
         "experiences[6].captions[0]",
+        "experiences[7].captions[0]",
     ]
 };

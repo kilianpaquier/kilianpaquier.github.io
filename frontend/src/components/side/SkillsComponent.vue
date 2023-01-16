@@ -35,7 +35,7 @@
 
 <script lang="ts">
 import {defineComponent} from "vue";
-import {bash, dbeaver, devicon, jetbrains, jira, maven, npm, postman, uml, vscode, yarn} from "@/plugins/devicon";
+import {bash, dbeaver, devicon, insomnia, jetbrains, jira, maven, npm, postman, uml, vscode, yarn} from "@/plugins/devicon";
 
 export default defineComponent({
     name: "SkillsComponent",
@@ -48,20 +48,17 @@ export default defineComponent({
 
         tools: [
             {icon: bash, name: "Bash"},
-
-            {icon: jetbrains, name: "JetBrains"},
-            {icon: vscode, name: "VSCode"},
             {icon: dbeaver, name: "DBeaver"},
-
-            {icon: uml, name: "UML"},
-            {icon: postman, name: "Postman"},
-
-            {icon: yarn, name: "Yarn"},
-            {icon: npm, name: "npm"},
-            {icon: maven, name: "Maven"},
-
+            {icon: devicon, name: "Devicon"}, 
+            {icon: insomnia, name: "Insomnia"},
+            {icon: jetbrains, name: "JetBrains"},
             {icon: jira, name: "Jira"},
-            {icon: devicon, name: "Devicon"}
+            {icon: maven, name: "Maven"},
+            {icon: npm, name: "npm"},
+            {icon: postman, name: "Postman"},
+            {icon: uml, name: "UML"},
+            {icon: vscode, name: "VSCode"},
+            {icon: yarn, name: "Yarn"},
         ]
     })
 });

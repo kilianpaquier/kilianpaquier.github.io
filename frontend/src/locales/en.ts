@@ -4,7 +4,6 @@ export default {
     $vuetify: {
         ...en
     },
-    title: "Software engineer {'|'} Scrum Master",
     about: "Passionate by computer science since the end of middle school, I particularly like to be attentive to user interfaces (UI), by adding details but also by suggesting intuitive solutions (drop-down list, predictive text, etc.). Solicitous of remaining versatile, I always seek to practice my technical and functional (needs analysis and customer / Product Owner support especially) skills.",
     resume: "My resume",
     theme: "Theme change",
@@ -29,8 +28,22 @@ export default {
     experiences: [
         {
             subtitles: [
+                "Software Engineer",
+                "October 2022 - Today"
+            ],
+            missions: [
+                "Involvement in the refinement, implementation² and delivery of US¹",
+                "Realisation of technical analysis and studies to meet functional requirements",
+            ],
+            captions: [
+                "¹ User Story",
+                "² Development, reviews, functional tests (writing and execution), specifications"
+            ]
+        },
+        {
+            subtitles: [
                 "Software Engineer {'|'} Scrum Master",
-                "March 2021 - Today"
+                "March 2021 - October 2022"
             ],
             missions: [
                 "Facilitation of the Scrum rituals, team self-organization and agile process continual improvement",

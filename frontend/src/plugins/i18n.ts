@@ -7,7 +7,7 @@ export const clientI18n = (languages: Ref<readonly string[]>) => {
     return createI18n({
         legacy: false,
         allowComposition: true,
-        locale: languages.value[0],
+        locale: languages.value[0].includes("fr") ? "fr" : "en",
         fallbackLocale: "en",
         messages: {fr, en}
     });
