@@ -6,7 +6,9 @@ import {aliases, mdi} from "vuetify/iconsets/mdi-svg";
 
 export const clientVuetify = (i18n: I18n) => {
     return createVuetify({
-        locale: createVueI18nAdapter({i18n, useI18n}),
+        locale: {
+            adapter: createVueI18nAdapter({i18n, useI18n})
+        },
         icons: {
             defaultSet: "mdi",
             aliases,

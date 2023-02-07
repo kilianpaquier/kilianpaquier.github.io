@@ -1,35 +1,9 @@
 include:
-  - project: "$CI_INDUS_PROJECT"
+  - project: $CI_INDUS_PROJECT
     ref: $CI_INDUS_BRANCH
     file:
-      - "pipelines/node.yml"
-      - "pipelines/deployable-pages.yml"
+      - pipeline/node.yml
+      - pipeline/pages.yml
 
 variables:
-  NODE_WORKING_DIR: "frontend"
-
-node-test:
-  rules:
-    - when: never
-
-node-lint:
-  rules:
-    - when: never
-
-sonar-analysis:
-  rules:
-    - when: never
-
-report-analysis:
-  rules:
-    - when: never
-
-release:
-  needs:
-    - job: node-build
-      artifacts: false
-
-pages:
-  rules:
-    # Testing purposes
-    - when: manual
+  NODE_WORKING_DIR: frontend

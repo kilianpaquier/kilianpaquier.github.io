@@ -31,8 +31,10 @@ export default defineConfig({
     },
     build: {
         emptyOutDir: true,
-        polyfillModulePreload: false,
-        cssCodeSplit: true
+        cssCodeSplit: true,
+        modulePreload: {
+            polyfill: false
+        }
     },
     ssgOptions: {
         script: "async defer",
