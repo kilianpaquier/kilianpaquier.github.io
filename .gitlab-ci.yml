@@ -4,6 +4,3 @@ include:
     file:
       - pipeline/node.yml
       - pipeline/pages.yml
-
-variables:
-  NODE_WORKING_DIR: frontend
