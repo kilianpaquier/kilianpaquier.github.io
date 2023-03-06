@@ -11,7 +11,9 @@
 
                 <v-col class="pt-0" cols="12">
                     <h1>{{ $t("experiences[0].subtitles[0]") }}</h1>
-                    <p class="text-justify">{{ $t("about") }}</p>
+                    <p class="text-justify">
+                        {{ $t("about") }}
+                    </p>
                 </v-col>
 
                 <v-col cols="12" md="7" xl="8">

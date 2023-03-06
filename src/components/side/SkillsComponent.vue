@@ -2,7 +2,9 @@
     <v-col cols="12">
         <v-row :no-gutters="true">
             <v-col cols="12">
-                <h2 class="mb-3">{{ $t("softs_title") }}</h2>
+                <h2 class="mb-3">
+                    {{ $t("softs_title") }}
+                </h2>
             </v-col>
             <v-col cols="12">
                 <v-row :no-gutters="true">
@@ -16,11 +18,13 @@
     <v-col cols="12">
         <v-row :no-gutters="true">
             <v-col cols="12">
-                <h2 class="mb-3">{{ $t("tools_title") }}</h2>
+                <h2 class="mb-3">
+                    {{ $t("tools_title") }}
+                </h2>
             </v-col>
             <v-col cols="12">
                 <v-row :no-gutters="true">
-                    <v-col v-for="(skill, index) in tools" v-bind:key="'tool' + index" :class="{ 'me-2': index < tools.length - 1 }" class="my-1" cols="auto">
+                    <v-col v-for="(skill, index) in tools" :key="'tool' + index" :class="{ 'me-2': index < tools.length - 1 }" class="my-1" cols="auto">
                         <v-tooltip :text="skill.name" location="bottom">
                             <template #activator="{props}">
                                 <component :is="skill.icon" class="mx-auto no-outline" v-bind="props" width="25" />

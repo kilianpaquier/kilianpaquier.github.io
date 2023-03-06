@@ -34,7 +34,8 @@ export default defineConfig({
         cssCodeSplit: true,
         modulePreload: {
             polyfill: false
-        }
+        },
+        chunkSizeWarningLimit: 800
     },
     ssgOptions: {
         script: "async defer",
@@ -42,7 +43,6 @@ export default defineConfig({
         mode: "production",
         crittersOptions: {
             pruneSource: true,
-            logLevel: "debug",
             preload: "js-lazy"
         }
     } as ViteSSGOptions,

@@ -1,7 +1,9 @@
 <template>
     <v-row :no-gutters="true">
         <v-col cols="12">
-            <h2 class="mb-3">{{ $t("projects_title") }}</h2>
+            <h2 class="mb-3">
+                {{ $t("projects_title") }}
+            </h2>
         </v-col>
         <v-col cols="12">
             <v-list class="bg-transparent">

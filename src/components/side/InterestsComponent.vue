@@ -1,15 +1,17 @@
 <template>
     <v-row :no-gutters="true">
         <v-col cols="12">
-            <h2 class="mb-3">{{ $t("projects_title") }}</h2>
+            <h2 class="mb-3">
+                {{ $t("projects_title") }}
+            </h2>
         </v-col>
         <v-col cols="12">
             <!-- Interests -->
             <v-row justify="center">
                 <v-col v-for="(interest, index) in interests" :key="'interest_' + index" class="text-center" cols="auto">
                     <div>
-                        <v-img :class="borderColor()" :cover="true" :eager="true" :sizes="sizes" :src="interest.src" :srcset="interest.srcset" class="rounded-circle mx-auto mb-3 interests-img w-100 h-100"></v-img>
-                        <span class="body-2">{{ $t(interest.title) }}</span>
+                        <v-img :class="borderColor()" :cover="true" :eager="true" :sizes="sizes" :src="interest.src" :srcset="interest.srcset" class="rounded-circle mx-auto mb-3 interests-img w-100 h-100" />
+                        <span class="text-body-2">{{ $t(interest.title) }}</span>
                     </div>
                 </v-col>
             </v-row>

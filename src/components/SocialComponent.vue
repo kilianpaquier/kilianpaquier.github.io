@@ -1,32 +1,32 @@
 <template>
-        <v-row :no-gutters="true">
-            <v-col class="d-print-none" cols="auto">
-                <v-tooltip location="top">
-                    <template #activator="{props}">
-                        <v-btn :icon="icons.mdiThemeLightDark" size="large" v-bind="props" variant="text" @click="changeTheme" />
-                    </template>
-                    <span>{{ $t("theme") }}</span>
-                </v-tooltip>
-            </v-col>
+    <v-row :no-gutters="true">
+        <v-col class="d-print-none" cols="auto">
+            <v-tooltip location="top">
+                <template #activator="{props}">
+                    <v-btn :icon="icons.mdiThemeLightDark" size="large" v-bind="props" variant="text" @click="changeTheme" />
+                </template>
+                <span>{{ $t("theme") }}</span>
+            </v-tooltip>
+        </v-col>
 
-            <v-col v-for="(social, index) in socials" :key="'socials_' + index" cols="auto">
-                <v-tooltip location="top">
-                    <template #activator="{props}">
-                        <v-btn :color="social.color" :href="social.link" :icon="social.icon" size="large" target="_blank" v-bind="props" variant="text" />
-                    </template>
-                    <span>{{ social.title }}</span>
-                </v-tooltip>
-            </v-col>
+        <v-col v-for="(social, index) in socials" :key="'socials_' + index" cols="auto">
+            <v-tooltip location="top">
+                <template #activator="{props}">
+                    <v-btn :color="social.color" :href="social.link" :icon="social.icon" size="large" target="_blank" v-bind="props" variant="text" />
+                </template>
+                <span>{{ social.title }}</span>
+            </v-tooltip>
+        </v-col>
 
-            <v-col class="d-print-none" cols="auto">
-                <v-tooltip location="top">
-                    <template #activator="{props}">
-                        <v-btn :href="resume()" :icon="icons.mdiDownloadCircleOutline" color="primary" download size="large" target="_blank" v-bind="props" variant="text" />
-                    </template>
-                    <span>{{ $t("resume") }}</span>
-                </v-tooltip>
-            </v-col>
-        </v-row>
+        <v-col class="d-print-none" cols="auto">
+            <v-tooltip location="top">
+                <template #activator="{props}">
+                    <v-btn :href="resume()" :icon="icons.mdiDownloadCircleOutline" color="primary" download size="large" target="_blank" v-bind="props" variant="text" />
+                </template>
+                <span>{{ $t("resume") }}</span>
+            </v-tooltip>
+        </v-col>
+    </v-row>
 </template>
 
 <script lang="ts">

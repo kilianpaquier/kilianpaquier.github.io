@@ -1,11 +1,13 @@
 <template>
     <v-row :no-gutters="true">
         <v-col cols="12">
-            <h2 class="mb-3">{{ $t("projects_title") }}</h2>
+            <h2 class="mb-3">
+                {{ $t("projects_title") }}
+            </h2>
         </v-col>
         <v-col cols="12">
             <v-window :continuous="true" class="elevation-1" show-arrows="hover">
-                <v-window-item v-for="(project, index) in projects" :key="'project_' + index" eager>
+                <v-window-item v-for="(project, p_index) in projects" :key="'project_' + p_index" eager>
                     <v-card>
                         <v-img :eager="true" :sizes="sizes" :src="project.src" :srcset="project.srcset" class="align-end cursor-pointer" @click="sectionShowing = !sectionShowing">
                             <v-card-title v-if="project.title" :class="project.titleColor">
@@ -17,12 +19,12 @@
                             <div v-show="sectionShowing">
                                 <v-card-text>
                                     <v-row :no-gutters="true">
-                                        <v-col v-for="(text, index) in project.text" :key="'project_text' + index" class="text-center my-1" cols="12">
+                                        <v-col v-for="(text, t_index) in project.text" :key="'project_text' + t_index" class="text-center my-1" cols="12">
                                             {{ $t(text) }}
                                         </v-col>
 
                                         <v-col class="text-center my-3" cols="12">
-                                            <component :is="project.icon" class="mx-auto no-outline cursor-pointer" height="40" @click="redirect(index)" />
+                                            <component :is="project.icon" class="mx-auto no-outline cursor-pointer" height="40" @click="redirect(p_index)" />
                                         </v-col>
 
                                         <template v-if="project.captions">
@@ -48,14 +50,14 @@ import {projects} from "@/data/projects";
 export default defineComponent({
     name: "ProjectsComponent",
 
-    data: () => ({
-        sizes: "(max-width: 960px) 100vw, (max-width: 1920px) 50vw, (min-width: 1921px) 25vw",
-        sectionShowing: false
-    }),
-
     setup: () => ({
         projects,
         redirect: (index: number) => window.open(projects[index].codeLink)
+    }),
+
+    data: () => ({
+        sizes: "(max-width: 960px) 100vw, (max-width: 1920px) 50vw, (min-width: 1921px) 25vw",
+        sectionShowing: false
     })
 });
 </script>

@@ -9,7 +9,7 @@
         <v-col cols="auto">
             <v-item-group :model-value="currentLang" mandatory selected-class="bg-primary">
                 <v-list class="text-end pe-0 bg-transparent" rounded>
-                    <v-item v-for="(lang, index) in langs" :key="'langs_' + index" v-slot="{ isSelected, selectedClass, toggle }">
+                    <v-item v-for="(lang, index) in langs" :key="'langs_' + index" v-slot="{ selectedClass, toggle }">
                         <v-list-item :class="selectedClass" class="py-2 my-2" rounded="xl" @click="changeLocale(toggle, lang.key)">
                             <template #append>
                                 <v-avatar class="mx-auto ms-sm-4">
@@ -17,8 +17,12 @@
                                 </v-avatar>
                             </template>
 
-                            <v-list-item-title class="d-none d-sm-block">{{ $t(lang.title) }}</v-list-item-title>
-                            <v-list-item-subtitle class="d-none d-sm-block">{{ $t(lang.skill) }}</v-list-item-subtitle>
+                            <v-list-item-title class="d-none d-sm-block">
+                                {{ $t(lang.title) }}
+                            </v-list-item-title>
+                            <v-list-item-subtitle class="d-none d-sm-block">
+                                {{ $t(lang.skill) }}
+                            </v-list-item-subtitle>
                         </v-list-item>
                     </v-item>
                 </v-list>
