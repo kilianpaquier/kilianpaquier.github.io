@@ -1,0 +1,541 @@
+{
+    "about": "Passionné par l'informatique depuis les deux dernières années du collège, je me suis orienté après le lycée vers une classe préparatoire intégrée à Polytech Tours. Finalisant mes études en 2021 après une année en double diplôme avec l'Université du Québec à Chicoutimi, j'apprécie développer des petits projets, regarder des séries/anime ainsi que lire des manga/manwha en ligne.",
+    "job": "Ingénieur développement",
+    "langs": [
+        {
+            "current": true,
+            "img": "/assets/flags/fr.svg",
+            "name": "Français",
+            "skill": "Langue natale",
+            "url": "/fr"
+        },
+        {
+            "img": "/assets/flags/gb.svg",
+            "name": "Anglais",
+            "skill": "Compétence professionnelle",
+            "url": "/en"
+        }
+    ],
+    "links": [
+        {
+            "icon": "devicon-gitlab-plain colored",
+            "name": "gitlab",
+            "url": "https://gitlab.com/kilianpaquier"
+        },
+        {
+            "icon": "devicon-github-original colored",
+            "name": "github",
+            "url": "https://github.com/kilianpaquier"
+        },
+        {
+            "icon": "devicon-linkedin-plain colored",
+            "name": "linkedin",
+            "url": "https://www.linkedin.com/in/kilianpaquier/"
+        }
+    ],
+    "experiences": {
+        "title": "Expériences",
+        "values": [
+            {
+                "captions": [
+                    "¹ Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications",
+                    "² User Story"
+                ],
+                "company": "Sopra Steria",
+                "dates": "Octobre 2022 - Aujourd'hui",
+                "img": "/assets/experiences/soprasteria.webp",
+                "job": "Ingénieur développement",
+                "missions": [
+                    "Participation aux phases d'affinage, implémentation¹ et livraison des US².",
+                    "Réalisation d'analyses et études techniques pour répondre aux besoins."
+                ],
+                "skills": [
+                    {
+                        "name": "golang",
+                        "type": "icon",
+                        "value": "devicon-go-plain colored"
+                    },
+                    {
+                        "name": "camunda",
+                        "value": "/assets/skills/camunda-original.svg"
+                    },
+                    {
+                        "name": "docker",
+                        "type": "icon",
+                        "value": "devicon-docker-plain colored"
+                    },
+                    {
+                        "name": "kubernetes",
+                        "type": "icon",
+                        "value": "devicon-kubernetes-plain colored"
+                    },
+                    {
+                        "name": "helm",
+                        "value": "/assets/skills/helm-original.svg"
+                    }
+                ]
+            },
+            {
+                "captions": [
+                    "¹ User Story",
+                    "² Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications"
+                ],
+                "company": "Sopra Steria",
+                "dates": "Mars 2021 - Octobre 2022",
+                "img": "/assets/experiences/soprasteria.webp",
+                "job": "Ingénieur développement | Scrum Master",
+                "missions": [
+                    "Facilitation des cérémonies Scrum, de l'auto-organisation de l'équipe et de l'amélioration continue du processus agile.",
+                    "Participation à toutes les phases d'une US¹, affinage, implémentation², livraison, déploiement, supervision et support technique.",
+                    "Formation fonctionnelle et technique des nouveaux acteurs."
+                ],
+                "skills": [
+                    {
+                        "name": "java",
+                        "type": "icon",
+                        "value": "devicon-java-plain colored"
+                    },
+                    {
+                        "name": "spring",
+                        "type": "icon",
+                        "value": "devicon-spring-plain colored"
+                    },
+                    {
+                        "name": "quarkus",
+                        "value": "/assets/skills/quarkus-original.svg"
+                    },
+                    {
+                        "name": "karatelabs",
+                        "value": "/assets/skills/karatelabs-plain.svg"
+                    },
+                    {
+                        "name": "docker",
+                        "type": "icon",
+                        "value": "devicon-docker-plain colored"
+                    },
+                    {
+                        "name": "kubernetes",
+                        "type": "icon",
+                        "value": "devicon-kubernetes-plain colored"
+                    },
+                    {
+                        "name": "helm",
+                        "value": "/assets/skills/helm-original.svg"
+                    },
+                    {
+                        "name": "traefikproxy",
+                        "value": "/assets/skills/traefikproxy-original.svg"
+                    },
+                    {
+                        "name": "envoyproxy",
+                        "value": "/assets/skills/envoyproxy-original.svg"
+                    },
+                    {
+                        "name": "typescript",
+                        "type": "icon",
+                        "value": "devicon-typescript-plain colored"
+                    },
+                    {
+                        "name": "angular",
+                        "value": "/assets/skills/angular-original.svg"
+                    },
+                    {
+                        "name": "hibernate",
+                        "value": "/assets/skills/hibernate-original.svg"
+                    },
+                    {
+                        "name": "bootstrap",
+                        "type": "icon",
+                        "value": "devicon-bootstrap-plain colored"
+                    },
+                    {
+                        "name": "python",
+                        "value": "/assets/skills/python-plain.svg"
+                    },
+                    {
+                        "name": "flask",
+                        "type": "icon",
+                        "value": "devicon-flask-plain colored"
+                    }
+                ]
+            },
+            {
+                "company": "Alten",
+                "dates": "Août 2020 - Février 2021",
+                "img": "/assets/experiences/alten.webp",
+                "job": "Stagiaire consultant innovation",
+                "missions": [
+                    "Pilotage et participation à un état de l'art des Blockchains, utilisation d'une blockchain.",
+                    "Rédaction de spécifications fonctionnelles, d'un document d'architecture et d'un bilan scientifique et technique."
+                ],
+                "skills": [
+                    {
+                        "name": "typescript",
+                        "type": "icon",
+                        "value": "devicon-typescript-plain colored"
+                    },
+                    {
+                        "name": "nestjs",
+                        "type": "icon",
+                        "value": "devicon-nestjs-plain colored"
+                    },
+                    {
+                        "name": "javascript",
+                        "type": "icon",
+                        "value": "devicon-javascript-plain colored"
+                    },
+                    {
+                        "name": "electronjs",
+                        "type": "icon",
+                        "value": "devicon-electron-original colored"
+                    },
+                    {
+                        "name": "bootstrap",
+                        "type": "icon",
+                        "value": "devicon-bootstrap-plain colored"
+                    }
+                ]
+            }
+        ],
+        "olders": {
+            "key": "Autres expériences",
+            "captions": [
+                "¹ Direction Départementale des Territoires",
+                "² Union Française des Centres de Vacances",
+                "³ C'est Génial Comme Vacances",
+                "⁴ Direction Régionale de l'Environnement, de l'Aménagement et du Logement"
+            ],
+            "missions": [
+                {
+                    "company": "Eurosys",
+                    "dates": "Juin - Août 2019",
+                    "img": "/assets/experiences/eurosys.webp",
+                    "job": "Stagiaire étude et développement ExtJS"
+                },
+                {
+                    "company": "DDT¹",
+                    "dates": "Août 2018",
+                    "img": "/assets/experiences/ddt.webp",
+                    "job": "Vacataire étude et développement Java & Swing"
+                },
+                {
+                    "company": "UFCV²",
+                    "dates": "Février, Avril, Août 2017",
+                    "img": "/assets/experiences/ufcv.webp",
+                    "job": "Formateur BAFA"
+                },
+                {
+                    "company": "CGCV³",
+                    "dates": "Juillet 2016 et 2017",
+                    "img": "/assets/experiences/cgcv.webp",
+                    "job": "Animateur BAFA"
+                },
+                {
+                    "company": "DREAL⁴",
+                    "dates": "Juin 2016",
+                    "img": "/assets/experiences/dreal.webp",
+                    "job": "Stagiaire découverte réseau"
+                }
+            ]
+        }
+    },
+    "projects": {
+        "title": "Projets",
+        "values": [
+            {
+                "description": "Application Golang d'installation de packages nécessitant plusieurs actions manuelles.",
+                "icon": {
+                    "type": "icon",
+                    "value": "devicon-gitlab-plain colored"
+                },
+                "img": "/assets/projects/yait.webp",
+                "link": "https://gitlab.com/yait/yait",
+                "skills": [
+                    {
+                        "name": "golang",
+                        "type": "icon",
+                        "value": "devicon-go-plain colored"
+                    },
+                    {
+                        "name": "bash",
+                        "type": "icon",
+                        "value": "devicon-bash-plain colored"
+                    },
+                    {
+                        "name": "powershell",
+                        "value": "/assets/skills/powershell-original.svg"
+                    }
+                ],
+                "title": "Yait"
+            },
+            {
+                "description": "Templates de pipeline Gitlab CI/CD pour Golang, Node.js et Maven.",
+                "icon": {
+                    "type": "icon",
+                    "value": "devicon-gitlab-plain colored"
+                },
+                "img": "/assets/projects/cicd.webp",
+                "link": "https://gitlab.com/kilianpaquier/cicd",
+                "skills": [
+                    {
+                        "name": "bash",
+                        "type": "icon",
+                        "value": "devicon-bash-plain colored"
+                    }
+                ],
+                "title": "CICD"
+            },
+            {
+                "description": "Beat Them All de deux à quatre joueurs pour s'amuser entre amis et récupérer les fraises volées.",
+                "icon": {
+                    "value": "/assets/skills/itchio-original-wordmark.svg"
+                },
+                "img": "/assets/projects/fortheberry.webp",
+                "link": "https://rogue888.itch.io/for-the-berry",
+                "skills": [
+                    {
+                        "name": "perforce",
+                        "value": "/assets/skills/perforce-original.svg"
+                    },
+                    {
+                        "name": "unity",
+                        "value": "/assets/skills/unity-original.svg"
+                    },
+                    {
+                        "name": "c#",
+                        "value": "/assets/skills/csharp-original.svg"
+                    }
+                ],
+                "title": "For The Berry"
+            },
+            {
+                "description": "Application de consultation et recherche d'exercices associés aux machines des salles de sport (via code QR).",
+                "icon": {
+                    "type": "icon",
+                    "value": "devicon-gitlab-plain colored"
+                },
+                "img": "/assets/projects/shareyourfit.webp",
+                "link": "https://gitlab.com/kilianpaquier/share-your-fit",
+                "skills": [
+                    {
+                        "name": "java",
+                        "type": "icon",
+                        "value": "devicon-java-plain colored"
+                    },
+                    {
+                        "name": "android",
+                        "type": "icon",
+                        "value": "devicon-android-plain colored"
+                    },
+                    {
+                        "name": "android studio",
+                        "type": "icon",
+                        "value": "devicon-androidstudio-plain colored"
+                    },
+                    {
+                        "name": "firebase",
+                        "type": "icon",
+                        "value": "devicon-firebase-plain colored"
+                    }
+                ],
+                "title": "Share Your Fit"
+            }
+        ]
+    },
+    "educations": {
+        "title": "Formations",
+        "values": [
+            {
+                "dates": "Juin 2022",
+                "diploma": "Professional Scrum Master™ I",
+                "img": "/assets/educations/psmi.webp",
+                "place": "PSM I"
+            },
+            {
+                "dates": "Août 2019 - Février 2021",
+                "diploma": "Maîtrise informatique",
+                "img": "/assets/educations/uqac.webp",
+                "place": "UQAC",
+                "skills": [
+                    {
+                        "name": "java",
+                        "type": "icon",
+                        "value": "devicon-java-plain colored"
+                    },
+                    {
+                        "name": "spring",
+                        "type": "icon",
+                        "value": "devicon-spring-plain colored"
+                    },
+                    {
+                        "name": ".net",
+                        "value": "/assets/skills/dotnet-original.svg"
+                    },
+                    {
+                        "name": "hibernate",
+                        "value": "/assets/skills/hibernate-original.svg"
+                    },
+                    {
+                        "name": "javascript",
+                        "type": "icon",
+                        "value": "devicon-javascript-plain colored"
+                    },
+                    {
+                        "name": "moleculer",
+                        "value": "/assets/skills/moleculer-original.svg"
+                    },
+                    {
+                        "name": "bootstrap",
+                        "type": "icon",
+                        "value": "devicon-bootstrap-plain colored"
+                    }
+                ]
+            },
+            {
+                "dates": "Septembre 2017 - Février 2021",
+                "diploma": "Diplôme d'ingénieur informatique",
+                "img": "/assets/educations/polytechtours.webp",
+                "place": "Polytech Tours",
+                "skills": [
+                    {
+                        "name": "java",
+                        "type": "icon",
+                        "value": "devicon-java-plain colored"
+                    },
+                    {
+                        "name": "c",
+                        "value": "/assets/skills/c-original.svg"
+                    },
+                    {
+                        "name": "c++",
+                        "value": "/assets/skills/cplusplus-original.svg"
+                    },
+                    {
+                        "name": "c#",
+                        "value": "/assets/skills/csharp-original.svg"
+                    },
+                    {
+                        "name": "qt",
+                        "type": "icon",
+                        "value": "devicon-qt-plain colored"
+                    }
+                ]
+            }
+        ]
+    },
+    "tools": {
+        "title": "Outils",
+        "values": [
+            {
+                "name": "bash",
+                "type": "icon",
+                "value": "devicon-bash-plain colored"
+            },
+            {
+                "name": "gitlab",
+                "type": "icon",
+                "value": "devicon-gitlab-plain colored"
+            },
+            {
+                "name": "github",
+                "type": "icon",
+                "value": "devicon-github-plain colored"
+            },
+            {
+                "name": "bitbucket",
+                "type": "icon",
+                "value": "devicon-bitbucket-plain colored"
+            },
+            {
+                "name": "confluence",
+                "type": "icon",
+                "value": "devicon-confluence-plain colored"
+            },
+            {
+                "name": "jira",
+                "type": "icon",
+                "value": "devicon-jira-plain colored"
+            },
+            {
+                "name": "vscode",
+                "type": "icon",
+                "value": "devicon-vscode-plain colored"
+            },
+            {
+                "name": "postman",
+                "value": "/assets/skills/postman-plain.svg"
+            },
+            {
+                "name": "insomnia",
+                "value": "/assets/skills/insomnia-plain.svg"
+            },
+            {
+                "name": "dbeaver",
+                "value": "/assets/skills/dbeaver-original.svg"
+            },
+            {
+                "name": "liquibase",
+                "value": "/assets/skills/liquibase-original.svg"
+            },
+            {
+                "name": "postgresql",
+                "type": "icon",
+                "value": "devicon-postgresql-plain colored"
+            },
+            {
+                "name": "yarn",
+                "type": "icon",
+                "value": "devicon-yarn-plain colored"
+            },
+            {
+                "name": "npm",
+                "type": "icon",
+                "value": "devicon-npm-original-wordmark colored"
+            },
+            {
+                "name": "maven",
+                "value": "/assets/skills/maven-original.svg"
+            },
+            {
+                "name": "elasticsearch",
+                "value": "/assets/skills/elasticsearch-original.svg"
+            },
+            {
+                "name": "sonar",
+                "value": "/assets/skills/sonarqube-original.svg"
+            }
+        ]
+    },
+    "behaves": {
+        "title": "Savoir-être",
+        "values": [
+            "Minutieux / Souci du détail",
+            "Organisation"
+        ]
+    },
+    "interests": {
+        "title": "Intérêts",
+        "values": [
+            {
+                "img": "/assets/interests/basketball.webp",
+                "name": "Basket-ball"
+            },
+            {
+                "img": "/assets/interests/movies.webp",
+                "name": "Séries, films et anime"
+            },
+            {
+                "img": "/assets/interests/videogames.webp",
+                "name": "Jeux vidéo"
+            },
+            {
+                "img": "/assets/interests/mangas.webp",
+                "name": "Manga et manwha"
+            },
+            {
+                "img": "/assets/interests/programming.webp",
+                "name": "Programmation"
+            }
+        ]
+    }
+}

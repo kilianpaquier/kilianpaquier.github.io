@@ -1,0 +1,5 @@
+@media print {
+    .print-fluid {
+        max-width: 100% !important;
+    }
+}

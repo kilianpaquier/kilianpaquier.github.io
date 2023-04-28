@@ -2,5 +2,5 @@ include:
   - project: $CI_INDUS_PROJECT
     ref: $CI_INDUS_BRANCH
     file:
-      - pipeline/node.yml
+      - pipeline/go.yml
       - pipeline/pages.yml
