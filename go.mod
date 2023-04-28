@@ -1,4 +1,4 @@
-module gitlab.com/kilianpaquier/kilianpaquier.gitlab.io
+module gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/v6
 
 go 1.20
 
