@@ -17,7 +17,7 @@
         <div class="row">
             <!-- Profile -->
             <div class="col-auto">
-                <img src="/assets/profile.webp" class="img-thumbnail rounded-circle" alt="profile" width="175">
+                <img loading="lazy" src="/assets/profile.webp" class="img-thumbnail rounded-circle" alt="profile" width="175">
             </div>
 
             <!-- Translations -->
@@ -30,7 +30,7 @@
                             <p class="mb-0">{{ .Name }}</p>
                             <small>{{ .Skill }}</small>
                         </div>
-                        <img src="{{ .Img }}" class="img-thumbnail rounded-circle ms-sm-3" alt="{{ .Img }}" width="40">
+                        <img loading="lazy" src="{{ .Img }}" class="img-thumbnail rounded-circle ms-sm-3" alt="{{ .Img }}" width="40">
                     </div>
                 </a>
                 {{ end }}
@@ -64,7 +64,7 @@
                                 <div class="d-flex w-100 justify-content-between align-items-center">
                                     <div class="d-flex justify-content-start align-items-center">
                                         <div class="flex-shrink-0">
-                                            <img src="{{ $e.Img }}" class="img-thumbnail me-3" alt="{{ $e.Company }}" width="35">
+                                            <img loading="lazy" src="{{ $e.Img }}" class="img-thumbnail me-3" alt="{{ $e.Company }}" width="35">
                                         </div>
                                         <div class="flex-grow-1">
                                             <div>{{ $e.Company }}</div>
@@ -74,7 +74,7 @@
                                                 {{ if eq .Type "icon" }}
                                                 <i class="{{ .Value }}" style="font-size: 22.5px;" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top"></i>
                                                 {{ else }}
-                                                <img src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
+                                                <img loading="lazy" src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
                                                 {{ end }}
                                                 {{ end }}
                                             </div>
@@ -119,7 +119,7 @@
                                 <div class="d-flex w-100 justify-content-between align-items-center mb-2">
                                     <div class="d-flex justify-content-start align-items-center">
                                         <div class="flex-shrink-0">
-                                            <img src="{{ .Img }}" class="me-3" alt="{{ .Company }}" width="30">
+                                            <img loading="lazy" src="{{ .Img }}" class="me-3" alt="{{ .Company }}" width="30">
                                         </div>
                                         <div class="flex-grow-1">
                                             <div>{{ .Company }}</div>
@@ -151,7 +151,7 @@
                         <div class="carousel-item {{if eq $i 0 }}active{{ end }}">
                             <div class="row bg-light position-relative px-3 pb-5">
                                 <div class="col-12 col-md-6 my-auto mx-auto pt-3">
-                                    <img src="{{ $p.Img }}" class="w-100" alt="{{ $p.Title }}">
+                                    <img loading="lazy" src="{{ $p.Img }}" class="w-100" alt="{{ $p.Title }}">
                                 </div>
                                 <div class="col-12 col-md-6 pt-3">
                                     <h6>{{ $p.Title }}</h6>
@@ -160,7 +160,7 @@
                                     {{ if eq .Type "icon" }}
                                     <i class="{{ .Value }}" style="font-size: 22.5px;" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top"></i>
                                     {{ else }}
-                                    <img src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
+                                    <img loading="lazy" src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
                                     {{ end }}
                                     {{ end }}
 
@@ -168,7 +168,7 @@
                                         {{ if eq $p.Icon.Type "icon" }}
                                         <i class="{{ $p.Icon.Value }}" style="font-size: 22.5px;"></i>
                                         {{ else }}
-                                        <img src="{{ $p.Icon.Value }}" alt="{{ $p.Icon.Value }}" style="vertical-align: unset;" height="22.5">
+                                        <img loading="lazy" src="{{ $p.Icon.Value }}" alt="{{ $p.Icon.Value }}" style="vertical-align: unset;" height="22.5">
                                         {{ end }}
                                     </a>
 
@@ -200,7 +200,7 @@
                                     {{ if eq .Type "icon" }}
                                     <i class="{{ .Value }}" style="font-size: 22.5px;" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top"></i>
                                     {{ else }}
-                                    <img src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
+                                    <img loading="lazy" src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
                                     {{ end }}
                                     {{ end }}
 
@@ -208,7 +208,7 @@
                                         {{ if eq $p.Icon.Type "icon" }}
                                         <i class="{{ $p.Icon.Value }}" style="font-size: 22.5px;"></i>
                                         {{ else }}
-                                        <img src="{{ $p.Icon.Value }}" alt="{{ $p.Icon.Value }}" style="vertical-align: unset;" height="22.5">
+                                        <img loading="lazy" src="{{ $p.Icon.Value }}" alt="{{ $p.Icon.Value }}" style="vertical-align: unset;" height="22.5">
                                         {{ end }}
                                     </a>
                                 </p>
@@ -228,7 +228,7 @@
                         {{ range .Educations.Values }}
                         <div class="d-flex w-100 align-items-center mb-3">
                             <div class="flex-shrink-0">
-                                <img src="{{ .Img }}" class="img-thumbnail rounded-circle me-3" alt="{{ .Diploma }}" width="40">
+                                <img loading="lazy" src="{{ .Img }}" class="img-thumbnail rounded-circle me-3" alt="{{ .Diploma }}" width="40">
                             </div>
                             <div class="card flex-grow-1">
                                 <div class="card-body">
@@ -239,7 +239,7 @@
                                         {{ if eq .Type "icon" }}
                                         <i class="{{ .Value }}" style="font-size: 22.5px;" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top"></i>
                                         {{ else }}
-                                        <img src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
+                                        <img loading="lazy" src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
                                         {{ end }}
                                         {{ end }}
                                     </p>
@@ -257,7 +257,7 @@
                             {{ if eq .Type "icon" }}
                             <i class="{{ .Value }}" style="font-size: 22.5px;" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top"></i>
                             {{ else }}
-                            <img src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
+                            <img loading="lazy" src="{{ .Value }}" alt="{{ .Value }}" style="vertical-align: unset;" width="22.5" data-bs-toggle="tooltip" data-bs-title="{{ .Name }}" data-bs-placement="top">
                             {{ end }}
                             {{ end }}
                         </div>
@@ -275,7 +275,7 @@
                         <div class="row mb-3">
                             {{ range .Interests.Values }}
                             <div class="col-auto mx-auto text-center mb-2">
-                                <img src="{{ .Img }}" class="img-thumbnail rounded-circle" alt="{{ .Name }}" width="100">
+                                <img loading="lazy" src="{{ .Img }}" class="img-thumbnail rounded-circle" alt="{{ .Name }}" width="100">
                                 <div><small>{{ .Name }}</small></div>
                             </div>
                             {{ end }}
