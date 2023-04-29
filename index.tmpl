@@ -24,7 +24,7 @@
             <div class="col-auto ms-auto">
                 <ul class="list-group">
                 {{ range .Langs }}
-                <a href="{{ .Url }}" class="list-group-item {{ if .Current }}active{{ end }}" {{if .Current }}aria-current="true"{{ end }}>
+                <a href="{{ if .Current }}#{{ else }}{{ .Url }}{{ end }}" class="list-group-item {{ if .Current }}active{{ end }}" {{if .Current }}aria-current="true"{{ end }}>
                     <div class="d-flex w-100 text-end justify-content-end align-items-center">
                         <div class="d-none d-sm-block">
                             <p class="mb-0">{{ .Name }}</p>

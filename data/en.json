@@ -6,7 +6,7 @@
             "img": "/assets/flags/fr.svg",
             "name": "French",
             "skill": "Native language",
-            "url": "/fr"
+            "url": "/"
         },
         {
             "current": true,

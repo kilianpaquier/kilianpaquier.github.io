@@ -101,18 +101,23 @@ type Resume struct {
 func main() {
 	tmpl, err := template.ParseFiles("./index.tmpl")
 	if err != nil {
-		fmt.Printf("failed to unmarshal template file: %v\n", err)
+		fmt.Println("failed to unmarshal template file", err)
 		os.Exit(1)
 	}
 
-	for _, lang := range []string{"fr", "en"} {
-		if err := generate(tmpl, lang); err != nil {
-			fmt.Println(err)
-		}
+	if err := generate(tmpl, "fr"); err != nil {
+		fmt.Println(err)
+	}
+	if err := generate(tmpl, "en"); err != nil {
+		fmt.Println(err)
+	}
+
+	if err := copy.Copy("./dist/fr", "./dist"); err != nil {
+		fmt.Println("failed to copy french page to root", err)
 	}
 
 	if err := copy.Copy("./assets", "./dist/assets"); err != nil {
-		fmt.Printf("failed to copy assets: %v\n", err)
+		fmt.Println("failed to copy assets", err)
 	}
 	os.Exit(0)
 }
@@ -121,12 +126,12 @@ func generate(tmpl *template.Template, lang string) error {
 	input := fmt.Sprintf("./data/%s.json", lang)
 	bytes, err := os.ReadFile(input)
 	if err != nil {
-		return fmt.Errorf("failed to read '%s': %w", input, err)
+		return fmt.Errorf("failed to read %q: %w", input, err)
 	}
 
 	var resume Resume
 	if err := json.Unmarshal(bytes, &resume); err != nil {
-		return fmt.Errorf("failed to unmarshal properties of '%s': %w", input, err)
+		return fmt.Errorf("failed to unmarshal properties of %q: %w", input, err)
 	}
 
 	output := "./dist/" + lang
@@ -136,7 +141,7 @@ func generate(tmpl *template.Template, lang string) error {
 
 	file, err := os.Create(fmt.Sprint(output, "/index.html"))
 	if err != nil {
-		return fmt.Errorf("failed to create file '%s': %w", fmt.Sprint(output, "/index.html"), err)
+		return fmt.Errorf("failed to create file %q: %w", fmt.Sprint(output, "/index.html"), err)
 	}
 	defer file.Close()
 
