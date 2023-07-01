@@ -1,0 +1,12 @@
+- name: GitLab
+  type: remote-svg
+  url: https://gitlab.com/kilianpaquier
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
+- name: GitHub
+  type: remote-svg
+  url: https://github.com/kilianpaquier
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
+- name: LinkedIn
+  type: remote-svg
+  url: https://www.linkedin.com/in/kilianpaquier
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/linkedin/linkedin-original.svg

@@ -2,8 +2,11 @@ clean:
 	@go clean
 	@git clean -Xf ./*
 
-generate:
-	@go run main.go
+build:
+	@hugo --gc --minify
 
 serve:
-	@python3 -m http.server --directory ./dist
+	@hugo server --disableFastRender
+
+production: build
+	@python3 -m http.server --directory ./public

@@ -1,0 +1,27 @@
+baseURL: https://kilianpaquier.com
+title: Kilian PAQUIER
+
+languageCode: fr
+defaultContentLanguage: fr
+
+module:
+  imports:
+    - path: gitlab.com/kilianpaquier/hugot
+theme: gitlab.com/kilianpaquier/hugot
+
+disableKinds:
+  - taxonomy
+
+ignoreErrors:
+  - error-disable-taxonomy
+
+params:
+  favicon: /favicon.webp
+
+  homepage:
+    overwrite: true
+    url: /resume/0.2/
+  
+  header:
+    scss:
+      - scss/custom.scss

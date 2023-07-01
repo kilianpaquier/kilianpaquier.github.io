@@ -1,0 +1,136 @@
+- captions:
+    - ¹ Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications
+    - ² User Story
+  company: Sopra Steria
+  dates: Octobre 2022 - Aujourd'hui
+  image: /experiences/soprasteria.webp
+  job: Ingénieur développement
+  missions:
+    - Participation aux phases d'affinage, implémentation¹ et livraison des US².
+    - Réalisation d'analyses et études techniques pour répondre aux besoins.
+  skills:
+    - name: Golang
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+    - name: Camunda
+      type: svg
+      value: /static/devicon/camunda-original.svg
+    - name: Docker
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/docker/docker-original.svg
+    - name: Kubernetes
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
+    - name: k3d
+      type: svg
+      value: /static/devicon/k3d-original.svg
+    - name: Helm
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
+- captions:
+    - ¹ User Story
+    - ² Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications
+  company: Sopra Steria
+  dates: Mars 2021 - Octobre 2022
+  image: /experiences/soprasteria.webp
+  job: Ingénieur développement | Scrum Master
+  missions:
+    - Facilitation des cérémonies Scrum, de l'auto-organisation de l'équipe et de l'amélioration continue du processus agile.
+    - Participation à toutes les phases d'une US¹, affinage, implémentation², livraison, déploiement, supervision et support technique.
+    - Formation fonctionnelle et technique des nouveaux acteurs.
+  skills:
+    - name: Java
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg
+    - name: Spring
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/spring/spring-original.svg
+    - name: Quarkus
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/quarkus/quarkus-original.svg
+    - name: Karatelabs
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/karatelabs/karatelabs-original.svg
+    - name: Docker
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/docker/docker-original.svg
+    - name: Kubernetes
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
+    - name: Helm
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
+    - name: Traefikproxy
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/traefikproxy/traefikproxy-original.svg
+    - name: Envoyproxy
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/envoy/envoy-original.svg
+    - name: Typescript
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
+    - name: Angular
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/angular/angular-original.svg
+    - name: Hibernate
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hibernate/hibernate-original.svg
+    - name: Bootstrap
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
+    - name: Python
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/python/python-original.svg
+    - name: Flask
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/flask/flask-original.svg
+- company: Alten
+  dates: Août 2020 - Février 2021
+  image: /experiences/alten.webp
+  job: Stagiaire consultant innovation
+  missions:
+    - Pilotage et participation à un état de l'art des Blockchains, utilisation d'une blockchain.
+    - Rédaction de spécifications fonctionnelles, d'un document d'architecture et d'un bilan scientifique et technique.
+  skills:
+    - name: Typescript
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
+    - name: Nestjs
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/nestjs/nestjs-plain.svg
+    - name: Javascript
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/javascript/javascript-original.svg
+    - name: Electronjs
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/electron/electron-original.svg
+    - name: Bootstrap
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
+- captions:
+    - ¹ Direction Départementale des Territoires
+    - ² Union Française des Centres de Vacances
+    - ³ C'est Génial Comme Vacances
+    - ⁴ Direction Régionale de l'Environnement, de l'Aménagement et du Logement
+  company: Autres expériences
+  missions:
+    - company: Eurosys
+      dates: Juin - Août 2019
+      image: /experiences/eurosys.webp
+      job: Stagiaire étude et développement ExtJS
+    - company: DDT¹
+      dates: Août 2018
+      image: /experiences/ddt.webp
+      job: Vacataire étude et développement Java & Swing
+    - company: UFCV²
+      dates: Février, Avril, Août 2017
+      image: /experiences/ufcv.webp
+      job: Formateur BAFA
+    - company: CGCV³
+      dates: Juillet 2016 et 2017
+      image: /experiences/cgcv.webp
+      job: Animateur BAFA
+    - company: DREAL⁴
+      dates: Juin 2016
+      image: /experiences/dreal.webp
+      job: Stagiaire découverte réseau

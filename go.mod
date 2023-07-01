@@ -1,7 +1,5 @@
-module gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/v6
+module gitlab.com/kilianpaquier/kilianpaquier.gitlab.io
 
 go 1.20
 
-require github.com/otiai10/copy v1.11.0
-
-require golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 // indirect
+require gitlab.com/kilianpaquier/hugot v0.0.0-20230701161839-e84e833b5121 // indirect

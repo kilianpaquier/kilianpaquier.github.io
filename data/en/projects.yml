@@ -1,0 +1,68 @@
+- description: A Golang application for installing packages that require multiple manual actions.
+  icon:
+    name: GitLab
+    type: remote-svg
+    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
+  image: /projects/yait.webp
+  link: https://gitlab.com/yait/yait
+  skills:
+    - name: Golang
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+    - name: Bash
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
+    - name: Powershell
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/powershell/powershell-original.svg
+  title: Yait
+- description: GitLab CI/CD template pipelines for Golang, Node.js, and Maven.
+  icon:
+    name: GitLab
+    type: remote-svg
+    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
+  image: /projects/cicd.webp
+  link: https://gitlab.com/kilianpaquier/cicd
+  skills:
+    - name: Bash
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
+  title: CICD
+- description: A two to four player Beat Them All game to have fun with friends and retrieve stolen strawberries.
+  icon:
+    name: Itchio
+    type: svg
+    value: /static/devicon/itchio-original-wordmark.svg
+  image: /projects/fortheberry.webp
+  link: https://rogue888.itch.io/for-the-berry
+  skills:
+    - name: Perforce
+      type: svg
+      value: /static/devicon/perforce-original.svg
+    - name: Unity
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/unity/unity-original.svg
+    - name: C#
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/csharp/csharp-original.svg
+  title: For The Berry
+- description: An application to browse and search for exercises associated with gym equipment using QR codes.
+  icon:
+    name: GitLab
+    type: remote-svg
+    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
+  image: /projects/shareyourfit.webp
+  link: https://gitlab.com/kilianpaquier/share-your-fit
+  skills:
+    - name: Java
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg
+    - name: Android
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/android/android-plain.svg
+    - name: Android studio
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/androidstudio/androidstudio-original.svg
+    - name: Firebase
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/firebase/firebase-plain.svg
+  title: Share Your Fit

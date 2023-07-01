@@ -1,5 +1,4 @@
-github.com/otiai10/copy v1.11.0 h1:OKBD80J/mLBrwnzXqGtFCzprFSGioo30JcmR4APsNwc=
-github.com/otiai10/copy v1.11.0/go.mod h1:rSaLseMUsZFFbsFGc7wCJnnkTAvdc5L6VWxPE4308Ww=
-github.com/otiai10/mint v1.5.1 h1:XaPLeE+9vGbuyEHem1JNk3bYc7KKqyI/na0/mLd/Kks=
-golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8 h1:0A+M6Uqn+Eje4kHMK80dtF3JCXC4ykBgQG4Fe06QRhQ=
-golang.org/x/sys v0.0.0-20220715151400-c0bba94af5f8/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+gitlab.com/kilianpaquier/hugot v0.0.0-20230628203006-9bcefd1a2f20 h1:FbXMIWHarecCWe5Lgtltj6NVg2a2v617rGq5+oGXZGI=
+gitlab.com/kilianpaquier/hugot v0.0.0-20230628203006-9bcefd1a2f20/go.mod h1:20dZ2Kd2kWD0BCFKmeNsxU2ZyPg1b6HubTo+GS7hqpM=
+gitlab.com/kilianpaquier/hugot v0.0.0-20230701161839-e84e833b5121 h1:JVa0zOfqov2i0Vro1lMwFVi35vWhG1FRAdnJ6n7UtWA=
+gitlab.com/kilianpaquier/hugot v0.0.0-20230701161839-e84e833b5121/go.mod h1:qQi89K+8tlmfd6G0mIe7FYmixpcaS79IyjwsGCKeo3o=

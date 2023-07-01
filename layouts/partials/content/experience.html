@@ -1,0 +1,24 @@
+<!-- We know for sure that when there're skills, then it's an accordion head, else it's an old experience -->
+<div class="d-flex w-100 justify-content-between align-items-center {{ .class }}">
+    <div class="d-flex justify-content-start align-items-center">
+        {{ with .this.image }}
+        <div class="flex-shrink-0">
+            <img src="{{ . }}" class="me-3 lazyload" alt="{{ . }}" width="32.5">
+        </div>
+        {{ end }}
+        <div class="flex-grow-1">
+            <div>{{ .this.company }}</div>
+            {{ with .this.job }}
+                <small>{{ . }}</small>
+            {{ end }}
+            {{ with .this.skills }}
+                <ul class="list-inline mt-1 mb-0">
+                    {{ range . }}
+                        <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </div>
+    </div>
+    <small class="text-end {{ if .this.skills }}me-3{{ end }}">{{ .this.dates }}</small>
+</div>

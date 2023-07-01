@@ -1,0 +1,10 @@
+main:
+  - identifier: home
+    name: Home
+    url: /
+    weight: 5
+
+  - identifier: resume
+    name: Mon CV
+    url: /resume/
+    weight: 20

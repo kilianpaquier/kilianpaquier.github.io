@@ -1,0 +1,136 @@
+- captions:
+    - ¹ Development, reviews, functional tests (writing and execution), specifications
+    - ² User Story
+  company: Sopra Steria
+  dates: October 2022 - Today
+  image: /experiences/soprasteria.webp
+  job: Software Engineer
+  missions:
+    - Involvement in the refinement, implementation¹ and delivery of US².
+    - Realisation of technical analysis and studies to meet functional requirements.
+  skills:
+    - name: Golang
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+    - name: Camunda
+      type: svg
+      value: /static/devicon/camunda-original.svg
+    - name: Docker
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/docker/docker-original.svg
+    - name: Kubernetes
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
+    - name: k3d
+      type: svg
+      value: /static/devicon/k3d-original.svg
+    - name: Helm
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
+- captions:
+    - ¹ User Story
+    - ² Development, reviews, functional tests (writing and execution), specifications
+  company: Sopra Steria
+  dates: March 2021 - October 2022
+  image: /experiences/soprasteria.webp
+  job: Software Engineer | Scrum Master
+  missions:
+    - Facilitation of the Scrum rituals, team self-organization and agile process continual improvement.
+    - Involvement in all phases of an US¹, refinement, implementation², delivery, deployment, supervision and technical support.
+    - Functional and technical training of our new team members.
+  skills:
+    - name: Java
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg
+    - name: Spring
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/spring/spring-original.svg
+    - name: Quarkus
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/quarkus/quarkus-original.svg
+    - name: Karatelabs
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/karatelabs/karatelabs-original.svg
+    - name: Docker
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/docker/docker-original.svg
+    - name: Kubernetes
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
+    - name: Helm
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
+    - name: Traefikproxy
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/traefikproxy/traefikproxy-original.svg
+    - name: Envoyproxy
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/envoy/envoy-original.svg
+    - name: Typescript
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
+    - name: Angular
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/angular/angular-original.svg
+    - name: Hibernate
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hibernate/hibernate-original.svg
+    - name: Bootstrap
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
+    - name: Python
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/python/python-original.svg
+    - name: Flask
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/flask/flask-original.svg
+- company: Alten
+  dates: August 2020 - February 2021
+  image: /experiences/alten.webp
+  job: Innovation consultant intern
+  missions:
+    - Leading and contribution to a blockchains' state of the art, use of a blockchain.
+    - Writing of functional and technical specifications, of an architecture document and a scientific and technical assessment.
+  skills:
+    - name: Typescript
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
+    - name: Nestjs
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/nestjs/nestjs-plain.svg
+    - name: Javascript
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/javascript/javascript-original.svg
+    - name: Electronjs
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/electron/electron-original.svg
+    - name: Bootstrap
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
+- captions:
+    - ¹ Direction Départementale des Territoires
+    - ² Union Française des Centres de Vacances
+    - ³ C'est Génial Comme Vacances
+    - ⁴ Direction Régionale de l'Environnement, de l'Aménagement et du Logement
+  company: Other experiences
+  missions:
+    - company: Eurosys
+      dates: June - August 2019
+      image: /experiences/eurosys.webp
+      job: ExtJS technical study intern
+    - company: DDT¹
+      dates: August 2018
+      image: /experiences/ddt.webp
+      job: Java & Swing temporary worker
+    - company: UFCV²
+      dates: February, April, August 2017
+      image: /experiences/ufcv.webp
+      job: Youth work qualification trainer
+    - company: CGCV³
+      dates: July 2016 et 2017
+      image: /experiences/cgcv.webp
+      job: Camp counselor
+    - company: DREAL⁴
+      dates: June 2016
+      image: /experiences/dreal.webp
+      job: Network internship discovery

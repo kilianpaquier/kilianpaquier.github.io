@@ -1,0 +1,207 @@
+{{ define "main" }}
+<div class="row">
+    <!-- Profile -->
+    <div class="col-auto">
+        <img src="{{ .Params.Image }}" class="img-thumbnail rounded-circle lazyload" alt="{{ .Params.Image }}" width="175">
+    </div>
+
+    {{ if .IsTranslated }}
+    <!-- Translations -->
+    <div class="col-auto ms-auto">
+        <div class="list-group">
+            {{ range .Translations }}
+            <a href="{{ .RelPermalink }}" class="list-group-item" aria-current="true">
+                <div class="d-flex w-100 text-end justify-content-end align-items-center">
+                    <div class="d-none d-sm-block">
+                        <p class="mb-0">{{ .Language.LanguageName }}</p>
+                        <small>{{ .Language.Params.Description }}</small>
+                    </div>
+
+                    <img src="{{ .Language.Params.Flag }}" class="img-thumbnail rounded-circle ms-sm-3 lazyload" alt="{{ .Language.Params.Flag }}" width="40">
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+<ul class="list-inline mt-3 mb-1">
+    {{ range .Site.Data.socials }}
+    <li class="list-inline-item me-4">
+        <a href="{{ .url }}" target="_blank" class="text-decoration-none">
+            {{ partial "content/icon.html" . }}
+        </a>
+    </li>
+    {{ end }}
+</ul>
+
+<h2>{{ T "resume_sections.title" }}</h2>
+<p>{{ .Description }}</p>
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+<div class="row">
+    <div class="col-12 col-lg-8 col-xl-7">
+        <!-- Experiences -->
+        <h5>{{ T "resume_sections.experiences" }}</h5>
+        <div class="accordion mb-3" id="accordion-experiences">
+            {{ range $i, $e := $data.experiences }}
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-head-{{ $i }}">
+                    <h2 class="accordion-header" id="flush-head-{{ $i }}">
+                        <button class="accordion-button {{if gt $i 0}}collapsed{{end}}" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $i }}" aria-expanded="{{if eq $i 0}}true{{else}}false{{end}}" aria-controls="flush-collapse-{{ $i }}">
+                            {{ partial "content/experience.html" (dict "this" $e) }}
+                        </button>
+                    </h2>
+                </h2>
+
+                <div id="flush-collapse-{{ $i }}" class="accordion-collapse collapse {{if eq $i 0}}show{{end}}" aria-labelledby="flush-head-{{ $i }}" data-bs-parent="#accordion-experiences">
+                    <div class="accordion-body">
+                        {{ range $e.missions }}
+                            {{ if reflect.IsMap . }}
+                                {{ partial "content/experience.html" (dict "this" . "class" "mb-2") }}
+                            {{ else }}
+                                <p class="mb-1">{{ . }}</p>
+                            {{ end }}
+                        {{ end }}
+                        
+                        {{ with $e.captions }}
+                            <div class="mt-2">
+                                {{ range . }}
+                                    <p class="text-end mb-0"><small>{{ . }}</small></p>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+
+        <!-- Projects -->
+        <h5>{{ T "resume_sections.projects" }}</h5>
+        <div id="carousel-projects" class="carousel-projects carousel carousel-dark slide mb-3 d-print-none" data-bs-ride="false">
+            <div class="carousel-indicators mb-2">
+                {{ range $i, $p := $data.projects }}
+                <button type="button" data-bs-target="#carousel-projects" data-bs-slide-to="{{ $i }}" class="{{if eq $i 0 }}active{{ end }}" aria-current="{{if eq $i 0 }}true{{ else }}false{{ end }}" aria-label="Slide {{ $i }}"></button>
+                {{ end }}
+            </div>
+            <div class="carousel-inner">
+                {{ range $i, $p := $data.projects }}
+                <div class="carousel-item {{if eq $i 0 }}active{{ end }}">
+                    <div class="row position-relative px-3 pb-5">
+                        <div class="col-12 col-sm-6 my-auto mx-auto pt-3">
+                            <img src="{{ .image }}" class="w-100 lazyload" alt="{{ .image }}">
+                        </div>
+                        <div class="col-12 col-sm-6 pt-3">
+                            <h6>{{ $p.title }}</h6>
+
+                            <ul class="list-inline mb-0">
+                                {{ range $p.skills }}
+                                <li class="list-inline-item me-1">{{ partial "content/icon.html" . }}</li>
+                                {{ end }}
+                                <li class="list-inline-item me-1">
+                                    <a href="{{ $p.link }}" target="_blank" class="text-decoration-none">
+                                        {{ partial "content/icon.html" $p.icon }}
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <p class="my-1">{{ $p.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-projects" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-projects" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Projects (print mode) -->
+        <div class="row mb-3 d-none d-print-flex">
+            {{ range $i, $p := $data.projects }}
+            <div class="col-6 {{ if gt $i 1 }}mt-3{{ end }}">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="card-title">{{ $p.title }}</div>
+                        <p class="card-text mb-0">
+                            <ul class="list-inline mb-0">
+                                {{ range $p.skills }}
+                                <li class="list-inline-item me-1">{{ partial "content/icon.html" . }}</li>
+                                {{ end }}
+                                <li class="list-inline-item me-1">
+                                    <a href="{{ $p.link }}" target="_blank" class="text-decoration-none">
+                                        {{ partial "content/icon.html" $p.icon }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </p>
+                        <p class="card-text">{{ $p.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="col-12 col-lg-4 col-xl-5">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-12">
+                <!-- Education -->
+                <h5>{{ T "resume_sections.education" }}</h5>
+                {{ range $data.educations }}
+                <div class="d-flex w-100 align-items-center mb-3">
+                    <div class="flex-shrink-0">
+                        <img src="{{ .image }}" class="img-thumbnail rounded-circle me-3 lazyload" alt="{{ .image }}" width="40">
+                    </div>
+                    <div class="card flex-grow-1">
+                        <div class="card-body">
+                            <div class="card-title">{{ .place }}</div>
+                            <div class="card-subtitle"><small>{{ .diploma }}</small></div>
+                            <ul class="list-inline mt-1 mb-0">
+                                {{ range .skills }}
+                                <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12">
+                <!-- Tools -->
+                <h5>{{ T "resume_sections.tools" }}</h5>
+                <ul class="list-inline mb-3">
+                    {{ range .Site.Data.tools }}
+                    <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                    {{ end }}
+                </ul>
+
+                <!-- Behaviors -->
+                <h5>{{ T "resume_sections.behaves" }}</h5>
+                <div class="mb-3">
+                    {{ range $data.behaves }}
+                    <p class="mb-0">{{ . }}</p>
+                    {{ end }}
+                </div>
+
+                <!-- Interests -->
+                <h5>{{ T "resume_sections.interests" }}</h5>
+                <div class="row mb-3">
+                    {{ range $data.interests }}
+                    <div class="col-auto mx-auto text-center mb-2">
+                        <img src="{{ .image }}" class="img-thumbnail rounded-circle lazyload" alt="{{ .image }}" width="100">
+                        <div><small>{{ .name }}</small></div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

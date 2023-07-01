@@ -1,0 +1,27 @@
+[data-bs-theme="dark"] {
+    svg {
+        &.perforce>path, &.itchio>path, &.github>g, &.bash>:nth-child(2), &.flask>path {
+            fill: #ffff;
+        }
+    }
+
+    .carousel-projects {
+        background-color: #1a1d20 !important;
+    }
+}
+
+.insomnia>path:last-child {
+    fill: #4000bf;
+}
+
+.helm>path {
+    fill: #277a9f;
+}
+
+.bootstrap>path {
+    fill: #7952b3;
+}
+
+.carousel-projects {
+    background-color: #f8f9fa !important;
+}

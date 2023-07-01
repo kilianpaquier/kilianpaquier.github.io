@@ -1,0 +1,10 @@
+- image: /interests/basketball.webp
+  name: Basketball
+- image: /interests/movies.webp
+  name: TV shows, movies et animes
+- image: /interests/videogames.webp
+  name: Video games
+- image: /interests/mangas.webp
+  name: Mangas and manwhas
+- image: /interests/programming.webp
+  name: Programming
