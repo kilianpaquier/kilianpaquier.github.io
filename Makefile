@@ -8,5 +8,5 @@ build:
 serve:
 	@hugo server --disableFastRender
 
-production: build
+production: clean build
 	@python3 -m http.server --directory ./public
