@@ -98,9 +98,9 @@
 
                             <ul class="list-inline mb-0">
                                 {{ range $p.skills }}
-                                <li class="list-inline-item me-1">{{ partial "content/icon.html" . }}</li>
+                                <li class="list-inline-item">{{ partial "content/icon.html" . }}</li>
                                 {{ end }}
-                                <li class="list-inline-item me-1">
+                                <li class="list-inline-item">
                                     <a href="{{ $p.link }}" target="_blank" class="text-decoration-none">
                                         {{ partial "content/icon.html" $p.icon }}
                                     </a>
@@ -131,9 +131,9 @@
                         <p class="card-text mb-0">
                             <ul class="list-inline mb-0">
                                 {{ range $p.skills }}
-                                <li class="list-inline-item me-1">{{ partial "content/icon.html" . }}</li>
+                                <li class="list-inline-item">{{ partial "content/icon.html" . }}</li>
                                 {{ end }}
-                                <li class="list-inline-item me-1">
+                                <li class="list-inline-item">
                                     <a href="{{ $p.link }}" target="_blank" class="text-decoration-none">
                                         {{ partial "content/icon.html" $p.icon }}
                                     </a>
@@ -164,7 +164,7 @@
                             <div class="card-subtitle"><small>{{ .diploma }}</small></div>
                             <ul class="list-inline mt-1 mb-0">
                                 {{ range .skills }}
-                                <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                                <li class="list-inline-item mt-1">{{ partial "content/icon.html" . }}</li>
                                 {{ end }}
                             </ul>
                         </div>
@@ -178,7 +178,7 @@
                 <h5>{{ T "resume_sections.tools" }}</h5>
                 <ul class="list-inline mb-3">
                     {{ range .Site.Data.tools }}
-                    <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                    <li class="list-inline-item mt-1">{{ partial "content/icon.html" . }}</li>
                     {{ end }}
                 </ul>
 

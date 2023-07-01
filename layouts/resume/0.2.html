@@ -49,7 +49,7 @@
                 <h4>{{ T "resume_sections.tools" }}</h4>
                 <ul class="list-inline mb-0">
                     {{ range .Site.Data.tools }}
-                    <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                    <li class="list-inline-item mt-1">{{ partial "content/icon.html" . }}</li>
                     {{ end }}
                 </ul>
             </div>
@@ -133,9 +133,9 @@
                 
                                     <ul class="list-inline mb-0">
                                         {{ range $p.skills }}
-                                        <li class="list-inline-item me-1">{{ partial "content/icon.html" . }}</li>
+                                        <li class="list-inline-item">{{ partial "content/icon.html" . }}</li>
                                         {{ end }}
-                                        <li class="list-inline-item me-1">
+                                        <li class="list-inline-item">
                                             <a href="{{ $p.link }}" target="_blank" class="text-decoration-none">
                                                 {{ partial "content/icon.html" $p.icon }}
                                             </a>
@@ -172,7 +172,7 @@
                                 <div class="card-subtitle"><small>{{ $e.diploma }}</small></div>
                                 <ul class="list-inline mt-1 mb-0">
                                     {{ range $e.skills }}
-                                    <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                                    <li class="list-inline-item mt-1">{{ partial "content/icon.html" . }}</li>
                                     {{ end }}
                                 </ul>
                             </div>
@@ -195,7 +195,7 @@
                 <h4>{{ T "resume_sections.tools" }}</h4>
                 <ul class="list-inline mb-0">
                     {{ range .Site.Data.tools }}
-                    <li class="list-inline-item me-1 mt-1">{{ partial "content/icon.html" . }}</li>
+                    <li class="list-inline-item mt-1">{{ partial "content/icon.html" . }}</li>
                     {{ end }}
                 </ul>
             </div>
