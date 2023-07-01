@@ -8,5 +8,5 @@ include:
 pages:
   image: registry.gitlab.com/pages/hugo/hugo_extended:latest
   before_script:
-    - apk add make
+    - apk add make go
     - make build
