@@ -7,12 +7,11 @@
         </div>
         {{ end }}
         <div class="flex-grow-1">
-            <div>{{ .this.company }}</div>
-            {{ with .this.job }}
-                <small>{{ . }}</small>
-            {{ end }}
+            <div class="mb-1">{{ .this.company }}</div>
+            <div class="small mb-1">{{ .this.job }}</div>
+            <div class="small d-sm-none mb-1">{{ .this.dates }}</div>
             {{ with .this.skills }}
-                <ul class="list-inline mt-1 mb-0">
+                <ul class="list-inline mb-0">
                     {{ range . }}
                         <li class="list-inline-item mt-1">{{ partial "content/icon.html" . }}</li>
                     {{ end }}
@@ -20,5 +19,5 @@
             {{ end }}
         </div>
     </div>
-    <small class="text-end {{ if .this.skills }}me-3{{ end }}">{{ .this.dates }}</small>
+    <small class="text-end d-none d-sm-block {{ if .this.skills }}me-3{{ end }}">{{ .this.dates }}</small>
 </div>
