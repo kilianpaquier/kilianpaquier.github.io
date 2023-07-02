@@ -10,8 +10,8 @@
     }
 }
 
-.experience-accordion-button {
-    transition: none; // fix button theme transition
+.accordion-header>.accordion-button {
+    transition: none;
 }
 
 .insomnia>path:last-child {

@@ -48,11 +48,9 @@
             {{ range $i, $e := $data.experiences }}
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-head-{{ $i }}">
-                    <h2 class="accordion-header" id="flush-head-{{ $i }}">
-                        <button class="accordion-button {{if gt $i 0}}collapsed{{end}}" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $i }}" aria-expanded="{{if eq $i 0}}true{{else}}false{{end}}" aria-controls="flush-collapse-{{ $i }}">
-                            {{ partial "resume/experience.html" (dict "this" $e) }}
-                        </button>
-                    </h2>
+                    <button class="accordion-button {{if gt $i 0}}collapsed{{end}}" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $i }}" aria-expanded="{{if eq $i 0}}true{{else}}false{{end}}" aria-controls="flush-collapse-{{ $i }}">
+                        {{ partial "resume/experience.html" (dict "this" $e) }}
+                    </button>
                 </h2>
 
                 <div id="flush-collapse-{{ $i }}" class="accordion-collapse collapse {{if eq $i 0}}show{{end}}" aria-labelledby="flush-head-{{ $i }}" data-bs-parent="#accordion-experiences">
