@@ -10,6 +10,10 @@
     }
 }
 
+.experience-accordion-button {
+    transition: none; // fix button theme transition
+}
+
 .insomnia>path:last-child {
     fill: #4000bf;
 }
