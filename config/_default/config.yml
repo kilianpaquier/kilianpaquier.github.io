@@ -10,7 +10,15 @@ module:
 theme: gitlab.com/kilianpaquier/hugot
 
 disableKinds:
+  - "404"
+  # - home
+  # - page
+  # - robotsTXT
+  # - RSS
+  # - section
+  # - sitemap
   - taxonomy
+  - term
 
 ignoreErrors:
   - error-disable-taxonomy
