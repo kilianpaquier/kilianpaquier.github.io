@@ -2,11 +2,12 @@
 categories: []
 container:
 contributors: []
-date: 2023-05-03
+date: {{ .Date | dateFormat "2006-01-02" }}
 description:
+image:
 layout:
 tags: []
-title: Kilian PAQUIER
+title: {{ replace .Name "-" " " | title }}
 version:
 weight:
 ---
