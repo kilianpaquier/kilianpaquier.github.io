@@ -9,10 +9,10 @@ main:
     url: /blog/
     weight: 10
 
-  - identifier: docs
-    name: Docs
-    url: /docs/workspace/softwares/
-    weight: 15
+  # - identifier: docs
+  #   name: Docs
+  #   url: /docs/
+  #   weight: 15
 
   - identifier: resume
     name: My Resume
