@@ -1,8 +1,8 @@
 main:
-  - identifier: home
-    name: Home
-    url: /
-    weight: 5
+  # - identifier: home
+  #   name: Home
+  #   url: /
+  #   weight: 5
 
   - identifier: resume
     name: My Resume

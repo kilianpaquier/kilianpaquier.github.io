@@ -10,8 +10,14 @@
     }
 }
 
-.accordion-header>.accordion-button {
-    transition: none;
+.accordion-header {
+    >.accordion-button {
+        &:focus {
+            z-index: initial;
+        }
+
+        transition: none;
+    }
 }
 
 .insomnia>path:last-child {
