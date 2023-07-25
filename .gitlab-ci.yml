@@ -4,7 +4,6 @@ include:
     file:
       - pipeline/go.yml
       - pipeline/pages.yml
-      - pipeline/publish.yml
 
 pages:
   image: registry.gitlab.com/pages/hugo/hugo_extended:latest
