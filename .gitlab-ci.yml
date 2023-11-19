@@ -1,5 +1,5 @@
 include:
-  - project: $CICD_INDUS_PROJECT
+  - project: kilianpaquier/cicd
     ref: $CICD_INDUS_BRANCH
     file:
       - pipeline/pages.yml
