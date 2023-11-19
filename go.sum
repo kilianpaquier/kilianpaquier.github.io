@@ -1,12 +1,2 @@
-gitlab.com/kilianpaquier/hugot v0.0.0-20230628203006-9bcefd1a2f20 h1:FbXMIWHarecCWe5Lgtltj6NVg2a2v617rGq5+oGXZGI=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230628203006-9bcefd1a2f20/go.mod h1:20dZ2Kd2kWD0BCFKmeNsxU2ZyPg1b6HubTo+GS7hqpM=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230701161839-e84e833b5121 h1:JVa0zOfqov2i0Vro1lMwFVi35vWhG1FRAdnJ6n7UtWA=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230701161839-e84e833b5121/go.mod h1:qQi89K+8tlmfd6G0mIe7FYmixpcaS79IyjwsGCKeo3o=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230701165203-7b330642d0e5 h1:4ut7tb5HJlDFjKRj660viK4BHx5oFh3QPXreFnOSL4A=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230701165203-7b330642d0e5/go.mod h1:qQi89K+8tlmfd6G0mIe7FYmixpcaS79IyjwsGCKeo3o=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230702105811-d909bd1e14bb h1:5HwznUgTkKDVAUVQOw5uUCCdYGamBkcWE+Ol2dNj3Bk=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230702105811-d909bd1e14bb/go.mod h1:qQi89K+8tlmfd6G0mIe7FYmixpcaS79IyjwsGCKeo3o=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230714103106-f555e4c92fa8 h1:RaVJujZbtelVacVq1aEqcQGGnKZzcdU7Irj1aoyKgqk=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230714103106-f555e4c92fa8/go.mod h1:qQi89K+8tlmfd6G0mIe7FYmixpcaS79IyjwsGCKeo3o=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230714105741-276f4a87c4ae h1:AFVSLhEevgai08IU9SNG1NtxaIBICktjYxctV6MwAuU=
-gitlab.com/kilianpaquier/hugot v0.0.0-20230714105741-276f4a87c4ae/go.mod h1:qQi89K+8tlmfd6G0mIe7FYmixpcaS79IyjwsGCKeo3o=
+gitlab.com/kilianpaquier/hugot v1.0.2 h1:Kf+aoVWa1tRm5wdOkSAHkBx5SWCfsaWdD7D+ln6c4Gw=
+gitlab.com/kilianpaquier/hugot v1.0.2/go.mod h1:tWb1AgfovSrPqbE5puIL5t5HHRrVSUM+wgS5xuKLEHE=

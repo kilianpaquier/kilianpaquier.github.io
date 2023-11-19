@@ -1,7 +1,7 @@
 module gitlab.com/kilianpaquier/kilianpaquier.gitlab.io
 
-go 1.20
+go 1.21
 
-require gitlab.com/kilianpaquier/hugot v0.0.0-20230714105741-276f4a87c4ae // indirect
+require gitlab.com/kilianpaquier/hugot v1.0.2 // indirect
 
 // replace gitlab.com/kilianpaquier/hugot => /home/kilianpaquier/kilianpaquier/hugot
