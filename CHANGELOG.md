@@ -1,3 +1,10 @@
+## [6.1.6](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/compare/v6.1.5...v6.1.6) (2023-11-21)
+
+
+### Bug Fixes
+
+* path changed for yait ([a04c824](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/commit/a04c8240d9ca07e0d83f59a6086ade021f7187b2))
+
 ## [6.1.5](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/compare/v6.1.4...v6.1.5) (2023-11-19)
 
 
