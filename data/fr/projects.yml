@@ -1,3 +1,15 @@
+- description: Templates de pipeline GitLab CI/CD pour Golang, Node.js et Maven.
+  icon:
+    name: GitLab
+    type: remote-svg
+    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
+  image: /projects/cicd.webp
+  link: https://gitlab.com/kilianpaquier/cicd
+  skills:
+    - name: Bash
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
+  title: CICD
 - description: Application Golang d'installation de packages nécessitant plusieurs actions manuelles.
   icon:
     name: GitLab
@@ -15,18 +27,6 @@
     - name: Powershell
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/powershell/powershell-original.svg
   title: Yait
-- description: Templates de pipeline GitLab CI/CD pour Golang, Node.js et Maven.
-  icon:
-    name: GitLab
-    type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
-  image: /projects/cicd.webp
-  link: https://gitlab.com/kilianpaquier/cicd
-  skills:
-    - name: Bash
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
-  title: CICD
 - description: Beat Them All de deux à quatre joueurs pour s'amuser entre amis et récupérer les fraises volées.
   icon:
     name: Itchio
