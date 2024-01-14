@@ -1,6 +1,8 @@
 baseURL: /
 title: Kilian PAQUIER
 
+copyright: Copyright © {{ year }} Kilian PAQUIER
+
 languageCode: fr
 defaultContentLanguage: fr
 
@@ -25,6 +27,8 @@ ignoreErrors:
 
 params:
   favicon: /favicon.webp
+  copyright:
+    enabled: true
 
   homepage:
     overwrite: true
