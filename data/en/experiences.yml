@@ -1,13 +1,16 @@
 - captions:
-    - ¹ Development, reviews, functional tests (writing and execution), specifications
-    - ² User Story
+    - ¹ User Story
+    - ² Development, reviews, functional tests (writing and execution), specifications
+    - ³ CI/CD, automated notifications bot, projects' layout generator, automated tests tool
   company: Sopra Steria
   dates: October 2022 - Today
   image: /experiences/soprasteria.webp
   job: Software Engineer
   missions:
-    - Involvement in the refinement, implementation¹ and delivery of US².
+    - Involvement in all phases of an US¹, refinement, implementation², delivery, deployment, supervision and technical support.
+    - Contributing to client's development tools³.
     - Realisation of technical analysis and studies to meet functional requirements.
+    - Functional and technical training of our new team members.
   skills:
     - name: Golang
       type: remote-svg

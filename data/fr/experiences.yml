@@ -1,13 +1,16 @@
 - captions:
     - ¹ Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications
     - ² User Story
+    - ³ Chaîne CI/CD, robot de notifications automatisées, générateur du squelette des projets, outil de tests automatisés
   company: Sopra Steria
   dates: Octobre 2022 - Aujourd'hui
   image: /experiences/soprasteria.webp
   job: Ingénieur développement
   missions:
-    - Participation aux phases d'affinage, implémentation¹ et livraison des US².
+    - Participation à toutes les phases d'une US¹, affinage, implémentation², livraison, déploiement, supervision et support technique.
+    - Contributions aux outils³ du client.
     - Réalisation d'analyses et études techniques pour répondre aux besoins.
+    - Formation fonctionnelle et technique des nouveaux acteurs.
   skills:
     - name: Golang
       type: remote-svg
@@ -21,9 +24,6 @@
     - name: Kubernetes
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
-    - name: k3d
-      type: svg
-      value: /static/devicon/k3d-original.svg
     - name: Helm
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
