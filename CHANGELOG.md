@@ -1,3 +1,16 @@
+## [6.2.0](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/compare/v6.1.6...v6.2.0) (2024-01-14)
+
+
+### Features
+
+* add copyright from hugot ([82be48c](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/commit/82be48c132888293ff71004c82ad9763ab94085c))
+
+
+### Chores
+
+* added latest missions and remove k3d as it was too little used ([16f0044](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/commit/16f0044937bafa5f606d2c27a7dbbdd6a8a8e734))
+* inverted yait and cicd projects ([9e9e9a2](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/commit/9e9e9a253f798cb85a3fad8e9da755e1e5f7441e))
+
 ## [6.1.6](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/compare/v6.1.5...v6.1.6) (2023-11-21)
 
 
