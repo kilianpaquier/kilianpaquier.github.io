@@ -1,3 +1,10 @@
+## [6.2.1](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/compare/v6.2.0...v6.2.1) (2024-01-16)
+
+
+### Bug Fixes
+
+* captions order in french experiences ([c95624a](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/commit/c95624a252cab3c570edf851555cef9e73f77810))
+
 ## [6.2.0](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/compare/v6.1.6...v6.2.0) (2024-01-14)
 
 
