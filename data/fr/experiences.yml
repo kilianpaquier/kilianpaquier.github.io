@@ -1,6 +1,6 @@
 - captions:
-    - ¹ Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications
-    - ² User Story
+    - ¹ User Story
+    - ² Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications
     - ³ Chaîne CI/CD, robot de notifications automatisées, générateur du squelette des projets, outil de tests automatisés
   company: Sopra Steria
   dates: Octobre 2022 - Aujourd'hui
