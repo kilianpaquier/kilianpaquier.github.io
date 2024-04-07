@@ -1,7 +1,9 @@
-module gitlab.com/kilianpaquier/kilianpaquier.gitlab.io
+module github.com/kilianpaquier/kilianpaquier.github.io
 
-go 1.21
+go 1.22.0
 
-require gitlab.com/kilianpaquier/hugot v1.2.0 // indirect
+toolchain go1.22.2
 
-// replace gitlab.com/kilianpaquier/hugot => /home/kilianpaquier/kilianpaquier/hugot
+// replace github.com/kilianpaquier/hugot => /home/kilianpaquier/kilianpaquier/hugot
+
+require github.com/kilianpaquier/hugot v1.2.1-0.20240407194658-248e72b0928e // indirect

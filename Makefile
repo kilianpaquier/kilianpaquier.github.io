@@ -1,12 +1,3 @@
-clean:
-	@go clean
-	@git clean -Xf ./*
+# This file is safe to edit. Once it exists it will not be overwritten.
 
-build:
-	@hugo --gc --minify
-
-serve:
-	@hugo server --disableFastRender
-
-production: clean build
-	@python3 -m http.server --directory ./public
+include ./scripts/*.mk

@@ -8,8 +8,8 @@ defaultContentLanguage: fr
 
 module:
   imports:
-    - path: gitlab.com/kilianpaquier/hugot
-theme: gitlab.com/kilianpaquier/hugot
+    - path: github.com/kilianpaquier/hugot
+theme: github.com/kilianpaquier/hugot
 
 disableKinds:
   - "404"

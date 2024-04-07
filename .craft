@@ -1,0 +1,12 @@
+# Craft configuration file (https://github.com/kilianpaquier/craft)
+---
+ci:
+  name: github
+  options:
+    - dependabot
+    - pages
+license: mit
+maintainers:
+  - name: kilianpaquier
+no_chart: true
+platform: github
