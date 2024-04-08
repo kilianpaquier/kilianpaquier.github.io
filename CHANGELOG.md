@@ -1,3 +1,26 @@
+## [6.3.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.2.1...v6.3.0) (2024-04-08)
+
+
+### Features
+
+* **projects:** add craft, go-builder-generator and hugot ([0e04406](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/0e04406b5154c7b8897b2371c5446398b3ef5679))
+
+
+### Bug Fixes
+
+* **resume:** ensure profile image has a minimal height to avoid weird behavior on page loading ([25453f3](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/25453f3f31e00076c8147d90a356d638e176b0f8))
+
+
+### Documentation
+
+* **readme:** add website check badge ([8004a10](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/8004a10d5c9a477a3cbe0c47b10bdcfcbb56ed9a))
+
+
+### Chores
+
+* **deps:** bump actions/cache from 3 to 4 ([bcb175a](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/bcb175a3b193b661398445badb5720749bc67db4))
+* **deps:** update hugot to v1.2.1 ([c0c3967](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/c0c396791806752a12fc2434d0130ee653d10add))
+
 ## [6.2.1](https://gitlab.com/kilianpaquier/kilianpaquier.gitlab.io/compare/v6.2.0...v6.2.1) (2024-01-16)
 
 
