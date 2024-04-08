@@ -1,12 +1,15 @@
 - name: Bash
   type: remote-svg
   value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
-- name: GitLab
-  type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
 - name: GitHub
   type: remote-svg
   value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
+- name: GitHub Actions
+  type: remote-svg
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
+- name: GitLab
+  type: remote-svg
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
 - name: Jira
   type: svg
   value: /static/devicon/jira-plain.svg
