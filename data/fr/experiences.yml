@@ -27,6 +27,9 @@
     - name: Helm
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
+    - name: Grafana
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/grafana/grafana-plain.svg
 - captions:
     - ¹ User Story
     - ² Développement, relectures, tests fonctionnels (rédaction et exécution), spécifications
