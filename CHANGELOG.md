@@ -1,3 +1,17 @@
+## [6.4.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.3.0...v6.4.0) (2024-06-24)
+
+
+### Features
+
+* **experiences:** add grafana in latest experience ([7ab7b98](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/7ab7b986c305b4608b0e82a7796fae326dccd49a))
+* **tools:** add pnpm, codecov and bun ([cfa53b7](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/cfa53b7c209b8bf67f762f36776d7fbac8dd120f))
+
+
+### Bug Fixes
+
+* **experiences:** bad angular and nestjs icons in latest devicon develop branch ([ec06919](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/ec06919aeb8b54a97dca2f23320e943784387211))
+* **html:** remove too much spaces between icons ([966d45a](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/966d45a73da0e7407390cce4340cc529b7a1f0a6))
+
 ## [6.3.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.2.1...v6.3.0) (2024-04-08)
 
 
