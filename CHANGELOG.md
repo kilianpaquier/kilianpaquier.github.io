@@ -1,3 +1,10 @@
+## [6.4.1](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.4.0...v6.4.1) (2024-06-24)
+
+
+### Reverts
+
+* "fix(html): remove too much spaces between icons" ([cbc4116](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/cbc411674e6e6eab1e03dfd5ff13f7fdfbb13d2d))
+
 ## [6.4.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.3.0...v6.4.0) (2024-06-24)
 
 
