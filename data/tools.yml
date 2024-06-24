@@ -34,18 +34,27 @@
 - name: Yarn
   type: remote-svg
   value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/yarn/yarn-original.svg
-- name: Npm
+- name: npm
   type: remote-svg
   value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/npm/npm-original-wordmark.svg
+- name: pnpm
+  type: remote-svg
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/pnpm/pnpm-original.svg
+- name: Bun
+  type: remote-svg
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bun/bun-original.svg
 - name: Maven
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/maven/maven-plain.svg
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/maven/maven-original.svg
 - name: Elasticsearch
   type: remote-svg
   value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/elasticsearch/elasticsearch-original.svg
 - name: Sonar
   type: remote-svg
   value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/sonarqube/sonarqube-original.svg
+- name: CodeCov
+  type: remote-svg
+  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/codecov/codecov-plain.svg
 - name: Bitbucket
   type: svg
   value: /static/devicon/bitbucket-plain.svg
