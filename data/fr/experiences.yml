@@ -71,7 +71,7 @@
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
     - name: Angular
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/angular/angular-original.svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/angular/angular-plain.svg
     - name: Hibernate
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hibernate/hibernate-original.svg
@@ -97,7 +97,7 @@
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
     - name: Nestjs
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/nestjs/nestjs-plain.svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/nestjs/nestjs-original.svg
     - name: Javascript
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/javascript/javascript-original.svg
