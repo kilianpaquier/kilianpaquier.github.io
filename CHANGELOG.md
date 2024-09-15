@@ -1,3 +1,10 @@
+## [6.5.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.4.1...v6.5.0) (2024-09-15)
+
+
+### Features
+
+* **resume:** add v0.3 front and close latest experience ([3d785ad](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/3d785ada7c23ebe2b5de6776ec53a6edaad395f1))
+
 ## [6.4.1](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.4.0...v6.4.1) (2024-06-24)
 
 
