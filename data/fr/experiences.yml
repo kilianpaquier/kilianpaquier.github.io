@@ -8,7 +8,7 @@
   missions:
     - Réalisation d'analyses et études techniques pour les besoins métier.
     - Recueil des besoins et rédaction de fonctionnalités.
-    - Participation au cycle de vie complet des fonctionalités¹.
+    - Participation au cycle de vie complet des fonctionnalités¹.
     - Rédaction de requêtes _SQL_ avancées.
     - Mise en place de _dashboards_ Grafana pour la supervision des applicatifs.
     - Contributions aux outils² du client.
@@ -53,7 +53,7 @@
   job: Ingénieur développement | Scrum Master
   missions:
     - Facilitation des cérémonies Scrum, de l'auto-organisation de l'équipe et de l'amélioration continue du processus agile.
-    - Participation au cycle de vie complet des fonctionalités¹.
+    - Participation au cycle de vie complet des fonctionnalités¹.
     - Formation fonctionnelle et technique des nouveaux collaborateurs.
   skills:
     - name: Java
