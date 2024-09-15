@@ -1,20 +1,32 @@
 - captions:
-    - ¹ User Story
-    - ² Development, reviews, functional tests (writing and execution), specifications
-    - ³ CI/CD, automated notifications bot, projects' layout generator, automated tests tool
+    - ¹ Development, documentation, review, tests, deployment, support
+    - ² CI/CD, automated notifications bot, projects' layout generator, automated tests tool
   company: Sopra Steria
-  dates: October 2022 - Today
+  dates: October 2022 - September 2024
   image: /experiences/soprasteria.webp
   job: Software Engineer
   missions:
-    - Involvement in all phases of an US¹, refinement, implementation², delivery, deployment, supervision and technical support.
-    - Contributing to client's development tools³.
     - Realisation of technical analysis and studies to meet functional requirements.
+    - Collection of needs and features writing.
+    - Involvement in all features' lifecycle¹.
+    - Advanced SQL requests writing.
+    - Grafana dashboards setups for software observability.
+    - Contributing to client's development tools².
     - Functional and technical training of our new team members.
+    - Technical presentations to colleagues.
   skills:
     - name: Golang
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+    - name: PostgreSQL
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/postgresql/postgresql-original.svg
+    - name: TimescaleDB
+      type: svg
+      value: /static/devicon/timescale-plain.svg
+    - name: Grafana
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/grafana/grafana-plain.svg
     - name: Camunda
       type: svg
       value: /static/devicon/camunda-original.svg
@@ -24,22 +36,24 @@
     - name: Kubernetes
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
+    - name: Keda
+      type: svg
+      value: /static/devicon/keda-plain.svg
     - name: Helm
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
-    - name: Grafana
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/grafana/grafana-plain.svg
+    - name: Graylog
+      type: svg
+      value: /static/devicon/graylog-original.svg
 - captions:
-    - ¹ User Story
-    - ² Development, reviews, functional tests (writing and execution), specifications
+    - ¹ Development, documentation, review, tests, deployment, support
   company: Sopra Steria
   dates: March 2021 - October 2022
   image: /experiences/soprasteria.webp
   job: Software Engineer | Scrum Master
   missions:
     - Facilitation of the Scrum rituals, team self-organization and agile process continual improvement.
-    - Involvement in all phases of an US¹, refinement, implementation², delivery, deployment, supervision and technical support.
+    - Involvement in all features' lifecycle¹.
     - Functional and technical training of our new team members.
   skills:
     - name: Java
@@ -75,9 +89,15 @@
     - name: Angular
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/angular/angular-plain.svg
+    - name: PostgreSQL
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/postgresql/postgresql-original.svg
     - name: Hibernate
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hibernate/hibernate-original.svg
+    - name: Liquibase
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/liquibase/liquibase-original.svg
     - name: Bootstrap
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
@@ -87,29 +107,9 @@
     - name: Flask
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/flask/flask-original.svg
-- company: Alten
-  dates: August 2020 - February 2021
-  image: /experiences/alten.webp
-  job: Innovation consultant intern
-  missions:
-    - Leading and contribution to a blockchains' state of the art, use of a blockchain.
-    - Writing of functional and technical specifications, of an architecture document and a scientific and technical assessment.
-  skills:
-    - name: Typescript
+    - name: Elasticsearch
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
-    - name: Nestjs
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/nestjs/nestjs-original.svg
-    - name: Javascript
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/javascript/javascript-original.svg
-    - name: Electronjs
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/electron/electron-original.svg
-    - name: Bootstrap
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/elasticsearch/elasticsearch-original.svg
 - captions:
     - ¹ Direction Départementale des Territoires
     - ² Union Française des Centres de Vacances
@@ -117,6 +117,10 @@
     - ⁴ Direction Régionale de l'Environnement, de l'Aménagement et du Logement
   company: Other experiences
   missions:
+    - company: Alten
+      dates: August 2020 - February 2021
+      image: /experiences/alten.webp
+      job: Innovation consultant intern
     - company: Eurosys
       dates: June - August 2019
       image: /experiences/eurosys.webp

@@ -1,10 +1,4 @@
 [data-bs-theme="dark"] {
-    svg {
-        &.perforce>path, &.itchio>path, &.github>g, &.bash>:nth-child(2), &.flask>path {
-            fill: #ffff;
-        }
-    }
-
     .carousel-projects {
         background-color: #1a1d20 !important;
     }
@@ -18,6 +12,37 @@
 
         transition: none;
     }
+}
+
+// ICONS
+
+[data-bs-theme="dark"] {
+    svg {
+        &.angular>path,
+        &.bash>:nth-child(2),
+        &.codespaces>path,
+        &.keda>path.fill,
+        &.flask>path,
+        &.github>g,
+        &.itchio>path,
+        &.maven>path,
+        &.perforce>path,
+        &.timescaledb>path {
+            fill: #ffff;
+        }
+
+        &.keda>path.stroke {
+            stroke: #ffff;
+        }
+
+        &.keda>path.fill-interved {
+            font: #0000;
+        }
+    }
+}
+
+.codespaces>path {
+    fill: #181616;
 }
 
 .insomnia>path:last-child {
