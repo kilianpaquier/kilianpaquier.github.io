@@ -1,12 +1,12 @@
 {{ define "head" }}
 
-{{ $latest := index .Pages 0 }}
+<!-- {{ $latest := index .Pages 0 }}
 {{ range .Pages }}
     {{ if lt $latest.Params.Version .Params.Version }}
         {{ $latest = . }}
     {{ end }}
 {{ end }}
 
-{{ partial "redirect.html" $latest.Permalink }}
+{{ partial "redirect.html" $latest.Permalink }} -->
 
 {{ end }}

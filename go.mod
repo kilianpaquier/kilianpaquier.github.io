@@ -4,6 +4,9 @@ go 1.23
 
 toolchain go1.23.0
 
-// replace github.com/kilianpaquier/hugot => /home/kilianpaquier/kilianpaquier/hugot
+// replace github.com/kilianpaquier/hugot => /home/debian/workspaces/github.com/kilianpaquier/hugot
 
-require github.com/kilianpaquier/hugot v1.2.5 // indirect
+require (
+	github.com/dzello/reveal-hugo v0.0.0-20240121164136-5e38035fe41f // indirect
+	github.com/kilianpaquier/hugot v1.2.5 // indirect
+)
