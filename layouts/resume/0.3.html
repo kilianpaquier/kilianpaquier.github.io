@@ -97,12 +97,12 @@
                 {{ range $i, $e := $data.experiences }}
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-head-{{ $i }}">
-                        <button class="experience-accordion-button accordion-button collapsed" type="button" 
+                        <button class="experience-accordion-button accordion-button collapsed" type="button"
                             data-bs-toggle="collapse" data-bs-target="#flush-collapse-{{ $i }}" aria-expanded="false" aria-controls="flush-collapse-{{ $i }}">
                             {{ partial "resume/experience.html" (dict "this" $e) }}
                         </button>
                     </h2>
-            
+
                     <div id="flush-collapse-{{ $i }}" class="accordion-collapse collapse" aria-labelledby="flush-head-{{ $i }}" data-bs-parent="#accordion-experiences">
                         <div class="accordion-body">
                             {{ $m := false }}
@@ -153,7 +153,7 @@
                                 </div>
                                 <div class="col-12 col-sm-6 pt-3">
                                     <h6>{{ $p.title }}</h6>
-                
+
                                     <ul class="list-inline mb-0">
                                         {{ range $p.skills }}
                                         <li class="list-inline-item">{{ partial "content/icon.html" . }}</li>
@@ -164,7 +164,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                
+
                                     <p class="my-1">{{ $p.description }}</p>
                                 </div>
                             </div>

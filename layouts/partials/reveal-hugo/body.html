@@ -1,0 +1,9 @@
+{{ if and .IsTranslated }}
+<div class="top">
+    {{ range .Translations }}
+    <a href="{{ .RelPermalink }}" aria-current="true">
+        <img src="{{ .Language.Params.Flag }}" class="inherit-colors img-thumbnail rounded-circle lazyload" alt="{{ .Language.Params.Flag }}" width="40">
+    </a>
+    {{ end }}
+</div>
+{{ end }}

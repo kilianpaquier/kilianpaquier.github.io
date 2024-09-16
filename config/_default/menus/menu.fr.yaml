@@ -8,3 +8,8 @@ main: []
   #   name: Mon CV
   #   url: /resume/
   #   weight: 20
+
+  # - identifier: slides
+  #   name: Slides
+  #   url: /slides/
+  #   weight: 20
