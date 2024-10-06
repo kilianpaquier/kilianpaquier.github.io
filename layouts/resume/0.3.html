@@ -155,14 +155,14 @@
                                     <h6>{{ $p.title }}</h6>
 
                                     <ul class="list-inline mb-0">
-                                        {{ range $p.skills }}
-                                        <li class="list-inline-item">{{ partial "content/icon.html" . }}</li>
-                                        {{ end }}
                                         <li class="list-inline-item">
                                             <a href="{{ $p.link }}" target="_blank" class="text-decoration-none">
                                                 {{ partial "content/icon.html" $p.icon }}
                                             </a>
                                         </li>
+                                        {{ range $p.skills }}
+                                        <li class="list-inline-item">{{ partial "content/icon.html" . }}</li>
+                                        {{ end }}
                                     </ul>
 
                                     <p class="my-1">{{ $p.description }}</p>
