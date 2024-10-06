@@ -60,10 +60,6 @@ disableKinds = [ "404", "taxonomy", "term" ]
       name = "RevealZoom"
       source = "reveal-js/plugin/zoom/zoom.js"
 
-  [params.logo]
-    src = "/favicon.webp"
-    width = "100px"
-
 [outputFormats.Reveal]
   baseName = "index"
   mediaType = "text/html"
