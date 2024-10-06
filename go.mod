@@ -2,7 +2,7 @@ module github.com/kilianpaquier/kilianpaquier.github.io
 
 go 1.23
 
-toolchain go1.23.0
+toolchain go1.23.2
 
 // replace github.com/kilianpaquier/hugot => /home/debian/workspaces/github.com/kilianpaquier/hugot
 
