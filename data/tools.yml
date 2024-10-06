@@ -49,3 +49,6 @@
 - name: Confluence
   type: svg
   value: /static/devicon/confluence-plain.svg
+- name: JSON Schema
+  type: svg
+  value: /static/devicon/jsonschema-original.svg

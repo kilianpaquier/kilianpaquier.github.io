@@ -28,6 +28,9 @@
     - name: GitHub Actions
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
+    - name: JSON Schema
+      type: svg
+      value: /static/devicon/jsonschema-original.svg
   title: Craft
 
 - description: GitLab CI/CD template pipelines for Golang, Node.js, and Maven.
