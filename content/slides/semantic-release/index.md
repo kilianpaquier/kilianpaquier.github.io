@@ -11,33 +11,25 @@ title: 📦🚀 Semantic Release
 
 #### Semantic Release
 
-<!-- no toc -->
-- [Qu'est-ce donc ?](#1)
-- [*Semantic Versioning*](#2)
-- [Etapes d'exécution](#3)
-- [Configuration](#4)
-- [Branches](#5)
-- [Extensions](#6)
-- [Alternatives](#7)
-
 ---
 
-##### Qu'est-ce donc ?
+#### Qu'est-ce donc ?
 
 - Produit *Open Source* pour gérer le *versioning* avec git
-- Créer les *releases* à partir des commits
-- Développé en javascript
-- Fonctionnant en 9 étapes séparées
+- Publie des *tags* **git** à partir des *commits*
+- Développé en **JavaScript**
+- Processus de publication en plusieurs étapes
 - Extensible avec des *plugins*
 - Configurable avec la *CLI* (*Command Line Interface*)
 - Configurable avec un fichier (`.releaserc` au format `.yaml`, `.json` ou `.js`)
 
 ---
 
-##### *Semantic Versioning*
+#### Comment calculer une version ?
 
-Aussi nommé [*semver*](https://semver.org/), c'est une spécification pour le nommage des versions.
-Format assez complet [ici](https://semver.org/#backusnaur-form-grammar-for-valid-semver-versions) mais voici quelques exemples :
+Basé sur du [*Semantic Versioning*](https://semver.org/) (ou *semver*), 
+[spécification](https://semver.org/#backusnaur-form-grammar-for-valid-semver-versions) (assez complète) pour le nommage de version.
+Quelques exemples :
 
 - `1.0.0`
 - `12.16.1788`
@@ -46,31 +38,25 @@ Format assez complet [ici](https://semver.org/#backusnaur-form-grammar-for-valid
 - `1.0.0+702c7fcc879`
 - `1.0.0-dev.702c7fcc879`
 
-Il est commun en supplément d'ajouter le préfixe "v" aux versions, c'est d'ailleurs pour cela que **semantic-release** propose une option de configuration spécifique pour ça.
+Commun en supplément d'ajouter le préfixe "v" aux versions, 
+l'option `tagFormat` permet de paramétrer plus précisement le format du *tag* créé.
 
 ---
 
 {{% section %}}
 
-##### Étapes d'exécution
+#### Quel est le processus de publication ?
 
-- *Verify Conditions* :
-  - Vérification de certaines conditions (*tokens* d'accès par exemple)
-- *Get last release* :
-  - Récupération des *commits* réalisés depuis la dernière *release*
-- *Analyze commits* :
-  - Détermination du type de *release* (*prerelease*, *patch*, mineur, majeur, next, etc.)
-- *Verify release* :
-  - Sans doute une étape libre pour les extensions afin de s'assurer que la *release* est conforme
+- *Verify Conditions* : Vérification de certaines conditions (*tokens* d'accès par exemple)
+- *Get last release* : Récupération des *commits* réalisés depuis la dernière version
+- *Analyze commits* : Détermination de la nouvelle version (*prerelease*, *patch*, mineur, majeur, next, etc.)
+- *Verify release* : Etape libre pour les extensions afin de déterminer la conformité de la *release*
 
 ---
 
-- *Generate notes* : Génération des notes de la *release*
-  - Apparaîssent dans la page de la *release* (si cette notion existe sur la plateforme git utilisée)
-  - Apparaîssent dans le fichier `CHANGELOG.md`
-- *Create git tag* : Création du *tag* git
+- *Generate notes* : Génération des notes de la *release* (titre du *commit*, notes supplémentaires, organisation en section)
+- *Create git tag* : Création du *tag* **git**
 - *Prepare* : Préparation de la *release*
-  - Sans doute une étape libre pour les extensions afin de préparation l'étape de *publish*
 - *Publish* : Publication de la *release*
 - *Notify* : Notification du succès ou de l'échec de la *release*
 
@@ -78,7 +64,7 @@ Il est commun en supplément d'ajouter le préfixe "v" aux versions, c'est d'ail
 
 ---
 
-##### Configuration
+#### Comment configurer l'outil ?
 
 - `--extends`
 - `--branches`
@@ -91,7 +77,14 @@ Il est commun en supplément d'ajouter le préfixe "v" aux versions, c'est d'ail
 
 ---
 
-##### Branches
+{{% section %}}
+
+#### En quoi consiste la configuration des branches ?
+
+- Préciser quelles branches peuvent être publiées
+- Préciser si une branche spécifique est dite de *prerelease* et son identifiant de *prerelease*
+
+---
 
 Gère les globs [micromatch](https://github.com/micromatch/micromatch?tab=readme-ov-file#matching-features)
 
@@ -104,22 +97,32 @@ branches:
   - next
   - next-major
   # la branche nommée "beta" est catégorisée en *prerelease*
-  # le *tag* créé sera donc 1.12.5-beta.X
+  # le *tag* créé sera de la forme 1.12.5-beta.X
   - { name: "beta", prerelease: true }
   # la branche nommée "staging" est catégorisée en *prerelease*
-  # le *tag* créé sera donc 1.12.5-beta.X
+  # le *tag* créé sera de la forme 1.12.5-beta.X
   - { name: "staging", prerelease: "beta" }
 ```
+
+{{% /section %}}
 
 ---
 
 {{% section %}}
 
-##### Extensions
+#### A quoi servent les extensions ?
+
+Par défaut, **semantic-release** ne gère que la création du *tag* **git** et force la présence d'au moins une extension pour l'analyse des *commits*.
+
+Quelques comportements pouvant être ajoutés par les extensions :
+
+- La création de notes de version (qui pourraient être intégrées à une page de *release*)
+- La création d'une *release* **GitHub**, **GitLab** ou **Gitea**
+- La publication d'un *package* npm, ou maven sur un registre
+- La publication d'une image Docker sur un registre
+- La fusion de la branche publiée dans une autre branche
 
 ---
-
-###### Par défaut
 
 - [**@semantic-release/commit-analyzer**](https://github.com/semantic-release/commit-analyzer) :
   - Analyse des *commits*
@@ -133,19 +136,6 @@ branches:
   - Création de *release* **GitHub** et notification sur les *pull requests* / *issues*
 
 ---
-
-###### Autres
-
-- [**@semantic-release/changelog**](https://github.com/semantic-release/changelog) :
-  - Création / mise à jour du fichier `CHANGELOG.md` avec les notes de *release*
-- [**@semantic-release/exec**](https://github.com/semantic-release/exec) :
-  - Exécution de scripts shell / des commandes shell lors des étapes d'une *release*
-- [**@semantic-release/git**](https://github.com/semantic-release/git) :
-  - Ajout d'un *commit* à la branche publiée
-
----
-
-###### Exemples
 
 ```yaml
 plugins:
@@ -182,40 +172,17 @@ plugins:
         noteKeywords: [ "BREAKING CHANGES", "BREAKING" ]
 ```
 
-Exemple de ce que ça donne [ici](https://github.com/semantic-release/semantic-release/releases/tag/v24.0.0).
+{{% /section %}}
 
 ---
 
-```yaml
-plugins:
-  - "@semantic-release/changelog"
-  - "semantic-release-license"
-  - - "@semantic-release/git"
-    - assets: [ "CHANGELOG.md", "LICENSE" ]
-      message: "chore(release): v${nextRelease.version} [skip ci]"
-  - - "@semantic-release/github"
-    - assets:
-        - { path: "CHANGELOG.md", label: "CHANGELOG.md" }
-        - path: "checksums.txt"
-        - path: "dist"
-      failComment: false
-      failTitle: false
-      successComment: 🎉 Resolved in ${nextRelease.version} 🎉
-```
+##### Quel résultat cela peut donner ?
+
+{{< figure src="/blog/semantic-release/semantic-release.webp" class="text-center" width="600px" >}}
 
 ---
 
-###### *Open Source*
-
-- Création de *releases* **GitHub**, **GitLab** et **Gitea**
-- Incrémentation de la version dans le `pom.xml` pour maven et déploiement du *package*
-- Mise à jour de la date dans le fichier `LICENSE`
-- *Backmerge* de la branche publiée avec une ou plusieurs branches
-- Chargement d'un image docker sur un registre
-
----
-
-##### Développer une extension
+##### Comment développer une extension ?
 
 ```ts
 export interface Config {
@@ -234,13 +201,10 @@ export const success = async (Config, SuccessContext)
 export const fail = async (Config, FailContext)
 ```
 
-{{% /section %}}
-
 ---
 
-##### Alternatives
+##### Existe-t-il des alternatives ?
 
-- [**GH Release**](https://github.com/softprops/action-gh-release)
-- [**Release Drafter**](https://github.com/release-drafter/release-drafter)
-- [**Release it**](https://github.com/release-it/release-it)
-- [**Release Please**](https://github.com/googleapis/release-please)
+- [**gh-release**](https://github.com/softprops/action-gh-release)
+- [**release-drafter**](https://github.com/release-drafter/release-drafter)
+- [**release-please**](https://github.com/googleapis/release-please)
