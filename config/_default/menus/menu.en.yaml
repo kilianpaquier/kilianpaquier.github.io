@@ -1,13 +1,18 @@
-main: []
+main:
   # - identifier: home
   #   name: Home
   #   url: /
   #   weight: 5
 
-  # - identifier: resume
-  #   name: My Resume
-  #   url: /resume/
-  #   weight: 20
+  - identifier: resume
+    name: My Resume
+    url: /resume/
+    weight: 20
+
+  - identifier: blog
+    name: Blog
+    url: /blog/
+    weight: 20
 
   # - identifier: slides
   #   name: Slides
