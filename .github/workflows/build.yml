@@ -5,13 +5,18 @@ run-name: Hugo Build
 
 on:
   workflow_call:
+    inputs:
+      skip:
+        description: Whether to skip the build job or not
+        default: false
+        type: boolean
 
 jobs:
 
   build:
     name: Build
     runs-on: ubuntu-latest
-    needs: version
+    if: ${{ ! inputs.skip }}
     steps:
       - uses: actions/checkout@v4
         with:
