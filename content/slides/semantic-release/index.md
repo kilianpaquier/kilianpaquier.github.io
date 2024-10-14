@@ -1,6 +1,6 @@
 ---
 date: 2024-09-15
-description: L'un des meilleurs outils *open source* pour faire du *versioning* git ?
+description: L'un des meilleurs outils *Open Source* pour faire du *versioning* git ?
 image: /slides/semantic-release/semantic-release-logo.svg
 layout: bundle
 logo:
@@ -125,15 +125,14 @@ Quelques comportements pouvant être ajoutés par les extensions :
 ---
 
 - [**@semantic-release/commit-analyzer**](https://github.com/semantic-release/commit-analyzer) :
-  - Analyse des *commits*
-  - Catégorisation des *commits* pour déterminer le type de la prochaine *release*
+  - Analyse les *commits* réalisés depuis la dernière version et détermine la nouvelle version
 - [**@semantic-release/release-notes-generator**](https://github.com/semantic-release/release-notes-generator) :
-  - Création des notes de la *release* organisées en sections
+  - Crée les notes de la *release* organisées en sections à partir de la liste des *commits* de la nouvelle version
 - [**@semantic-release/npm**](https://github.com/semantic-release/npm) :
-  - Création du *package* sur un registre npm (par défaut [npmjs.org](https://npmjs.org))
-  - Incrémentation de la version dans le `package.json` (non poussé)
+  - Incrémente la version présente dans le `package.json` avec la nouvelle version (attention ce n'est pas poussé sur le dépôt **git**)
+  - Publie le *package* npm sur un registre approprié (par défaut [npmjs.org](https://npmjs.org)) si besoin
 - [**@semantic-release/github**](https://github.com/semantic-release/github) :
-  - Création de *release* **GitHub** et notification sur les *pull requests* / *issues*
+  - Crée la *release* **GitHub** et notifie les *pull requests* / *issues* que ces sujets ont été publiés
 
 ---
 

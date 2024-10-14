@@ -211,7 +211,7 @@ voici quelques extensions *Open Source* ajoutant différents comportements :
 - Ajouter un *commit* à la branche publiée avec différents *assets* modifiés durant le processus de publication 
   (`package.json`, `pom.xml`, `CHANGELOG.md`, `LICENSE`, etc.) : [**@semantic-release/git**](https://github.com/semantic-release/git)
 
-#### Quel résultat que ça peut donner ?
+#### Quel résultat cela peut donner ?
 
 Voici un exemple de ce qu'une *release* sur **GitHub** peut donner :
 
