@@ -1,3 +1,19 @@
+## [6.6.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.5.0...v6.6.0) (2024-10-16)
+
+### Features
+
+* add new slides and blog sections initialized with semantic-release presentation ([105a7ab](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/105a7ab1143ac22c43574c2dca44d590c7224259))
+
+### Bug Fixes
+
+* **config:** remove useless logo definition ([21dcea0](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/21dcea0bd57293153cf842a1baa1d6fdedc2c65a))
+* **slides:** fix width for top left logo ([8247dfc](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/8247dfca954f1201a68cf12b09f1b1b7a4ef7402))
+
+### Chores
+
+* **config:** add menu for resume and blog ([7f3e7b7](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/7f3e7b76e53d9d6e16c4749ba262c07db05adb68))
+* **tools:** add json-schema ([7117617](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/7117617940cd86713cec27519a0ddb2155c412f1))
+
 ## [6.5.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.4.1...v6.5.0) (2024-09-15)
 
 
