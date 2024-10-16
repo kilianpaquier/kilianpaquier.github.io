@@ -177,7 +177,7 @@ plugins:
 
 ##### Quel résultat cela peut donner ?
 
-{{< figure src="/blog/semantic-release/semantic-release.webp" class="text-center" width="600px" >}}
+{{< figure src="/blog/semantic-release/semantic-release.webp" width="600px" >}}
 
 ---
 
