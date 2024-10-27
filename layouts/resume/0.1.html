@@ -105,7 +105,7 @@
                                 </li>
                             </ul>
 
-                            <p class="my-1">{{ $p.description }}</p>
+                            <p class="my-1">{{ $p.description | markdownify }}</p>
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                                 </li>
                             </ul>
                         </p>
-                        <p class="card-text">{{ $p.description }}</p>
+                        <p class="card-text">{{ $p.description | markdownify }}</p>
                     </div>
                 </div>
             </div>

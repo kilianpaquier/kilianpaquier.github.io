@@ -1,18 +1,21 @@
-- description: Golang structs builder generator.
+- description: |
+    Plugin for [**semantic-release**](https://github.com/semantic-release/semantic-release) 
+    to backmerge released branch into one or multiple others (main => staging, main => develop, staging => develop, etc.) 
+    and create a pull request in case of conflicts.
   icon:
     name: GitHub
     type: remote-svg
     value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
-  image: /projects/go-builder-generator.webp
-  link: https://github.com/kilianpaquier/go-builder-generator
+  image: /projects/semantic-release-backmerge.webp
+  link: https://github.com/kilianpaquier/semantic-release-backmerge
   skills:
-    - name: Golang
+    - name: TypeScript
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
     - name: GitHub Actions
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
-  title: Go Builder Generator
+  title: semantic-release-backmerge
 
 - description: Project layout generator (dockerfile, github actions, gitlab cicd, helm chart, license file, etc.).
   icon:
@@ -31,7 +34,23 @@
     - name: JSON Schema
       type: svg
       value: /static/devicon/jsonschema-original.svg
-  title: Craft
+  title: craft
+
+- description: Golang structs builder generator.
+  icon:
+    name: GitHub
+    type: remote-svg
+    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
+  image: /projects/go-builder-generator.webp
+  link: https://github.com/kilianpaquier/go-builder-generator
+  skills:
+    - name: Golang
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+    - name: GitHub Actions
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
+  title: go-builder-generator
 
 - description: GitLab CI/CD template pipelines for Golang, Node.js, and Maven.
   icon:
@@ -57,7 +76,7 @@
     - name: Hugo
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hugo/hugo-original.svg
-  title: Hugot
+  title: hugot
 
 - description: A Golang application for installing packages that require multiple manual actions.
   icon:
@@ -75,7 +94,7 @@
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
     - name: Powershell
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/powershell/powershell-original.svg
-  title: Yait
+  title: yait
 
 - description: A two to four player Beat Them All game to have fun with friends and retrieve stolen strawberries.
   icon:

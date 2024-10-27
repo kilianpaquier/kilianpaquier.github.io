@@ -1,10 +1,10 @@
 ---
 date: 2024-09-15
 description: L'un des meilleurs outils *Open Source* pour faire du *versioning* git ?
-image: /slides/semantic-release/semantic-release-logo.svg
+image: /devicon/semanticrelease-original.svg
 layout: bundle
 logo:
-  src: /slides/semantic-release/semantic-release-logo.svg
+  src: /devicon/semanticrelease-original.svg
 outputs: [ "Reveal" ]
 title: 📦🚀 Semantic Release
 ---

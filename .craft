@@ -5,8 +5,7 @@ ci:
   auth:
     release: github-token
   name: github
-  release:
-    auto: true
+  release: {}
   static:
     name: netlify
 license: mit

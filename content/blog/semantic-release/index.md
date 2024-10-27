@@ -1,7 +1,7 @@
 ---
 date: 2024-09-15
 description: L'un des meilleurs outils *Open Source* pour faire du *versioning* git ?
-image: /slides/semantic-release/semantic-release-logo.svg
+image: /devicon/semanticrelease-original.svg
 title: 📦🚀 Semantic Release
 ---
 
@@ -50,7 +50,7 @@ Dans les détails de l'outil, le processus de publication consiste en suite d'é
 - *Publish* : Publication de la *release*
 - *Notify* : Notification du succès ou de l'échec de la *release*
 
-Lorsqu'une étape lève une exception / erreur, alors les suivantes ne sont pas exécutées et l'exécution s'arrête avec l'erreur rencontrée (hors *notify*).
+Lorsqu'une étape lève une exception / erreur, alors les suivantes ne sont pas exécutées (sauf la notification d'échec) et l'exécution s'arrête avec l'erreur rencontrée.
 En réalité, **semantic-release** délègue une majeure partie du *flow* d'exécution aux extensions (abordé plus bas), qui peuvent se greffer à chacune des étapes.
 Bien sûr, par défaut, un certain nombre d'extensions sont définies pour que l'outil ait une vraie plus-value sans configuration particulière.
 
