@@ -6,6 +6,19 @@ run-name: Netlify
 on:
   workflow_call:
   workflow_dispatch:
+  push:
+    branches:
+      - alpha
+      - beta
+      - dev
+      - develop
+      - development
+      - next
+      - staging
+      - main
+      - master
+      - v[0-9]+.[0-9]+.x
+      - v[0-9]+.x
 
 jobs:
 
