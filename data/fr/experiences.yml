@@ -7,6 +7,8 @@
   missions:
     - Participation au cycle de vie complet des fonctionnalités¹.
     - Manager opérationnel de plusieurs collaborateurs.
+    - Présentations techniques au reste de l'agence.
+    - Réalisation d'entretiens techniques pour de nouveaux collaborateurs.
   skills:
     - name: Golang
       type: remote-svg
