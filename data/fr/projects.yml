@@ -17,7 +17,7 @@
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
   title: semantic-release-backmerge
 
-- description: Générateur de structures de projets (github actions, gitlab cicd, dockerfile, chart helm, license etc.).
+- description: Générateur de structures de projets (**GitHub** Actions, **GitLab** CI/CD, Dockerfile, **Helm** charts, license, etc.).
   icon:
     name: GitHub
     type: remote-svg
@@ -36,7 +36,7 @@
       value: /static/devicon/jsonschema-original.svg
   title: craft
 
-- description: Générateur de builders pour les structures golang.
+- description: Générateur de builders pour les structures Golang.
   icon:
     name: GitHub
     type: remote-svg

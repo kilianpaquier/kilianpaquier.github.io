@@ -1,5 +1,21 @@
 - captions:
     - ¹ Development, documentation, review, tests, deployment, support
+  company: Sopra Steria
+  dates: September 2024 - Today
+  image: /experiences/soprasteria.webp
+  job: Software Engineer
+  missions:
+    - Involvement in all features' lifecycle¹.
+    - Operational manager of multiple colleagues.
+  skills:
+    - name: Golang
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+    - name: Temporal
+      type: svg
+      value: /static/devicon/temporal-original.svg
+- captions:
+    - ¹ Development, documentation, review, tests, deployment, support
     - ² CI/CD, automated notifications bot, projects' layout generator, automated tests tool
   company: Sopra Steria
   dates: October 2022 - September 2024
@@ -13,7 +29,8 @@
     - Grafana dashboards setups for software observability.
     - Contributing to client's development tools².
     - Functional and technical training of our new team members.
-    - Technical presentations to colleagues.
+    - Technical presentations to team members.
+    - Internal trainer on GitLab CI/CD.
   skills:
     - name: Golang
       type: remote-svg

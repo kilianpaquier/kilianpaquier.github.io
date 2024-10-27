@@ -17,7 +17,7 @@
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
   title: semantic-release-backmerge
 
-- description: Project layout generator (dockerfile, github actions, gitlab cicd, helm chart, license file, etc.).
+- description: Project layout generator (**GitHub** Actions, **GitLab** CI/CD, Dockerfile, **Helm** charts, license, etc.).
   icon:
     name: GitHub
     type: remote-svg
