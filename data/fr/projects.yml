@@ -78,24 +78,6 @@
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hugo/hugo-original.svg
   title: hugot
 
-- description: Application Golang d'installation de packages nécessitant plusieurs actions manuelles.
-  icon:
-    name: GitLab
-    type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
-  image: /projects/yait.webp
-  link: https://gitlab.com/gotools-land/yait/yait
-  skills:
-    - name: Golang
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
-    - name: Bash
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
-    - name: Powershell
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/powershell/powershell-original.svg
-  title: yait
-
 - description: Beat Them All de deux à quatre joueurs pour s'amuser entre amis et récupérer les fraises volées.
   icon:
     name: Itchio
@@ -114,25 +96,3 @@
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/csharp/csharp-original.svg
   title: For The Berry
-
-- description: Application de consultation et recherche d'exercices associés aux machines des salles de sport (via code QR).
-  icon:
-    name: GitLab
-    type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
-  image: /projects/shareyourfit.webp
-  link: https://gitlab.com/kilianpaquier/share-your-fit
-  skills:
-    - name: Java
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg
-    - name: Android
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/android/android-plain.svg
-    - name: Android studio
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/androidstudio/androidstudio-original.svg
-    - name: Firebase
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/firebase/firebase-plain.svg
-  title: Share Your Fit
