@@ -1,10 +1,12 @@
-- image: /interests/basketball.webp
-  name: Basket-ball
+- image: /interests/pool.webp
+  name: Billard
+- image: /interests/programming.webp
+  name: Programmation
+- image: /interests/mangas.webp
+  name: Mangas et manwhas
 - image: /interests/movies.webp
   name: Séries, films et animes
 - image: /interests/videogames.webp
   name: Jeux vidéo
-- image: /interests/mangas.webp
-  name: Mangas et manwhas
-- image: /interests/programming.webp
-  name: Programmation
+- image: /interests/basketball.webp
+  name: Basket-ball
