@@ -1,7 +1,9 @@
 ---
 date: 2024-09-15
 description: L'un des meilleurs outils *Open Source* pour faire du *versioning* git ?
-image: /devicon/semanticrelease-original.svg
+image: 
+  src: /devicon/semanticrelease-original.svg
+  height: 200px
 layout: bundle
 logo:
   src: /devicon/semanticrelease-original.svg
