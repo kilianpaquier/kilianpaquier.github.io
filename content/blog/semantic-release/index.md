@@ -67,7 +67,7 @@ Comme abordé plus haut, **semantic-release** peut être configuré avec plusieu
 - `--repositoryUrl` : *URL* vers le dépôt avec votre code (optionnel, par défaut récupéré au travers de l'*URL* **git**)
 - `--dry-run` : Exécute en *dry run* la création de la *release*
 - `--ci` / `--no-ci` : *Bypass* des vérifications liées à un environnement *CI* (*Continuous Integration*) pour publier de nouvelles versions depuis un environnement local
-- `--debug` : Ajoute les logs de niveau *DEBUG*
+- `--debug` : Ajoute les logs réalisés avec [**debug**](https://github.com/debug-js/debug) dont le namespace est `semantic-release:`
 
 Personnellement, je ne suis pas très *fan* de l'option `--extends` puisque pour qu'une configuration puisse être étendue, 
 celle-ci doit être publiée sur un registre npm. 
