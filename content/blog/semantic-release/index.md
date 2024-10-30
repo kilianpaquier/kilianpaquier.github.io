@@ -248,14 +248,15 @@ export interface Config {
     [k: string]: any
 }
 
-// fonction exécutée pour la vérifier certaines conditions pour la bonne création de la release
-// par exemple le bon format de la configuration ou les tokens d'accès
+// fonction exécutée pour vérifier certaines conditions comme par exemple 
+// le bon format de la configuration du plugin
+// ou encore la vérification des variables d'environnement (token d'accès, URL d'API, etc.)
 export const verifyConditions = async (globalConfig: Config, context: VerifyConditionsContext) => {}
 
 // fonction exécutée pour l'analyse des commits depuis la dernière release
 export const analyzeCommits = async (globalConfig: Config, context: AnalyzeCommitsContext) => {}
 
-// fonction exécutée pour vérifier la conformité de la release (on en a parlé plus haut)
+// fonction exécutée pour vérifier la conformité de la release
 export const verifyRelease = async (globalConfig: Config, context: VerifyReleaseContext) => {}
 
 // fonction exécutée pour / lors de la génération des notes de la release
