@@ -45,7 +45,7 @@ Dans les détails de l'outil, le processus de publication consiste en suite d'é
 - *Verify Conditions* : Vérification de certaines conditions (*tokens* d'accès par exemple)
 - *Get last release* : Récupération des *commits* réalisés depuis la dernière version
 - *Analyze commits* : Détermination de la nouvelle version (*prerelease*, *patch*, mineur, majeur, next, etc.)
-- *Verify release* : Etape libre pour les extensions afin de déterminer la conformité de la *release*
+- *Verify release* : Étape libre pour les extensions afin de déterminer la conformité de la *release*
 - *Generate notes* : Génération des notes de la *release* (titre du *commit*, notes supplémentaires, organisation en section)
 - *Create git tag* : Création du *tag* **git**
 - *Prepare* : Préparation de la *release*
@@ -107,7 +107,7 @@ branches:
     prerelease: beta
 ```
 
-#### A quoi servent les extensions ?
+#### À quoi servent les extensions ?
 
 Par défaut, **semantic-release** ne gère que la création d'un *tag* **git**, le reste du processus de publication doit être géré par les extensions 
 et au moins une extension doit être présente pour gérer l'étape d'analyse des *commits*.
