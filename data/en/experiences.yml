@@ -14,6 +14,9 @@
     - name: Temporal
       type: svg
       value: /static/devicon/temporal-original.svg
+    - name: Cucumber
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/cucumber/cucumber-plain.svg
 - captions:
     - ¹ Development, documentation, review, tests, deployment, support
     - ² CI/CD, automated notifications bot, projects' layout generator, automated tests tool
