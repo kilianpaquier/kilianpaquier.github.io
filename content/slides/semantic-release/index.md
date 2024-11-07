@@ -112,7 +112,7 @@ branches:
 
 {{% section %}}
 
-#### A quoi servent les extensions ?
+#### À quoi servent les extensions ?
 
 Par défaut, **semantic-release** ne gère que la création du *tag* **git** et force la présence d'au moins une extension pour l'analyse des *commits*.
 
@@ -177,13 +177,13 @@ plugins:
 
 ---
 
-##### Quel résultat cela peut donner ?
+#### Quel résultat cela peut donner ?
 
 {{< figure src="/blog/semantic-release/semantic-release.webp" width="600px" >}}
 
 ---
 
-##### Comment développer une extension ?
+#### Comment développer une extension ?
 
 ```ts
 export interface Config {
@@ -204,7 +204,7 @@ export const fail = async (Config, FailContext)
 
 ---
 
-##### Existe-t-il des alternatives ?
+#### Existe-t-il des alternatives ?
 
 - [**gh-release**](https://github.com/softprops/action-gh-release)
 - [**release-drafter**](https://github.com/release-drafter/release-drafter)

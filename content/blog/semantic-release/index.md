@@ -290,7 +290,7 @@ qui résolvent aussi cette problématique de suivi et de maintenance des livrais
 C'est une Action **GitHub** configurable qui se base principalement sur les *pull requests* réalisées 
 depuis la dernière version publiée.
 
-L'aspect intéressement concerne la génération des notes de *release* 
+L'aspect intéressant concerne la génération des notes de *release* 
 puisque l'outil peut se baser sur le fichier `.github/release.yml` qui est aussi le fichier par défaut 
 qu'utilise **GitHub** pour générer les notes de *release* quand celle-ci est 
 [créée à la main](https://docs.github.com/fr/repositories/releasing-projects-on-github/automatically-generated-release-notes).
