@@ -42,7 +42,7 @@ c'est d'ailleurs pour cela que **semantic-release** propose une option de config
 
 Dans les détails de l'outil, le processus de publication consiste en suite d'étapes (fonctions) qui sont exécutées dans l'ordre suivant :
 
-- *Verify Conditions* : Vérification de certaines conditions (*tokens* d'accès par exemple)
+- *Verify conditions* : Vérification de certaines conditions (*tokens* d'accès par exemple)
 - *Get last release* : Récupération des *commits* réalisés depuis la dernière version
 - *Analyze commits* : Détermination de la nouvelle version (*prerelease*, *patch*, mineur, majeur, next, etc.)
 - *Verify release* : Étape libre pour les extensions afin de déterminer la conformité de la *release*

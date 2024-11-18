@@ -49,10 +49,10 @@ l'option `tagFormat` permet de paramétrer plus précisement le format du *tag* 
 
 #### Quel est le processus de publication ?
 
-- *Verify Conditions* : Vérification de certaines conditions (*tokens* d'accès par exemple)
+- *Verify conditions* : Vérification de certaines conditions (*tokens* d'accès par exemple)
 - *Get last release* : Récupération des *commits* réalisés depuis la dernière version
 - *Analyze commits* : Détermination de la nouvelle version (*prerelease*, *patch*, mineur, majeur, next, etc.)
-- *Verify release* : Etape libre pour les extensions afin de déterminer la conformité de la *release*
+- *Verify release* : Étape libre pour les extensions afin de déterminer la conformité de la *release*
 
 ---
 
@@ -125,6 +125,8 @@ Quelques comportements pouvant être ajoutés par les extensions :
 - La fusion de la branche publiée dans une autre branche
 
 ---
+
+##### Extensions par défaut
 
 - [**@semantic-release/commit-analyzer**](https://github.com/semantic-release/commit-analyzer) :
   - Analyse les *commits* réalisés depuis la dernière version et détermine la nouvelle version
