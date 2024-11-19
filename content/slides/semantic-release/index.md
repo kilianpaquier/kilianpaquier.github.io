@@ -92,7 +92,7 @@ Gère les globs [micromatch](https://github.com/micromatch/micromatch?tab=readme
 
 ```yaml
 branches:
-  # 1.12.x, 1.x.x
+  # 1.12.x, 1.x, 1.x.x
   - +([0-9])?(.{+([0-9]),x}).x
   - master
   - main
