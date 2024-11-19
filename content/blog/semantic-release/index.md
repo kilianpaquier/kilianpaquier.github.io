@@ -86,7 +86,7 @@ ou un *glob* qui respecte le format [**micromatch**](https://github.com/micromat
 
 ```yaml
 branches:
-  # 1.12.x, 1.x, 1.x.x
+  # 1.12.x, 1.x.x
   # https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#maintenance-branches
   - +([0-9])?(.{+([0-9]),x}).x
   - master
