@@ -121,7 +121,7 @@ jobs:
   netlify:
     name: Netlify
     runs-on: ubuntu-latest
-    if: ${{ (github.event_name == 'push' && github.ref_protected == 'true') || github.event_name == 'workflow_dispatch' }}
+    if: ${{ (github.event_name == 'push' && github.ref_protected) || github.event_name == 'workflow_dispatch' }}
     needs:
       - hugo-build
     environment:
@@ -159,7 +159,7 @@ jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'workflow_dispatch' && github.ref_protected == 'true' }}
+    if: ${{ github.event_name == 'workflow_dispatch' && github.ref_protected }}
     environment:
       name: release
       url: ${{ github.server_url }}/${{ github.repository_owner }}/${{ github.repository }}/releases/tag/${{ steps.semrel_version.outputs.new_release_version }}
