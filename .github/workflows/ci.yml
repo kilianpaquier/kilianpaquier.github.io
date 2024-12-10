@@ -162,7 +162,7 @@ jobs:
     if: ${{ github.event_name == 'workflow_dispatch' && github.ref_protected }}
     environment:
       name: release
-      url: ${{ github.server_url }}/${{ github.repository_owner }}/${{ github.repository }}/releases/tag/${{ steps.semrel_version.outputs.new_release_version }}
+      url: ${{ github.server_url }}/${{ github.repository }}/releases/tag/v${{ steps.semrel_version.outputs.new_release_version }}
     needs:
       - hugo-build
       - netlify
