@@ -1,3 +1,18 @@
+## [6.7.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.6.0...v6.7.0) (2024-12-10)
+
+### 🚀 Features
+
+* add latest in progress experience with little description ([5f7a28d](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/5f7a28df3aa47e8c6943c758b90434eeac5d8a44))
+* add pool in interests section ([7b6b2a0](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/7b6b2a0c253537a14c9375c77bd04987f8cf7ab2))
+* add semantic-release-backmerge project ([3ca80bd](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/3ca80bdf30d557de134c3b9b0f5b279b80918952))
+* **slides:** add timescale slides ([12c3c18](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/12c3c182b6e9877fb1104b64efe244cb6308003f))
+
+### ⚙️ Chores
+
+* remove two old projects ([0e32daa](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/0e32daaa57135313910f1af8359a6a6cf381ae5f))
+* **resume:** add cucumber to latest experience ([078af0f](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/078af0f3dd0d469a832d026f8041682e3c8a2414))
+* **semantic-release:** provide logo size with hugot v1.3.0 ([7e42c0c](https://github.com/kilianpaquier/kilianpaquier.github.io/commit/7e42c0cd2b49a9f369ea8bbde9e148abb8ab4347))
+
 ## [6.6.0](https://github.com/kilianpaquier/kilianpaquier.github.io/compare/v6.5.0...v6.6.0) (2024-10-16)
 
 ### Features
