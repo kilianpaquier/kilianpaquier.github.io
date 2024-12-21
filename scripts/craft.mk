@@ -6,4 +6,4 @@ generate:
 
 .PHONY: clean
 clean:
-	@git clean -Xf ./*
+	@git clean -dfX
