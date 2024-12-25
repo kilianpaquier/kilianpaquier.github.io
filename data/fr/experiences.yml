@@ -7,6 +7,7 @@
   missions:
     - Participation au cycle de vie complet des fonctionnalités¹.
     - Manager opérationnel de plusieurs collaborateurs.
+    - Présentations techniques au reste de la communauté technique de l'agence.
   skills:
     - name: Golang
       type: remote-svg
@@ -17,6 +18,9 @@
     - name: Cucumber
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/cucumber/cucumber-plain.svg
+    - name: Grafana
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/grafana/grafana-plain.svg
 - captions:
     - ¹ Développement, documentation, relecture, tests, mise en production, support
     - ² CI/CD, robot de notifications automatisées, générateur du squelette des projets, outil de tests automatisés

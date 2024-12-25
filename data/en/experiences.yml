@@ -7,6 +7,7 @@
   missions:
     - Involvement in all features' lifecycle¹.
     - Operational manager of multiple colleagues.
+    - Technical presentations to office's branch technical community.
   skills:
     - name: Golang
       type: remote-svg
@@ -17,6 +18,9 @@
     - name: Cucumber
       type: remote-svg
       value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/cucumber/cucumber-plain.svg
+    - name: Grafana
+      type: remote-svg
+      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/grafana/grafana-plain.svg
 - captions:
     - ¹ Development, documentation, review, tests, deployment, support
     - ² CI/CD, automated notifications bot, projects' layout generator, automated tests tool
