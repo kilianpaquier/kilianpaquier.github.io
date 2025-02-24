@@ -1,30 +1,30 @@
 ---
 date: 2024-09-15
 description: L'un des meilleurs outils *Open Source* pour faire du *versioning* git ?
-image: 
+image:
   src: /devicon/semanticrelease-original.svg
   height: 200px
 title: 📦🚀 Semantic Release
 ---
 
 Lorsque l'on construit un logiciel, on cherche généralement à gérer des versions pour simplifier le suivi ou la maintenance de ce qui a été livré ou déployé.
-Dans cette démarche, en creusant la *CICD* (*Continuous Integration*, *Continuous Delivery*, *Continuous Deployment*) sur l'une de mes missions, 
+Dans cette démarche, en creusant la *CICD* (*Continuous Integration*, *Continuous Delivery*, *Continuous Deployment*) sur l'une de mes missions,
 pour gérer les versions de mes projets personnels, je suis tombé sur [**semantic-release**](https://github.com/semantic-release/semantic-release).
 
-En creusant un peu, je me suis rendu compte que la capacité de l'outil à être applicable peu importe le langage du logiciel était intéressante 
+En creusant un peu, je me suis rendu compte que la capacité de l'outil à être applicable peu importe le langage du logiciel était intéressante
 et que son système d'extensions permettait d'ajuster les comportements de l'outil pour la publication des versions.
 
 #### Qu'est-ce que **semantic-release** ?
 
 C'est un outil *Open Source* gérant la publication des *tags* pour des logiciels maintenus avec **git**.
-Développé en **JavaScript**, **semantic-release** est facilement extensible avec des extensions 
+Développé en **JavaScript**, **semantic-release** est facilement extensible avec des extensions
 et configurable au travers d'une *CLI* (*Command Line Interface*) ou d'un fichier (`.releaserc` au format `.yaml`, `.json` ou `.js`).
 
 Une version est calculée à partir des nouveaux *commits* (de la branche qui doit être publiée) réalisés depuis la dernière version publiée.
 
 #### Sur quoi se base t'il pour calculer une version ?
 
-Le calcul d'une version se base sur du [*Semantic Versioning*](https://semver.org/) (ou *semver*), 
+Le calcul d'une version se base sur du [*Semantic Versioning*](https://semver.org/) (ou *semver*),
 c'est une [spécification](https://semver.org/#backusnaur-form-grammar-for-valid-semver-versions) (assez complète) pour le nommage de version.
 Voici quelques exemples :
 
@@ -35,7 +35,7 @@ Voici quelques exemples :
 - `1.0.0+702c7fcc879`
 - `1.0.0-dev.702c7fcc879`
 
-Il est commun en supplément d'ajouter le préfixe "v" aux versions, 
+Il est commun en supplément d'ajouter le préfixe "v" aux versions,
 c'est d'ailleurs pour cela que **semantic-release** propose une option de configuration spécifique (`tagFormat`) pour paramétrer le format du *tag* qui sera créé.
 
 #### Quel est le processus de publication ?
@@ -69,9 +69,9 @@ Comme abordé plus haut, **semantic-release** peut être configuré avec plusieu
 - `--ci` / `--no-ci` : *Bypass* des vérifications liées à un environnement *CI* (*Continuous Integration*) pour publier de nouvelles versions depuis un environnement local
 - `--debug` : Ajoute les logs réalisés avec [**debug**](https://github.com/debug-js/debug) dont le namespace est `semantic-release:`
 
-Personnellement, je ne suis pas très *fan* de l'option `--extends` puisque pour qu'une configuration puisse être étendue, 
-celle-ci doit être publiée sur un registre npm. 
-En comparaison, une extension de configuration comme peut le faire [**renovate**](https://docs.renovatebot.com/config-presets/#preset-file-naming) 
+Personnellement, je ne suis pas très *fan* de l'option `--extends` puisque pour qu'une configuration puisse être étendue,
+celle-ci doit être publiée sur un registre npm.
+En comparaison, une extension de configuration comme peut le faire [**renovate**](https://docs.renovatebot.com/config-presets/#preset-file-naming)
 est très pratique, puisqu'il suffit simplement de préciser le chemin de la configuration.
 
 #### En quoi consiste la configuration des branches ?
@@ -81,7 +81,7 @@ Si on regarde de plus près certaines configurations, comme celle des branches, 
 - Préciser quelles branches peuvent être publiées
 - Préciser si une branche spécifique est dite de *prerelease* et son identifiant de *prerelease*
 
-Ci-dessous, un exemple complet, il faut aussi noter que le nom d'une branche peut être une chaîne de caractères fixe, 
+Ci-dessous, un exemple complet, il faut aussi noter que le nom d'une branche peut être une chaîne de caractères fixe,
 ou un *glob* qui respecte le format [**micromatch**](https://github.com/micromatch/micromatch?tab=readme-ov-file#matching-features).
 
 ```yaml
@@ -95,13 +95,13 @@ branches:
   - next-major
   # la branche nommée "beta" est catégorisée en prerelease
   # le tag créé sera de la forme 1.12.5-beta.X
-  # le X sera incrémenté en fonction du nombre de prerelease réalisées 
+  # le X sera incrémenté en fonction du nombre de prerelease réalisées
   # sur la version actuelle pointée par la beta
   - name: beta
     prerelease: true
   # la branche nommée "staging" est catégorisée en prerelease
   # le tag créé sera de la forme 1.12.5-beta.X
-  # le X sera incrémenté en fonction du nombre de prerelease réalisées 
+  # le X sera incrémenté en fonction du nombre de prerelease réalisées
   # sur la version actuelle pointée par la beta
   - name: staging
     prerelease: beta
@@ -109,10 +109,10 @@ branches:
 
 #### À quoi servent les extensions ?
 
-Par défaut, **semantic-release** ne gère que la création d'un *tag* **git**, le reste du processus de publication doit être géré par les extensions 
+Par défaut, **semantic-release** ne gère que la création d'un *tag* **git**, le reste du processus de publication doit être géré par les extensions
 et au moins une extension doit être présente pour gérer l'étape d'analyse des *commits*.
 
-Les extensions peuvent ajouter des comportements comme par exemple : 
+Les extensions peuvent ajouter des comportements comme par exemple :
 
 - La création de notes de version (qui pourraient être intégrées à une page de *release*)
 - La création d'une *release* **GitHub**, **GitLab** ou **Gitea**
@@ -132,7 +132,7 @@ Malgré tout, sans configuration particulière, **semantic-release** intègre le
 - [**@semantic-release/github**](https://github.com/semantic-release/github) :
   - Crée la *release* **GitHub** et notifie les *pull requests* / *issues* que ces sujets ont été publiés
 
-Comme l'étape d'analyse des *commits* est obligatoire dans le processus de publication de l'outil, je recommande de garder à minima 
+Comme l'étape d'analyse des *commits* est obligatoire dans le processus de publication de l'outil, je recommande de garder à minima
 l'extension **@semantic-release/commit-analyzer** qui peut être configurée pour modifier les modalités du calcul de la nouvelle version :
 
 ```yaml
@@ -161,8 +161,8 @@ plugins:
 ```
 
 L'une des fonctionnalités intéressantes sur laquelle gravitent plusieurs extensions concerne la génération des notes de *release*.
-En effet on peut retrouver **@semantic-release/release-notes-generator** (abordé plus haut) 
-et [**@semantic-release/changelog**](https://github.com/semantic-release/changelog) qui se sert de la précédente extension 
+En effet on peut retrouver **@semantic-release/release-notes-generator** (abordé plus haut)
+et [**@semantic-release/changelog**](https://github.com/semantic-release/changelog) qui se sert de la précédente extension
 pour construire ou mettre à jour le fichier `CHANGELOG.md` (afin de suivre les changements réalisés à chaque version) :
 
 ```yaml
@@ -172,7 +172,7 @@ plugins:
       # https://www.conventionalcommits.org/en/v1.0.0/#specification
       preset: conventionalcommits
 
-      # une configuration pour définir quel type de commit va 
+      # une configuration pour définir quel type de commit va
       # dans quelle section des notes de release
       presetConfig:
         types:
@@ -193,7 +193,7 @@ plugins:
   - "@semantic-release/changelog"
 ```
 
-En complément des deux exemples précédents et des extensions par défaut présentées, 
+En complément des deux exemples précédents et des extensions par défaut présentées,
 voici quelques extensions *Open Source* ajoutant différents comportements :
 
 - Créer des *release* en fonction de la plateforme **git** :
@@ -210,28 +210,28 @@ voici quelques extensions *Open Source* ajoutant différents comportements :
   - [**@saithodev/semantic-release-backmerge**](https://github.com/saitho/semantic-release-backmerge) :
     - Méthodologie de fusion (*fast forward*, *rebase*, etc.) configurable
 - Exécuter des scripts shell personnalisés sur certaines (ou toutes) étapes d'exécution : [**@semantic-release/exec**](https://github.com/semantic-release/exec)
-- Ajouter un *commit* à la branche publiée avec différents *assets* modifiés durant le processus de publication 
+- Ajouter un *commit* à la branche publiée avec différents *assets* modifiés durant le processus de publication
   (`package.json`, `pom.xml`, `CHANGELOG.md`, `LICENSE`, etc.) : [**@semantic-release/git**](https://github.com/semantic-release/git)
 
 #### Quel résultat cela peut donner ?
 
 Voici un exemple de ce qu'une *release* sur **GitHub** peut donner :
 
-{{< figure 
-  src="/blog/semantic-release/semantic-release.webp" 
-  caption="La release [v24.0.0](https://github.com/semantic-release/semantic-release/releases/tag/v24.0.0) de **semantic-release**" 
+{{< figure
+  src="/blog/semantic-release/semantic-release.webp"
+  caption="La release [v24.0.0](https://github.com/semantic-release/semantic-release/releases/tag/v24.0.0) de **semantic-release**"
   class="text-center" >}}
 
 #### Comment développer une extension ?
 
-On a parlé plus haut des possibilités d'extension, mais finalement, 
-comment [développer une extension](https://semantic-release.gitbook.io/semantic-release/developer-guide/plugin) 
+On a parlé plus haut des possibilités d'extension, mais finalement,
+comment [développer une extension](https://semantic-release.gitbook.io/semantic-release/developer-guide/plugin)
 pour apporter de la valeur ajoutée supplémentaire à **semantic-release** ?
 
-Une extension est forcément un *package* npm qui exporte (au sens **JavaScript** ou **TypeScript**) 
+Une extension est forcément un *package* npm qui exporte (au sens **JavaScript** ou **TypeScript**)
 au moins une des étapes d'exécution de **semantic-release** et qui soit "enregistré" ou "déployé" dans un registre npm.
 
-Pour que ce soit plus simple pour vos utilisateurs, je vous recommande d'utiliser le registre [npmjs.org](https://www.npmjs.com/) 
+Pour que ce soit plus simple pour vos utilisateurs, je vous recommande d'utiliser le registre [npmjs.org](https://www.npmjs.com/)
 plutôt qu'un autre registre car cela nécessiterait de la configuration supplémentaire pour l'authentification et droits d'accès.
 
 ```ts
@@ -248,7 +248,7 @@ export interface Config {
     [k: string]: any
 }
 
-// fonction exécutée pour vérifier certaines conditions comme par exemple 
+// fonction exécutée pour vérifier certaines conditions comme par exemple
 // le bon format de la configuration du plugin
 // ou encore la vérification des variables d'environnement (token d'accès, URL d'API, etc.)
 export const verifyConditions = async (globalConfig: Config, context: VerifyConditionsContext) => {}
@@ -262,11 +262,11 @@ export const verifyRelease = async (globalConfig: Config, context: VerifyRelease
 // fonction exécutée pour / lors de la génération des notes de la release
 export const generateNotes = async (globalConfig: Config, context: GenerateNotesContext) => {}
 
-// fonction exécutée pour ajouter un channel de release, 
+// fonction exécutée pour ajouter un channel de release,
 // je n'ai pas plus de contexte car je n'ai jamais poussé la réflexion sur cette fonctionnalité
 export const addChannel = async (globalConfig: Config, context: AddChannelContext) => {}
 
-// fonction exécutée pour préparer la release comme 
+// fonction exécutée pour préparer la release comme
 // mettre à jour certains fichiers ou pousser un commit
 export const prepare = async (globalConfig: Config, context: PrepareContext) => {}
 
@@ -282,41 +282,41 @@ export const fail = async (globalConfig: Config, context: FailContext) => {}
 
 #### Existe-t-il des alternatives ?
 
-C'est vrai que le sujet abordé ici était **semantic-release**, mais il existe aussi des solutions alternatives, 
+C'est vrai que le sujet abordé ici était **semantic-release**, mais il existe aussi des solutions alternatives,
 qui résolvent aussi cette problématique de suivi et de maintenance des livraisons et déploiements :
 
 [**gh-release**](https://github.com/softprops/action-gh-release)
 
-C'est une Action **GitHub** configurable qui se base principalement sur les *pull requests* réalisées 
+C'est une Action **GitHub** configurable qui se base principalement sur les *pull requests* réalisées
 depuis la dernière version publiée.
 
-L'aspect intéressant concerne la génération des notes de *release* 
-puisque l'outil peut se baser sur le fichier `.github/release.yml` qui est aussi le fichier par défaut 
-qu'utilise **GitHub** pour générer les notes de *release* quand celle-ci est 
+L'aspect intéressant concerne la génération des notes de *release*
+puisque l'outil peut se baser sur le fichier `.github/release.yml` qui est aussi le fichier par défaut
+qu'utilise **GitHub** pour générer les notes de *release* quand celle-ci est
 [créée à la main](https://docs.github.com/fr/repositories/releasing-projects-on-github/automatically-generated-release-notes).
 
-Un autre point intéressant concerne la création d'une discussion **GitHub** (optionnel) lors de la création 
+Un autre point intéressant concerne la création d'une discussion **GitHub** (optionnel) lors de la création
 de la *release* pour permettre aux utilisateurs de commenter / réagir aux changements.
 
 [**release-drafter**](https://github.com/release-drafter/release-drafter)
 
-C'est aussi une Action **GitHub** (existait aussi en **GitHub** App mais celle-ci a été dépréciée), 
+C'est aussi une Action **GitHub** (existait aussi en **GitHub** App mais celle-ci a été dépréciée),
 qui se base aussi sur les *pull requests* réalisées depuis la dernière version publiée.
 
-À la différence de **gh-release**, la configuration est un peu plus malléable puisqu'elle n'utilise pas le fichier 
+À la différence de **gh-release**, la configuration est un peu plus malléable puisqu'elle n'utilise pas le fichier
 `.github/release.yml` mais un fichier spécifique pour **release-drafter**.
-Parmi les points plus malléables, on peut retrouver plus de customisation sur les notes de la *release*, 
-une fonctionnalité que j'aime beaucoup, l'[*autolabeler*](https://github.com/release-drafter/release-drafter?tab=readme-ov-file#autolabeler), qui à partir de la configuration va mettre les bons labels 
+Parmi les points plus malléables, on peut retrouver plus de customisation sur les notes de la *release*,
+une fonctionnalité que j'aime beaucoup, l'[*autolabeler*](https://github.com/release-drafter/release-drafter?tab=readme-ov-file#autolabeler), qui à partir de la configuration va mettre les bons labels
 automatiquement sur les *pull requests* ou encore la possibilité de préciser l'identifiant de *prerelease*.
 
 [**release-please**](https://github.com/googleapis/release-please)
 
-À la différence de **gh-release** ou **release-drafter**, cet outil se base, comme **semantic-release** 
+À la différence de **gh-release** ou **release-drafter**, cet outil se base, comme **semantic-release**
 sur les *commits* et les *conventional commits* pour déterminer la nouvelle version ainsi que les notes de *release*.
 
-C'est à la base une *CLI* qui est déclinée en Action **GitHub**, dans tous les cas la *CLI* n'est pour le moment (octobre 2024) 
+C'est à la base une *CLI* qui est déclinée en Action **GitHub**, dans tous les cas la *CLI* n'est pour le moment (octobre 2024)
 disponible uniquement que pour **GitHub**.
 
-L'un des gros atout de cet outil est de passer par une *pull request* mise à jour 
+L'un des gros atout de cet outil est de passer par une *pull request* mise à jour
 au fur et à mesure des fusions réalisées dans la branche ciblée par la *release*.
 Une fois la *pull request* principale fusionnée alors la *release* est créée au travers de l'action **GitHub**.

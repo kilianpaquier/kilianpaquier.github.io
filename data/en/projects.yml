@@ -1,6 +1,6 @@
 - description: |
-    Plugin for [**semantic-release**](https://github.com/semantic-release/semantic-release) 
-    to backmerge released branch into one or multiple others (main => staging, main => develop, staging => develop, etc.) 
+    Plugin for [**semantic-release**](https://github.com/semantic-release/semantic-release)
+    to backmerge released branch into one or multiple others (main => staging, main => develop, staging => develop, etc.)
     and create a pull request in case of conflicts.
   icon:
     name: GitHub

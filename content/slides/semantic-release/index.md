@@ -1,7 +1,7 @@
 ---
 date: 2024-09-15
 description: L'un des meilleurs outils *Open Source* pour faire du *versioning* git ?
-image: 
+image:
   src: /devicon/semanticrelease-original.svg
   height: 200px
 layout: bundle
@@ -29,7 +29,7 @@ title: 📦🚀 Semantic Release
 
 #### Comment calculer une version ?
 
-Basé sur du [*Semantic Versioning*](https://semver.org/) (ou *semver*), 
+Basé sur du [*Semantic Versioning*](https://semver.org/) (ou *semver*),
 [spécification](https://semver.org/#backusnaur-form-grammar-for-valid-semver-versions) (assez complète) pour le nommage de version.
 Quelques exemples :
 
@@ -40,7 +40,7 @@ Quelques exemples :
 - `1.0.0+702c7fcc879`
 - `1.0.0-dev.702c7fcc879`
 
-Commun en supplément d'ajouter le préfixe "v" aux versions, 
+Commun en supplément d'ajouter le préfixe "v" aux versions,
 l'option `tagFormat` permet de paramétrer plus précisement le format du *tag* créé.
 
 ---

@@ -1,6 +1,6 @@
 - description: |
-    Extension [**semantic-release**](https://github.com/semantic-release/semantic-release) 
-    pour fusionner la branche publiée dans une ou plusieurs autres branches (main => staging, main => develop, staging => develop, etc.) 
+    Extension [**semantic-release**](https://github.com/semantic-release/semantic-release)
+    pour fusionner la branche publiée dans une ou plusieurs autres branches (main => staging, main => develop, staging => develop, etc.)
     et créer une pull request dans le cas de conflits.
   icon:
     name: GitHub

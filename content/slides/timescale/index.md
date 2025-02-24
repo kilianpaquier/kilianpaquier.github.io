@@ -1,7 +1,7 @@
 ---
 date: 2024-10-16
 description: Ingestion de données *time-series* rendu simple
-image: 
+image:
   src: /devicon/timescale-plain.svg
   height: 200px
 layout: bundle
@@ -101,7 +101,7 @@ SELECT set_chunk_time_interval('conditions_summary_hourly',
 
 {{% note %}}
 
-- Par défaut, le taille d'un *chunk* d'une aggrégation continue 
+- Par défaut, le taille d'un *chunk* d'une aggrégation continue
   est 10 fois celle de l'hypertable sur laquelle elle se base
 
 {{% /note %}}
@@ -122,16 +122,16 @@ SELECT add_continuous_aggregate_policy('conditions_summary_hourly',
   schedule_interval => INTERVAL '1 hour');
 
 -- rafraîchir manuellement l'aggrégation (date de fin non comprise)
-CALL refresh_continuous_aggregate('conditions_summary_hourly', 
-  '2024-08-01', 
+CALL refresh_continuous_aggregate('conditions_summary_hourly',
+  '2024-08-01',
   '2024-09-01');
 ```
 
 {{% note %}}
 
-- Lorsqu'un *chunk* présent dans la période d'aggrégation continue est modifié, 
+- Lorsqu'un *chunk* présent dans la période d'aggrégation continue est modifié,
   l'intégralité des *buckets* associés à ce *chunk* sont reconstruits.
-  Par exemple, si j'ajoute / met à jour une donnée du 15 août, tous les *buckets* horaires 
+  Par exemple, si j'ajoute / met à jour une donnée du 15 août, tous les *buckets* horaires
   de cette journée sont recalculés.
 
 {{% /note %}}
@@ -161,7 +161,7 @@ ALTER MATERIALIZED VIEW 'conditions_summary_hourly'
 
 ```sql
 -- pour compresser une hypertable
-ALTER TABLE conditions SET (timescaledb.compress, 
+ALTER TABLE conditions SET (timescaledb.compress,
   timescaledb.compress_orderby = 'time DESC'
   timescaledb.compress_segmentby = 'device, location');
 -- définition de l'ancienneté des données avant compression
