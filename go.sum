@@ -2,3 +2,5 @@ github.com/dzello/reveal-hugo v0.0.0-20240121164136-5e38035fe41f h1:UPALL8009oW6
 github.com/dzello/reveal-hugo v0.0.0-20240121164136-5e38035fe41f/go.mod h1:9mgTYgEkMfnc36vaNSvk3xRedXIv2qXjejlugfwyb3o=
 github.com/kilianpaquier/hugot v1.3.1 h1:DomtFKMD8I02WAe9M6WPOpHzbSN/3pke01twaq7cjZ8=
 github.com/kilianpaquier/hugot v1.3.1/go.mod h1:D1ygP3wv7bnNU9ob/p7eHcMcWRmkj0dfqtLZVCtiBXw=
+github.com/kilianpaquier/hugot v1.4.0 h1:b0YZAviqKADSEpjtoV17l6ysuZ3iQ62yL0pPjo8m6lM=
+github.com/kilianpaquier/hugot v1.4.0/go.mod h1:D1ygP3wv7bnNU9ob/p7eHcMcWRmkj0dfqtLZVCtiBXw=
