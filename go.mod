@@ -7,6 +7,6 @@ toolchain go1.24.0
 // replace github.com/kilianpaquier/hugot => /home/debian/workspaces/github.com/kilianpaquier/hugot
 
 require (
-	github.com/dzello/reveal-hugo v0.0.0-20240121164136-5e38035fe41f // indirect
-	github.com/kilianpaquier/hugot v1.4.0 // indirect
+	github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be // indirect
+	github.com/kilianpaquier/hugot v1.4.1 // indirect
 )
