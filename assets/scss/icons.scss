@@ -1,0 +1,247 @@
+svg {
+    // TOOLS
+
+    &.visualstudiocode>path {
+        fill: #007ACC;
+    }
+
+    &.gitlab>path, &.gitlabcicd>path {
+        fill: #FC6D26;
+    }
+
+    &.github>path {
+        fill: #181717;
+    }
+
+    &.linkedin>path {
+        fill: #0A66C2;
+    }
+
+    &.azurefunctions>path {
+        fill: #0062AD;
+    }
+
+    &.azure>path {
+        fill: #0078D4;
+    }
+
+    &.githubactions>path {
+        fill: #2088FF;
+    }
+
+    &.netlify>path {
+        fill: #00C7B7;
+    }
+
+    &.dbeaver>path {
+        fill: #382923;
+    }
+
+    &.pnpm>path {
+        fill: #F69220;
+    }
+
+    &.yarn>path {
+        fill: #2C8EBB;
+    }
+
+    &.npm>path {
+        fill: #CB3837;
+    }
+
+    &.apachemaven>path {
+        fill: #C71A36;
+    }
+
+    &.sonarqube>path {
+        fill: #4E9BCD;
+    }
+
+    &.sonarcloud>path {
+       fill: #F3702A;
+    }
+
+    &.sonarlint>path {
+        fill: #CB2029;
+    }
+
+    &.codecov>path {
+        fill: #F01F7A;
+    }
+
+    &.dependabot>path {
+        fill: #025E8C;
+    }
+
+    &.renovate>path {
+        fill: #308BE3;
+    }
+
+    &.jira>path {
+        fill: #0052CC;
+    }
+
+    &.bitbucket>path {
+        fill: #0052CC;
+    }
+
+    // EDUCATION
+
+    &.java>path {
+        fill: #007396;
+    }
+
+    &.spring>path {
+        fill: #6DB33F;
+    }
+
+    &.dotnet>path { //FIXME
+        fill: #512BD4;
+    }
+
+    &.hibernate>path {
+        fill: #59666C;
+    }
+
+    &.javascript>path {
+        fill: #F7DF1E;
+    }
+
+    &.moleculer>path {
+        fill: #3CAFCE;
+    }
+
+    &.bootstrap>path {
+        fill: #7952B3;
+    }
+
+    &.c>path {
+        fill: #A8B9CC;
+    }
+
+    &.cplusplus {
+        fill: #00599C;
+    }
+
+    &.csharp>path { // FIXME
+        fill: #512BD4;
+    }
+
+    &.qt>path {
+        fill: #41CD52;
+    }
+
+    // PROJECTS
+
+    &.typescript>path {
+        fill: #3178C6;
+    }
+
+    &.go>path {
+        fill: #00ADD8;
+    }
+
+    &.hugo>path {
+        fill: #FF4088;
+    }
+
+    &.itchdotio>path {
+        fill: #FA5C5C;
+    }
+
+    &.perforce>path {
+        fill: #404040;
+    }
+
+    &.unity>path {
+        fill: #000000;
+    }
+
+    // EXPERIENCES
+
+    &.postgresql>path {
+        fill: #4169E1;
+    }
+
+    &.grafana>path {
+        fill: #F46800;
+    }
+
+    &.camunda>path {
+        fill: #FC5D0D;
+    }
+
+    &.docker>path {
+        fill: #2496ED;
+    }
+
+    &.kubernetes>path {
+        fill: #326CE5;
+    }
+
+    &.helm>path {
+        fill: #0F1689;
+    }
+
+    &.cucumber>path {
+        fill: #23D96C;
+    }
+
+    &.graylog>path {
+        fill: #FF3633;
+    }
+
+    &.quarkus>path {
+        fill: #4695EB;
+    }
+
+    &.traefikproxy>path {
+        fill: #24A1C1;
+    }
+
+    &.envoyproxy>path {
+        fill: #AC6199;
+    }
+
+    &.angular>path {
+        fill: #0F0F11;
+    }
+
+    &.liquibase>path {
+        fill: #2962FF;
+    }
+
+    &.python>path {
+        fill: #3776AB;
+    }
+
+    &.elasticsearch>path {
+       fill: #005571;
+    }
+}
+
+[data-bs-theme="dark"] {
+    svg {
+        &.angular>path,
+        &.flask>path,
+        &.github>path,
+        &.gnubash>path,
+        &.jsonschema>path,
+        &.keda>path.fill,
+        &.semanticrelease>path,
+        &.temporal>path,
+        &.timescale>path,
+        &.unity>path
+        {
+            fill: #ffff;
+        }
+
+        &.keda>path.stroke {
+            stroke: #ffff;
+        }
+
+        &.keda>path.fill-interved {
+            font: #0000;
+        }
+    }
+}

@@ -42,57 +42,6 @@
     }
 }
 
-// ICONS
-
-[data-bs-theme="dark"] {
-    svg {
-        &.angular>path,
-        &.bash>:nth-child(2),
-        &.codespaces>path,
-        &.keda>path.fill,
-        &.flask>path,
-        &.github>g,
-        &.itchio>path,
-        &.maven>path,
-        &.perforce>path,
-        &.timescaledb>path {
-            fill: #ffff;
-        }
-
-        &.keda>path.stroke {
-            stroke: #ffff;
-        }
-
-        &.keda>path.fill-interved {
-            font: #0000;
-        }
-
-        &.json.schema {
-            fill: #fff;
-        }
-
-        &.temporal {
-            fill: #fff;
-        }
-    }
-}
-
-.codespaces>path {
-    fill: #181616;
-}
-
-.insomnia>path:last-child {
-    fill: #4000bf;
-}
-
-.helm>path {
-    fill: #277a9f;
-}
-
-.bootstrap>path {
-    fill: #7952b3;
-}
-
 // SLIDES MENU
 
 .top {

@@ -4,15 +4,15 @@ main:
   #   url: /
   #   weight: 5
 
-  - identifier: resume
-    name: My Resume
-    url: /resume/
-    weight: 20
-
   - identifier: blog
     name: Blog
     url: /blog/
-    weight: 20
+    weight: 10
+
+  - identifier: resume
+    name: My Resume
+    url: /resume/
+    weight: 15
 
   # - identifier: slides
   #   name: Slides

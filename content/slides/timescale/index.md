@@ -2,12 +2,15 @@
 date: 2024-10-16
 description: Ingestion de données *time-series* rendu simple
 image:
-  src: /devicon/timescale-plain.svg
+  src: /icons/timescale.svg
   height: 200px
 layout: bundle
 logo:
-  src: /devicon/timescale-plain.svg
+  src: /icons/timescale.svg
 outputs: [ "Reveal" ]
+params:
+  bootstrap:
+    css: bootstrap-utilities.min.css
 title: Timescale
 ---
 

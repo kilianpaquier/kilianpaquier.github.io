@@ -24,10 +24,6 @@ on:
       - v[0-9]+.x
       - v[0-9]+.[0-9]+.x
   workflow_dispatch:
-    inputs:
-      release:
-        description: Run release job.
-        type: boolean
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -70,41 +66,13 @@ jobs:
     outputs:
       version: ${{ steps.version.outputs.version }}
     permissions:
-      contents: write
-      issues: write
-      pull-requests: write
       id-token: none
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      # https://github.com/marketplace/actions/action-for-semantic-release
-      - id: semrel_version
-        uses: cycjimmy/semantic-release-action@v4
-        with:
-          dry_run: true
-          semantic_version: 24
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/commit-analyzer
-            @semantic-release/exec
-            @semantic-release/git
-            @semantic-release/github
-            @semantic-release/release-notes-generator
-            conventional-changelog-conventionalcommits
-            semantic-release-license
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - id: version
         run: |
-          if [ "${SEMREL_INFO_NEXT_VERSION}" != "" ]; then
-            echo "version=v${SEMREL_INFO_NEXT_VERSION#v}" >> $GITHUB_OUTPUT
-          else
-            DESCRIBE=$(git describe --tags || echo "v0.0.0")
-            echo "version=v${DESCRIBE#v}" >> $GITHUB_OUTPUT
-          fi
-        env:
-          SEMREL_INFO_NEXT_VERSION: ${{ steps.semrel_version.outputs.new_release_version }}
+          DESCRIBE=$(git describe --tags || echo "v0.0.0")
+          echo "version=v${DESCRIBE#v}" >> $GITHUB_OUTPUT
       - run: echo ${VERSION}
         env:
           VERSION: ${{ steps.version.outputs.version }}
@@ -129,7 +97,8 @@ jobs:
         with:
           hugo-version: latest
           extended: true
-      - run: hugo --gc --minify --destination dist
+      - run: |
+          hugo --gc --enableGitInfo --minify --destination "${GITHUB_WORKSPACE}/dist"
         env:
           VERSION: ${{ needs.version.outputs.version }}
       - uses: actions/upload-artifact@v4
@@ -160,6 +129,9 @@ jobs:
       - id: branch_sha
         run: |
           echo "branch_sha=$(echo "${GITHUB_REF_NAME}" | sha256sum | cut -c -8)" >> $GITHUB_OUTPUT
+      - id: config
+        run: |
+          if [ -f netlify.toml ]; then echo "path=netlify.toml" >> $GITHUB_OUTPUT; fi
       - id: netlify
         uses: nwtgck/actions-netlify@v3
         with:
@@ -169,53 +141,9 @@ jobs:
           enable-commit-status: false
           github-deployment-environment: netlify
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-config-path: netlify.toml
+          netlify-config-path: ${{ steps.config.outputs.path }}
           production-branch: ${{ github.event.repository.default_branch }}
           publish-dir: dist
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-
-  release:
-    name: Release
-    runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'workflow_dispatch' && github.ref_protected }}
-    environment:
-      name: release
-      url: ${{ steps.environment_url.outputs.environment_url }}
-    needs:
-      - hugo-build
-      - netlify
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
-      id-token: none
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      # https://github.com/marketplace/actions/action-for-semantic-release
-      - id: semrel_version
-        uses: cycjimmy/semantic-release-action@v4
-        with:
-          dry_run: ${{ inputs.release == 'false' }}
-          semantic_version: 24
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/commit-analyzer
-            @semantic-release/exec
-            @semantic-release/git
-            @semantic-release/github
-            @semantic-release/release-notes-generator
-            conventional-changelog-conventionalcommits
-            semantic-release-license
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - id: environment_url
-        run: |
-          if [ "${VERSION}" != "" ]; then
-            echo "environment_url=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/releases/tag/v${VERSION#v}" >> $GITHUB_OUTPUT
-          fi
-        env:
-          VERSION: ${{ steps.semrel_version.outputs.new_release_version }}

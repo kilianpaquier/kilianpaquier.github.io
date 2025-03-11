@@ -8,43 +8,43 @@
   place: UQAC
   skills:
     - name: Java
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg
+      type: svg
+      value: /static/icons/java.svg
     - name: Spring
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/spring/spring-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/spring.svg
     - name: .Net
-      type: svg
-      value: /static/devicon/dotnet-original.svg
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/dotnet.svg
     - name: Hibernate
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hibernate/hibernate-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/hibernate.svg
     - name: Javascript
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/javascript/javascript-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/javascript.svg
     - name: Moleculer
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/moleculer/moleculer-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/moleculer.svg
     - name: Bootstrap
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/bootstrap.svg
 - dates: September 2017 - February 2021
   diploma: Computer engineering degree
   image: /educations/polytechtours.webp
   place: Polytech Tours
   skills:
     - name: Java
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg
+      type: svg
+      value: /static/icons/java.svg
     - name: C
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/c/c-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/c.svg
     - name: C++
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/cplusplus/cplusplus-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/cplusplus.svg
     - name: C#
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/csharp/csharp-original.svg
+      type: svg
+      value: /static/icons/csharp.svg
     - name: Qt
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/qt/qt-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/qt.svg

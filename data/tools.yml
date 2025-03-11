@@ -1,54 +1,60 @@
 - name: Bash
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
-- name: VScode
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/gnubash.svg
+- name: Visual Studio Code
+  type: svg
+  value: /static/icons/visualstudiocode.svg
+- name: Semantic Release
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/vscode/vscode-original.svg
-- name: GitHub Codespaces
-  type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubcodespaces/githubcodespaces-plain.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/semanticrelease.svg
 - name: GitHub Actions
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/githubactions.svg
 - name: GitLab CICD
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/gitlab.svg
 - name: Netlify
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/netlify/netlify-original.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/netlify.svg
 - name: DBeaver
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/dbeaver/dbeaver-original.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/dbeaver.svg
 - name: pnpm
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/pnpm/pnpm-original.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/pnpm.svg
 - name: Bun
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bun/bun-original.svg
+  value: https://raw.githubusercontent.com/oven-sh/bun/refs/heads/main/src/logo.svg
 - name: Yarn
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/yarn/yarn-original.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/yarn.svg
 - name: npm
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/npm/npm-original-wordmark.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/npm.svg
 - name: Maven
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/maven/maven-plain.svg
-- name: Sonar
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/apachemaven.svg
+- name: SonarQube
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/sonarqube/sonarqube-original.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/sonarqube.svg
+- name: SonarCloud
+  type: remote-svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/sonarcloud.svg
 - name: CodeCov
   type: remote-svg
-  value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/codecov/codecov-plain.svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/codecov.svg
+- name: Dependabot
+  type: remote-svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/dependabot.svg
+- name: Renovate
+  type: remote-svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/renovate.svg
 - name: Jira
-  type: svg
-  value: /static/devicon/jira-plain.svg
+  type: remote-svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/jira.svg
 - name: Bitbucket
-  type: svg
-  value: /static/devicon/bitbucket-plain.svg
-- name: Confluence
-  type: svg
-  value: /static/devicon/confluence-plain.svg
+  type: remote-svg
+  value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/bitbucket.svg
 - name: JSON Schema
   type: svg
-  value: /static/devicon/jsonschema-original.svg
+  value: /static/icons/jsonschema.svg

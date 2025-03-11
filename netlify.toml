@@ -1,5 +1,11 @@
 [[redirects]]
   force = true
+  from = "https://kilianpaquier.netlify.app/*"
+  status = 301
+  to = "https://kilianpaquier.com/:splat"
+
+[[redirects]]
+  force = true
   from = "/"
   status = 301
   to = "/resume/0.3/"
@@ -12,12 +18,12 @@
 
 [[redirects]]
   force = true
-  from = "/en/resume/"
+  from = "/en/"
   status = 301
   to = "/en/resume/0.3/"
 
 [[redirects]]
   force = true
-  from = "https://kilianpaquier.netlify.app"
+  from = "/en/resume/"
   status = 301
-  to = "https://kilianpaquier.com"
+  to = "/en/resume/0.3/"

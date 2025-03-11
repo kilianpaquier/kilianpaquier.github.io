@@ -1,4 +1,11 @@
-{{ partial "header/bootstrap-utilities.min.html" . }}
-{{ partial "header/styles.html" . }}
+{{ $revealStyles := dict
+    "css" (slice
+        (printf "https://cdn.jsdelivr.net/npm/bootstrap@%s/dist/css/%s" .Site.Params.bootstrap.version (.Params.bootstrap.css | default .Site.Params.bootstrap.css))
+    )
+    "scss" (slice "scss/main.scss")
+}}
+{{ $revealCSS := partial "hugot/helpers/styles.html" $revealStyles }}
+{{ $bundleRevealCSS := $revealCSS | resources.Concat "css/bundle-reveal.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $bundleRevealCSS.RelPermalink }}" integrity="{{ $bundleRevealCSS.Data.Integrity }}" crossorigin="anonymous">
 
 <link rel="icon" href="{{ .Site.Params.favicon }}">

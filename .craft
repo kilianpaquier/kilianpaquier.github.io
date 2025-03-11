@@ -2,10 +2,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/kilianpaquier/craft/beta/.schemas/craft.schema.json
 bot: dependabot
 ci:
-  auth:
-    release: github-token
   name: github
-  release: {}
   static:
     auto: true
     name: netlify

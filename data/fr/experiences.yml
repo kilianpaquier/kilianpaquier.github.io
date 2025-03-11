@@ -1,74 +1,58 @@
 - captions:
     - ¹ Développement, documentation, relecture, tests, mise en production, support
-  company: Sopra Steria
-  dates: Septembre 2024 - Aujourd'hui
-  image: /experiences/soprasteria.webp
-  job: Ingénieur développement
-  missions:
-    - Participation au cycle de vie complet des fonctionnalités¹.
-    - Manager opérationnel de plusieurs collaborateurs.
-    - Présentations techniques au reste de la communauté technique de l'agence.
-  skills:
-    - name: Golang
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
-    - name: Temporal
-      type: svg
-      value: /static/devicon/temporal-original.svg
-    - name: Cucumber
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/cucumber/cucumber-plain.svg
-    - name: Grafana
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/grafana/grafana-plain.svg
-- captions:
-    - ¹ Développement, documentation, relecture, tests, mise en production, support
     - ² CI/CD, robot de notifications automatisées, générateur du squelette des projets, outil de tests automatisés
   company: Sopra Steria
-  dates: Octobre 2022 - Septembre 2024
+  dates: Octobre 2022 - Aujourd'hui
   image: /experiences/soprasteria.webp
   job: Ingénieur développement
   missions:
     - Réalisation d'analyses et études techniques pour les besoins métier.
     - Recueil des besoins et rédaction de fonctionnalités.
     - Participation au cycle de vie complet des fonctionnalités¹.
-    - Rédaction de requêtes _SQL_ avancées.
-    - Mise en place de _dashboards_ Grafana pour la supervision des applicatifs.
     - Contribution aux outils² du client.
+    - Mise en place de _dashboards_ Grafana pour la supervision des applicatifs.
+    - Présentations techniques au reste de l'équipe et à la communauté technique de l'agence.
+    - Manager opérationnel de plusieurs collaborateurs
     - Formation fonctionnelle et technique des nouveaux collaborateurs.
-    - Présentations techniques au reste de l'équipe.
+    - Rédaction de requêtes _SQL_ avancées.
     - Formateur en interne sur GitLab CI/CD.
   skills:
     - name: Golang
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/go.svg
     - name: PostgreSQL
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/postgresql/postgresql-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/postgresql.svg
     - name: TimescaleDB
       type: svg
-      value: /static/devicon/timescale-plain.svg
+      value: /static/icons/timescale.svg
     - name: Grafana
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/grafana/grafana-plain.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/grafana.svg
+    - name: Temporal
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/temporal.svg
     - name: Camunda
-      type: svg
-      value: /static/devicon/camunda-original.svg
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/camunda.svg
     - name: Docker
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/docker/docker-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/docker.svg
     - name: Kubernetes
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/kubernetes.svg
     - name: Keda
       type: svg
-      value: /static/devicon/keda-plain.svg
+      value: /static/icons/keda.svg
     - name: Helm
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/helm.svg
+    - name: Cucumber
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/cucumber.svg
     - name: Graylog
-      type: svg
-      value: /static/devicon/graylog-original.svg
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/graylog.svg
 - captions:
     - ¹ Développement, documentation, relecture, tests, mise en production, support
   company: Sopra Steria
@@ -81,59 +65,59 @@
     - Formation fonctionnelle et technique des nouveaux collaborateurs.
   skills:
     - name: Java
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/java/java-original.svg
+      type: svg
+      value: /static/icons/java.svg
     - name: Spring
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/spring/spring-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/spring.svg
     - name: Quarkus
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/quarkus/quarkus-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/quarkus.svg
     - name: Karatelabs
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/karatelabs/karatelabs-original.svg
+      type: svg
+      value: /static/icons/karatelabs.svg
     - name: Docker
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/docker/docker-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/docker.svg
     - name: Kubernetes
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/kubernetes/kubernetes-plain.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/kubernetes.svg
     - name: Helm
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/helm/helm-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/helm.svg
     - name: Traefikproxy
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/traefikproxy/traefikproxy-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/traefikproxy.svg
     - name: Envoyproxy
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/envoy/envoy-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/envoyproxy.svg
     - name: Typescript
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/typescript.svg
     - name: Angular
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/angular/angular-plain.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/angular.svg
     - name: PostgreSQL
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/postgresql/postgresql-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/postgresql.svg
     - name: Hibernate
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hibernate/hibernate-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/hibernate.svg
     - name: Liquibase
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/liquibase/liquibase-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/liquibase.svg
     - name: Bootstrap
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bootstrap/bootstrap-plain.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/bootstrap.svg
     - name: Python
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/python/python-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/python.svg
     - name: Flask
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/flask/flask-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/flask.svg
     - name: Elasticsearch
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/elasticsearch/elasticsearch-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/elasticsearch.svg
 - captions:
     - ¹ Direction Départementale des Territoires
     - ² Union Française des Centres de Vacances

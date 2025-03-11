@@ -1,3 +1,22 @@
+- description: Project layout generator (**GitHub** Actions, **GitLab** CI/CD, Dockerfile, **Helm** charts, license, etc.).
+  icon:
+    name: GitHub
+    type: remote-svg
+    value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/github.svg
+  image: /projects/craft.webp
+  link: https://github.com/kilianpaquier/craft
+  skills:
+    - name: Golang
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/go.svg
+    - name: GitHub Actions
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/githubactions.svg
+    - name: JSON Schema
+      type: svg
+      value: /static/icons/jsonschema.svg
+  title: craft
+
 - description: |
     Plugin for [**semantic-release**](https://github.com/semantic-release/semantic-release)
     to backmerge released branch into one or multiple others (main => staging, main => develop, staging => develop, etc.)
@@ -5,94 +24,75 @@
   icon:
     name: GitHub
     type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
+    value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/github.svg
   image: /projects/semantic-release-backmerge.webp
   link: https://github.com/kilianpaquier/semantic-release-backmerge
   skills:
     - name: TypeScript
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/typescript/typescript-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/typescript.svg
     - name: GitHub Actions
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/githubactions.svg
   title: semantic-release-backmerge
-
-- description: Project layout generator (**GitHub** Actions, **GitLab** CI/CD, Dockerfile, **Helm** charts, license, etc.).
-  icon:
-    name: GitHub
-    type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
-  image: /projects/craft.webp
-  link: https://github.com/kilianpaquier/craft
-  skills:
-    - name: Golang
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
-    - name: GitHub Actions
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
-    - name: JSON Schema
-      type: svg
-      value: /static/devicon/jsonschema-original.svg
-  title: craft
 
 - description: Golang structs builder generator.
   icon:
     name: GitHub
     type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
+    value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/github.svg
   image: /projects/go-builder-generator.webp
   link: https://github.com/kilianpaquier/go-builder-generator
   skills:
     - name: Golang
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/go/go-original-wordmark.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/go.svg
     - name: GitHub Actions
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/githubactions/githubactions-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/githubactions.svg
   title: go-builder-generator
 
 - description: GitLab CI/CD template pipelines for Golang, Node.js, and Maven.
   icon:
     name: GitLab
     type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/gitlab/gitlab-original.svg
+    value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/gitlab.svg
   image: /projects/cicd.webp
   link: https://gitlab.com/kilianpaquier/cicd
   skills:
     - name: Bash
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/bash/bash-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/gnubash.svg
   title: CICD
 
 - description: Hugo simple theme for a bottom right menu with docs and blog included layouts.
   icon:
     name: GitHub
     type: remote-svg
-    value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/github/github-original.svg
+    value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/github.svg
   image: /projects/hugot.webp
   link: https://github.com/kilianpaquier/hugot
   skills:
     - name: Hugo
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/hugo/hugo-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/hugo.svg
   title: hugot
 
 - description: A two to four player Beat Them All game to have fun with friends and retrieve stolen strawberries.
   icon:
     name: Itchio
-    type: svg
-    value: /static/devicon/itchio-original-wordmark.svg
+    type: remote-svg
+    value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/itchdotio.svg
   image: /projects/fortheberry.webp
   link: https://rogue888.itch.io/for-the-berry
   skills:
     - name: Perforce
-      type: svg
-      value: /static/devicon/perforce-original.svg
+      type: remote-svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/perforce.svg
     - name: Unity
       type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/unity/unity-original.svg
+      value: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/unity.svg
     - name: C#
-      type: remote-svg
-      value: https://raw.githubusercontent.com/devicons/devicon/develop/icons/csharp/csharp-original.svg
+      type: svg
+      value: /static/icons/csharp.svg
   title: For The Berry
