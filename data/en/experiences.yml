@@ -15,7 +15,6 @@
     - Operational manager of multiple colleagues.
     - Functional and technical training of our new team members.
     - Advanced SQL requests writing.
-    - Internal trainer on GitLab CI/CD.
   skills:
     - name: Golang
       type: remote-svg

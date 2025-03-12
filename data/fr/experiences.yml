@@ -15,7 +15,6 @@
     - Manager opérationnel de plusieurs collaborateurs
     - Formation fonctionnelle et technique des nouveaux collaborateurs.
     - Rédaction de requêtes _SQL_ avancées.
-    - Formateur en interne sur GitLab CI/CD.
   skills:
     - name: Golang
       type: remote-svg

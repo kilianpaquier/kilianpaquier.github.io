@@ -2,3 +2,5 @@ github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be h1:v+kEI6Q/q
 github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be/go.mod h1:aXqv6sUwk2OVl71kJjJAYl4mWhGNThGp1kJR9+VgPM4=
 github.com/kilianpaquier/hugot v1.4.2-0.20250311203300-7ce65d0535f0 h1:vvavlMf3pLUmdOcLGYNnWLDTV2Jltn2kmzYCSjo1HjU=
 github.com/kilianpaquier/hugot v1.4.2-0.20250311203300-7ce65d0535f0/go.mod h1:D1ygP3wv7bnNU9ob/p7eHcMcWRmkj0dfqtLZVCtiBXw=
+github.com/kilianpaquier/hugot v1.4.2-0.20250312081034-a2657ad90c98 h1:3qQZQofQ3qokr3B0jGKqgdTb+O41kxZbiYAZ5rSiBlk=
+github.com/kilianpaquier/hugot v1.4.2-0.20250312081034-a2657ad90c98/go.mod h1:D1ygP3wv7bnNU9ob/p7eHcMcWRmkj0dfqtLZVCtiBXw=
