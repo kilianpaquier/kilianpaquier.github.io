@@ -3,11 +3,11 @@ fr:
   languageName: Français
   params:
     description: Langue natale
-    flag: /flags/fr.svg
+    pre: /static/flags/fr.svg
 
 en:
   contentDir: content
   languageName: English
   params:
     description: Professional proficiency
-    flag: /flags/en.svg
+    pre: /static/flags/en.svg

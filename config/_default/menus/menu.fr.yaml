@@ -1,20 +1,57 @@
 main:
-  # - identifier: home
-  #   name: Home
-  #   url: /
-  #   weight: 5
+  - identifier: about
+    name: Overview
+    pre: /static/primer/book-16.svg
+    pageRef: /
+    weight: 5
 
-  - identifier: blog
-    name: Blog
-    url: /blog/
+  - identifier: posts
+    name: Posts
+    pre: /static/primer/log-16.svg
+    pageRef: /posts
     weight: 10
 
-  - identifier: resume
-    name: Mon CV
-    url: /resume/
+  - identifier: projects
+    name: Projets
+    pre: /static/primer/repo-16.svg
+    pageRef: /projects
     weight: 15
 
-  # - identifier: slides
-  #   name: Slides
-  #   url: /slides/
-  #   weight: 20
+  - identifier: slides
+    name: Slides
+    pre: /static/primer/versions-16.svg
+    pageRef: /slides
+    weight: 20
+
+profile:
+  - identifier: company
+    params:
+      aria_label: Sopra Steria
+      class: text-bold
+    name: "@soprasteria"
+    pre: /static/primer/organization-16.svg
+    weight: 5
+
+  - identifier: website
+    name: https://kilianpaquier.com
+    pre: /static/primer/link-16.svg
+    url: https://kilianpaquier.com
+    weight: 10
+
+  - identifier: linkedin
+    name: in/kilianpaquier
+    pre: /static/primer/in-16.svg
+    url: https://www.linkedin.com/in/kilianpaquier/
+    weight: 15
+
+  - identifier: github
+    name: "@kilianpaquier"
+    pre: /static/primer/mark-github-16.svg
+    url: https://github.com/kilianpaquier
+    weight: 20
+
+  - identifier: gitlab
+    name: "@kilianpaquier"
+    pre: https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/gitlab.svg
+    url: https://gitlab.com/kilianpaquier
+    weight: 25
