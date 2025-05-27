@@ -1,9 +1,10 @@
 {{ if .IsTranslated }}
-<div class="top">
-    {{ range .Translations }}
-    <a href="{{ .RelPermalink }}" aria-current="true">
-        <img src="{{ .Language.Params.Flag }}" class="inherit-colors img-thumbnail rounded-circle lazyload" alt="{{ .Language.Params.Flag }}" width="40">
-    </a>
-    {{ end }}
-</div>
+    <!-- FIXME not compatible with primer/css since it's bootstrap styles here -->
+    <!-- <div class="top">
+        {{ range .Translations }}
+        <a href="{{ .RelPermalink }}" aria-current="true">
+            <img src="{{ .Language.Params.Flag }}" class="inherit-colors img-thumbnail rounded-circle lazyload" alt="{{ .Language.Params.Flag }}" width="40">
+        </a>
+        {{ end }}
+    </div> -->
 {{ end }}

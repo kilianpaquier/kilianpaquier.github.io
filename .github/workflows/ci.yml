@@ -52,11 +52,6 @@ jobs:
         with:
           python-version: 3.x
       - uses: pre-commit/action@v3.0.1
-      - if: always()
-        # see https://github.com/marketplace/actions/git-auto-commit
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "fix(commit): pre-commit autofixes [skip ci]"
 
   version:
     name: Version
@@ -98,7 +93,7 @@ jobs:
           hugo-version: latest
           extended: true
       - run: |
-          hugo --gc --enableGitInfo --minify --destination "${GITHUB_WORKSPACE}/dist"
+          hugo --gc --enableGitInfo --minify --destination "${GITHUB_WORKSPACE}/dist" --logLevel debug
         env:
           VERSION: ${{ needs.version.outputs.version }}
       - uses: actions/upload-artifact@v4

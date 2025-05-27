@@ -1,12 +1,10 @@
 module github.com/kilianpaquier/kilianpaquier.github.io
 
-go 1.24
+go 1.24.3
 
-toolchain go1.24.0
-
-// replace github.com/kilianpaquier/hugot => /home/debian/workspaces/github.com/kilianpaquier/hugot
+// replace github.com/kilianpaquier/hugo-primer => /mnt/workspaces/github.com/kilianpaquier/hugo-primer
 
 require (
 	github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be // indirect
-	github.com/kilianpaquier/hugot v1.4.2-0.20250312081409-38c81aebbb6a // indirect
+	github.com/kilianpaquier/hugo-primer v0.0.0-20250611191926-b392e8eedc9e // indirect
 )

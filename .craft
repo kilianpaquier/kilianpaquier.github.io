@@ -3,11 +3,14 @@
 bot: dependabot
 ci:
   name: github
+  options:
+    - labeler
   static:
     auto: true
     name: netlify
 exclude:
   - chart
+  - pre-commit:auto-commit
 license: mit
 maintainers:
   - name: kilianpaquier

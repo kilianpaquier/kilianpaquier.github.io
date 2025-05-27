@@ -1,11 +1,32 @@
-{{ $revealStyles := dict
-    "css" (slice
-        (printf "https://cdn.jsdelivr.net/npm/bootstrap@%s/dist/css/%s" .Site.Params.bootstrap.version (.Params.bootstrap.css | default .Site.Params.bootstrap.css))
-    )
-    "scss" (slice "scss/main.scss")
-}}
-{{ $revealCSS := partial "hugot/helpers/styles.html" $revealStyles }}
-{{ $bundleRevealCSS := $revealCSS | resources.Concat "css/bundle-reveal.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $bundleRevealCSS.RelPermalink }}" integrity="{{ $bundleRevealCSS.Data.Integrity }}" crossorigin="anonymous">
+<link rel="icon" href="{{ .Site.Params.hugo_primer.favicon }}">
 
-<link rel="icon" href="{{ .Site.Params.favicon }}">
+{{ partialCached "hugo-primer/helpers/styles.html"
+    (dict
+        "local" (slice
+            "styles/scss/highlight-gen/github.scss"
+            "styles/scss/highlight-gen/github-dark.scss"
+            "styles/scss/highlight.scss"
+            "styles/scss/github.scss"
+            "styles/scss/theming.scss"
+
+            site.Params.hugo_primer.styles.custom_file
+        )
+        "remote" (slice
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/base/size/size.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/base/typography/typography.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/functional/size/border.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/functional/size/breakpoints.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/functional/size/size.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/functional/size/viewport.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/functional/typography/typography.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/functional/themes/light.css" site.Params.hugo_primer.versions.primer_primitives)
+            (printf "https://cdn.jsdelivr.net/npm/@primer/primitives@%v/dist/css/functional/themes/dark.css" site.Params.hugo_primer.versions.primer_primitives)
+
+            (printf "https://cdn.jsdelivr.net/npm/@primer/css@%v/dist/markdown.css" site.Params.hugo_primer.versions.primer_css)
+        )
+    )
+    "reveal-hugo"
+    "styles"
+}}
+
+{{ partialCached "hugo-primer/helpers/js.html" (dict "local" (slice "js/reveal-hugo.js")) "theme" }}

@@ -1,8 +1,6 @@
 github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be h1:v+kEI6Q/q2eGUkUq+ITGsWZ8rpfPvgjYepoQlkDq9b8=
 github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be/go.mod h1:aXqv6sUwk2OVl71kJjJAYl4mWhGNThGp1kJR9+VgPM4=
-github.com/kilianpaquier/hugot v1.4.2-0.20250311203300-7ce65d0535f0 h1:vvavlMf3pLUmdOcLGYNnWLDTV2Jltn2kmzYCSjo1HjU=
-github.com/kilianpaquier/hugot v1.4.2-0.20250311203300-7ce65d0535f0/go.mod h1:D1ygP3wv7bnNU9ob/p7eHcMcWRmkj0dfqtLZVCtiBXw=
-github.com/kilianpaquier/hugot v1.4.2-0.20250312081034-a2657ad90c98 h1:3qQZQofQ3qokr3B0jGKqgdTb+O41kxZbiYAZ5rSiBlk=
-github.com/kilianpaquier/hugot v1.4.2-0.20250312081034-a2657ad90c98/go.mod h1:D1ygP3wv7bnNU9ob/p7eHcMcWRmkj0dfqtLZVCtiBXw=
-github.com/kilianpaquier/hugot v1.4.2-0.20250312081409-38c81aebbb6a h1:NrrdCHUvZL8ZUrhbZp8L2wELmlJqtALU1zCElH5+fVs=
-github.com/kilianpaquier/hugot v1.4.2-0.20250312081409-38c81aebbb6a/go.mod h1:D1ygP3wv7bnNU9ob/p7eHcMcWRmkj0dfqtLZVCtiBXw=
+github.com/kilianpaquier/hugo-primer v0.0.0-20250610193535-64a3e71cc02f h1:Iqlxr3aR+EUMCdN0rM543RZ7v7EiTJNkroASpp77G1I=
+github.com/kilianpaquier/hugo-primer v0.0.0-20250610193535-64a3e71cc02f/go.mod h1:yvbQaA/dPXC9ZkHlfCqblvED6rCB9GZqFgP373pwisI=
+github.com/kilianpaquier/hugo-primer v0.0.0-20250611191926-b392e8eedc9e h1:Ssflk8g3uqpkIaKumhdPeL++F0FOmShmSIQ/eCrzOpE=
+github.com/kilianpaquier/hugo-primer v0.0.0-20250611191926-b392e8eedc9e/go.mod h1:yvbQaA/dPXC9ZkHlfCqblvED6rCB9GZqFgP373pwisI=
