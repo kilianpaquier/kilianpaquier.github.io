@@ -6,24 +6,6 @@
 
 [[redirects]]
   force = true
-  from = "/"
+  from = "/slides/:name"
+  to = "/slides/:name/reveal"
   status = 301
-  to = "/resume/0.3/"
-
-[[redirects]]
-  force = true
-  from = "/resume/"
-  status = 301
-  to = "/resume/0.3/"
-
-[[redirects]]
-  force = true
-  from = "/en/"
-  status = 301
-  to = "/en/resume/0.3/"
-
-[[redirects]]
-  force = true
-  from = "/en/resume/"
-  status = 301
-  to = "/en/resume/0.3/"

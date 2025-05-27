@@ -1,0 +1,91 @@
+[id*="flag-icon-css"] {
+    border-radius: var(--borderRadius-medium, 6px);
+}
+
+:not(.octicon)>svg {
+    &.visualstudiocode>path {
+        fill: #007ACC;
+    }
+
+    &.gitlab>path, &.gitlabcicd>path {
+        fill: #FC6D26;
+    }
+
+    &.githubactions>path {
+        fill: #2088FF;
+    }
+
+    &.netlify>path {
+        fill: #00C7B7;
+    }
+
+    &.dbeaver>path {
+        fill: #382923;
+    }
+
+    &.pnpm>path {
+        fill: #F69220;
+    }
+
+    &.yarn>path {
+        fill: #2C8EBB;
+    }
+
+    &.npm>path {
+        fill: #CB3837;
+    }
+
+    &.apachemaven>path {
+        fill: #C71A36;
+    }
+
+    &.sonarqubeserver>path {
+        fill: #126ED3;
+    }
+
+    &.codecov>path {
+        fill: #F01F7A;
+    }
+
+    &.dependabot>path {
+        fill: #025E8C;
+    }
+
+    &.renovate>path {
+        fill: #308BE3;
+    }
+
+    &.jira>path {
+        fill: #0052CC;
+    }
+
+    &.bitbucket>path {
+        fill: #0052CC;
+    }
+
+    &.semanticrelease>path {
+        fill: #494949;
+    }
+
+    &.jfrog>path {
+        fill: #40BE46;
+    }
+
+    &.go>path {
+        fill: #00ADD8;
+    }
+
+    &.hugo>path {
+        fill: #FF4088;
+    }
+}
+
+[data-light-theme*="dark"] {
+    :not(.octicon)>svg {
+        &.gnubash>path,
+        &.jsonschema>path
+        {
+            fill: #ffff;
+        }
+    }
+}

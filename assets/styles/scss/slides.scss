@@ -1,0 +1,48 @@
+// LANG SLIDES SELECTION
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: var(--bgColor-muted);
+    border: var(--borderWidth-default) solid var(--borderColor-default);
+    border-radius: var(--borderRadius-full);
+}
+
+// SLIDES MENU
+
+.top {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+// SLIDES
+
+.reveal {
+    ul, p, code {
+        font-size: 22px;
+    }
+
+    .hljs, code * span {
+        font-size: 20px; // set text size for highlight zones
+    }
+
+    pre {
+        box-shadow: none; // remove weird focus on highlight zones
+    }
+
+    h1, h2, h3 {
+        border-bottom: none;
+    }
+
+    .controls button {
+        margin-bottom: 0; // remove weird margin bottom on first slide before any navigation
+    }
+}
+
+#logo {
+    display: none;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+    z-index: 2;
+}
