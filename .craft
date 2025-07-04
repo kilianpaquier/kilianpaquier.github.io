@@ -2,12 +2,12 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/kilianpaquier/craft/beta/.schemas/craft.schema.json
 bot: dependabot
 ci:
+  deployment:
+    auto: true
+    platform: netlify
   name: github
   options:
     - labeler
-  static:
-    auto: true
-    name: netlify
 exclude:
   - chart
   - pre-commit:auto-commit
