@@ -8,9 +8,6 @@ ci:
   name: github
   options:
     - labeler
-exclude:
-  - chart
-  - pre-commit:auto-commit
 license: mit
 maintainers:
   - name: kilianpaquier
