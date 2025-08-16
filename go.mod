@@ -8,5 +8,5 @@ toolchain go1.25.0
 
 require (
 	github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be // indirect
-	github.com/kilianpaquier/hugo-primer v0.0.0-20250816082950-6d7f3c8bef1b // indirect
+	github.com/kilianpaquier/hugo-primer v0.0.0-20250816083702-4e4e2457a5a8 // indirect
 )
