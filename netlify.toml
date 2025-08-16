@@ -2,4 +2,4 @@
   force = true
   from = "https://kilianpaquier.netlify.app/*"
   status = 301
-  to = "https://kilianpaquier.com/:splat"
+  to = "https://kilianpaquier.dev/:splat"
