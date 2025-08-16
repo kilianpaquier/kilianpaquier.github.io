@@ -3,3 +3,9 @@
   from = "https://kilianpaquier.netlify.app/*"
   status = 301
   to = "https://kilianpaquier.dev/:splat"
+
+[[redirects]]
+  force = true
+  from = "https://kilianpaquier.com/*"
+  status = 301
+  to = "https://kilianpaquier.dev/:splat"

@@ -33,9 +33,9 @@ profile:
     weight: 5
 
   - identifier: website
-    name: https://kilianpaquier.com
+    name: https://kilianpaquier.dev
     pre: /static/primer/link-16.svg
-    url: https://kilianpaquier.com
+    url: https://kilianpaquier.dev
     weight: 10
 
   - identifier: linkedin
