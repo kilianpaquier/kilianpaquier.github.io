@@ -1,4 +1,4 @@
 github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be h1:v+kEI6Q/q2eGUkUq+ITGsWZ8rpfPvgjYepoQlkDq9b8=
 github.com/joshed-io/reveal-hugo v0.0.0-20241030080325-e191f51d09be/go.mod h1:aXqv6sUwk2OVl71kJjJAYl4mWhGNThGp1kJR9+VgPM4=
-github.com/kilianpaquier/hugo-primer v0.0.0-20250816083702-4e4e2457a5a8 h1:OVdnc2+gRKZeqhqDY7ANEesFJ3+9s6UyViEca1oGWAk=
-github.com/kilianpaquier/hugo-primer v0.0.0-20250816083702-4e4e2457a5a8/go.mod h1:iLJW+FKBPPdzC9dbRzxS8/LXH5kWttUIMdb7R6kCr18=
+github.com/kilianpaquier/hugo-primer v1.0.0 h1:kjlDpJr8il4buH0rKhgejbi9znM1pePTh1z7GZaqw8I=
+github.com/kilianpaquier/hugo-primer v1.0.0/go.mod h1:GHNNgV5ubKQygaKneno76a/a/RLWaZDmd6XXCYBRXzc=
