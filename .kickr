@@ -6,6 +6,7 @@ ci:
   options:
     - codeql
     - harden-runner
+    - kickr:github-app
   website:
     auto: true
     hosting: netlify
@@ -15,3 +16,5 @@ license: mit
 maintainers:
   - name: kilianpaquier
 platform: github
+pre-commit:
+  - conventional-commits
